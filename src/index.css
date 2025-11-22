@@ -1,0 +1,2631 @@
+* {
+  margin: 0px;
+  padding: 0px;
+
+  box-sizing: border-box;
+  /* Incluye el padding y el borde dentro del tamaño total del elemento */
+}
+
+html {
+  font-size: 16px;
+}
+
+.icon i {
+  display: none;
+}
+
+.nav1 i {
+  display: none;
+}
+
+.feature-box {
+  width: 100%;
+  height: 250%;
+}
+
+@media (max-width: 600px) {
+  /* * {
+   
+  } */
+
+  body {
+    background: linear-gradient(
+      to bottom,
+      #ffd700 200px,
+      rgba(245, 245, 245, 0) 50vh
+    );
+
+    /* #f5f5f5;
+
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    /* Para asegurar que el fondo cubra toda la pantalla */
+  }
+
+  /*********************************** estilos globales ***************** */
+  h1 {
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 2.5rem !important;
+  }
+
+  h2 {
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 1.5rem !important;
+  }
+
+  /* También para los párrafos */
+  p {
+    font-family: "Roboto", sans-serif !important;
+    font-size: 1.125rem !important;
+  }
+  a {
+    font-family: "Roboto", sans-serif !important;
+    font-size: 1.2rem;
+  }
+
+  /* ********************* NAV NAVEGACION */
+
+  .icon {
+    background-color: none;
+  }
+
+  .icon #btn-menu {
+    display: flex;
+    padding: 10px;
+    /* Espaciado interno */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el icono */
+  }
+
+  /* .icon #btn-close{
+        display: flex;
+        margin-left: 30%;
+        background-color: #fb8804;
+        z-index: 90;
+    } */
+
+  .nav1 #btn-close {
+    display: flex;
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    z-index: 99;
+    color: beige;
+    cursor: pointer;
+  }
+
+  /********************************** estilos del menu hamburguesa nav */
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 2em;
+    z-index: 10;
+  }
+
+  header .nav1 {
+    position: fixed;
+    top: 0;
+    right: -250px; /* El menú está oculto fuera de la pantalla a la derecha */
+    width: 250px;
+    height: 100vh;
+    z-index: 40;
+    background-color: rgba(12, 11, 9, 0.9); /* Transparente */
+    transition: right 300ms ease-in-out; /* Efecto suave de transición */
+  }
+
+  header .nav2 {
+    position: fixed;
+    top: 0;
+    right: 0; /* El menú se despliega hacia la izquierda desde la derecha */
+    width: 250px;
+    height: 100vh;
+    z-index: 30;
+    background-color: rgba(12, 11, 9, 0.9); /* Transparente */
+    transition: right 300ms ease-in-out; /* Efecto suave de transición */
+  }
+
+  header nav ul {
+    list-style: none; /* Quitar las viñetas de la lista */
+    padding: 0; /* Eliminar el relleno predeterminado */
+    margin: 0; /* Eliminar el margen predeterminado */
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  header nav ul li {
+    margin-top: 30px;
+  }
+
+  header nav ul li a {
+    color: #d7d7d7;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+  }
+
+  header .icon {
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+  }
+
+  .header-container .icon:first-child {
+    margin-right: auto; /* se pega al inicio */
+  }
+
+  .header-container .icon:last-child {
+    margin-left: auto; /* se pega al final */
+  }
+
+  #btn-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  /* fin de navegacion barra*************************************************** */
+
+  /******************************************* el baner */
+
+  /* .baner {
+    width: 94%;
+    height: 250px;
+    background-color: #fb8804;
+    margin: auto;
+    border-radius: 10px;
+  } */
+  /********************************* banner principal en todas las secciones++++++++++++++++++++++++++++++ */
+  /* Contenedor del carrusel */
+  .baner {
+    width: 96%;
+    height: 340px;
+    margin: 1em auto;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    /* box-shadow: 0 0 8px rgba(0, 0, 0, 0.08); */
+  }
+
+  /* Slide (crossfade) */
+  .banner-item {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    display: flex;
+    flex-direction: column; /* imagen arriba, contenido debajo */
+    align-items: center;
+    justify-content: flex-start; /* NO centrar vertical para que respete padding inferior */
+    gap: 0.75rem; /* espacio entre imagen y contenido */
+    padding: 1rem 1rem 1.75rem; /* padding-bottom garantiza aire bajo el botón */
+    box-sizing: border-box;
+    text-align: center;
+    /* background: #edf0f4; tu fondo (cámbialo si usas otro) */
+  }
+
+  .banner-item.active {
+    opacity: 1;
+    z-index: 1;
+  }
+
+  /* Imagen */
+  .banner-item img {
+    max-width: 60%;
+    height: auto; /* evita deformaciones */
+    aspect-ratio: 4 / 3; /* estable; quítalo si no te sirve */
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0 auto; /* centrada */
+  }
+
+  /* Contenido (título, párrafo, botón) */
+  .banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 0 0.3rem; /* aire lateral */
+    color: #fff;
+  }
+
+  .banner-content h2 {
+    margin: 0 0 0.35rem 0;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    color: #070707;
+  }
+
+  .banner-content p {
+    margin: 0 0 0.5rem 0; /* separa del botón */
+    font-size: 1rem;
+    color: #ffffffde;
+  }
+
+  /* Botón CTA */
+  .btn-banner {
+    display: inline-block;
+    padding: 0.5rem 1.1rem;
+    background-color: #ffd700;
+    color: #333;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.2s ease, transform 0.15s ease,
+      box-shadow 0.15s ease;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+  }
+
+  .btn-banner:hover {
+    background-color: #e6b800;
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.22);
+  }
+
+  /* Responsive */
+  /* @media (max-width: 768px) {
+  .baner { height: auto; }
+  .banner-item { padding: .9rem .9rem 1.5rem; }
+  .banner-item img { max-width: 78%; aspect-ratio: auto; }
+  .banner-content h2 { font-size: 1.1rem; }
+} */
+
+  /* fin baner******************************************************************************** */
+
+  /**************************** seccion de los items en el home*******************/
+  /* Home.css */
+
+  /* Home.css */
+
+  .intro-glovo {
+    background-color: #ffcb05; /* amarillo Glovo */
+    padding: 2rem 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #f0b400;
+  }
+
+  .intro-glovo h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    /* color: #111; */
+    color: #007bff;
+    margin: 1rem 0;
+    line-height: 1.3;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .intro-glovo .intro-img {
+    width: 160px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .btn.green {
+    /* background-color: #00c896; */
+    color: white;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 999px;
+    font-weight: 600;
+    margin-top: 0.75rem;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+  }
+
+  /* *************************************** fin home****************************** */
+  .main-content {
+    position: relative;
+    /* background-color: aqua; */
+    width: 98%;
+    margin: 2em auto 2em auto;
+    padding: 1em auto;
+    display: grid;
+    /* grid-template: repeat(4, 1fr) / repeat(4, 1fr); */
+    grid-template-columns: repeat(autofill, minmax(100px, 1fr));
+    gap: 1em 0.5em;
+    box-sizing: border-box;
+    z-index: 99;
+    /* overflow: hidden; */
+  }
+
+  .feature-box {
+    width: auto;
+    height: 30vh;
+    padding: 2em 1em;
+    position: relative;
+    display: flex;
+    border-radius: 10px;
+    align-items: flex-end;
+    justify-content: center;
+    /* opacity: 0.1s; */
+  }
+
+  .feature-box:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 2;
+    border-radius: 20px;
+    opacity: 0.5;
+  }
+
+  .feature-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+  }
+
+  .feature-box .info {
+    position: absolute;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 3;
+    color: #fff;
+    opacity: 0.8;
+    /* background-color: #00ff11; */
+    padding: 10px;
+  }
+
+  .info h3 {
+    padding: 1px;
+    margin: 1em auto;
+    /* background-color: #fb8804; */
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .info p {
+    padding: 1px;
+    margin: 1em auto;
+    padding: 1px;
+    margin: 1em auto;
+  }
+
+  .info a {
+    background-color: red;
+    text-decoration: none;
+    padding: 7px 15px;
+    color: #fff;
+    border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+  }
+
+  /* fin*************** */
+
+  /***************************** slider estilos de los botones del slider ********************************/
+
+  /* Slider CSS */
+
+  .main-dad {
+    max-width: 1200px;
+    position: relative;
+    margin: 1em auto;
+    border-left: 0;
+    border-right: 0;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+  }
+
+  .main-dad .main-fitness2 {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    gap: 12px;
+    /* background-color: #f2f3f5; */
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+  }
+
+  .main-fitness2::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Cada card debe tener ancho fijo y no expandirse */
+  .main-fitness2 > * {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+  }
+
+  .main-fitness2.dragging {
+    scroll-behavior: auto;
+  }
+
+  .main-fitness2.dragging .main-card {
+    cursor: grab;
+    user-select: none;
+  }
+
+  .main-fitness2 .main-card {
+    flex: 0 0 auto;
+    width: 120px;
+    height: 150px;
+    padding: 10px 5px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* scroll-snap-align: start; */
+    transition: transform 0.2s ease;
+  }
+
+  .main-fitness2 .main-card:hover {
+    transform: scale(1.05);
+  }
+
+  .main-card img {
+    width: 44px;
+    height: 44px;
+    margin-bottom: 6px;
+    object-fit: contain;
+  }
+
+  .main-card .info-card h3 {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .indicadores {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+    gap: 6px;
+  }
+
+  .indicador {
+    width: 22px;
+    height: 4px;
+    background-color: #ccc;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .indicador.activo {
+    background-color: #ffce00;
+  }
+
+  /* estilos de las paginas de cada seccion */
+
+  /* .main-fitness {
+    
+        width: 98%;
+        margin:2em auto 2em auto;
+        padding: 1em auto;
+        display: flex;
+        /* grid-auto-flow: column;
+        grid-auto-columns: calc((100/3)-12px); */
+
+  /* background-color: #50C878; */
+
+  /* overflow: hidden; */
+
+  */ .main-fitness .img {
+    object-fit: cover;
+    /* width: 140px;
+    height: 140px; */
+  }
+
+  .main-fitness .feature-box {
+    flex: 0 0 25%;
+    position: relative;
+    padding: 20px;
+    /* background-color: #fb8804; */
+    /* width: calc(90%*2); */
+    margin-left: 0.5em;
+  }
+
+  .feature-box .info {
+    position: absolute;
+    display: flex;
+    /*  Use flexbox; */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    /* background-color: #d7d7d7; */
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    /* Optional: add padding for spacing */
+    box-sizing: border-box;
+    /* Ensure padding is included in element's total width and height */
+    text-align: center;
+    /* Optional: center text inside the flex container */
+  }
+
+  /* **********************************css del sistema muscular *******************************************/
+
+  .sistemamuscular {
+    display: block;
+
+    /* background-color: #50C878; */
+    justify-content: center;
+  }
+
+  .sistemamuscular .bloque-disciplina .titulo-disciplina {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 0.8rem;
+    position: relative;
+    display: inline-block;
+    width: 96%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Estilo general del contenedor */
+  .trenes {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    font-family: "Arial", sans-serif;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* Estilo para los títulos */
+  .trenes h3 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    color: black; /* azul sobrio */
+    border-left: 4px solid #ffd700;
+    padding-left: 0.5rem;
+  }
+
+  /* Estilo para las listas */
+  .trenes ul {
+    list-style: none;
+    padding-left: 1rem;
+  }
+
+  .trenes ul li {
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    position: relative;
+    line-height: 1.6;
+  }
+
+  .trenes ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    /* color: #ffd700; */
+    font-size: 1.2rem;
+  }
+
+  .p-sistema-muscular {
+    background-color: #e6f0ff;
+    color: #333;
+    padding: 1.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* opcional */
+    width: 96%;
+  }
+
+  .intro-imagenes {
+    color: #333;
+    padding: 1.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* opcional */
+    width: 96%;
+  }
+
+  .galeria-muscular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .imagen-muscular {
+    width: 90%; /* Para que no ocupe todo el ancho en móviles */
+    max-width: 320px; /* Ancho máximo en móvil */
+    aspect-ratio: 3/4; /* Proporción de cuerpo humano */
+    height: auto;
+    object-fit: contain;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* Efecto hover (solo para desktop realmente) */
+  .imagen-muscular:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* ****************************estilos de componente disciplina ****************************/
+
+.menu-disciplinas {
+  background-color: #f5f5f5;
+
+  /* margin: left 20px ; */
+}
+
+/* PARARAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARRRRRRRRRRRRRRRRARRRRRRRRRRRRRARRRRRRRR */
+.menu-disciplinas ul {
+  background-color: #3e3b3b;
+}
+
+/* .menu-disciplinas ul li{
+   
+
+   list-style: none;
+   padding: 0.5rem;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   width: 96%;
+   border: 1px solid #070707;
+   border-radius: 8px;
+   z-index: 0;
+   margin: 0.9rem auto;
+   height: 4rem;
+   background-color: rgba(255, 215, 0);
+   
+   cursor: pointer;
+  user-select: none;
+
+} */
+
+.menu-disciplinas ul li::before {
+  position: absolute;
+  content: "";
+  /* Necesario para que la pseudoclase aparezca */
+  border-radius: 20%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background-color: rgba(0, 0, 0, 0.6); Color negro con 50% de transparencia */
+  z-index: -1;
+  /* Coloca la pseudoclase detrás del contenido del contenedor */
+}
+
+.menu-disciplinas ul li img {
+  width: auto;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* .menu-disciplinas ul li img{
+    position: relative;
+  width: 30%;
+  height: auto; 
+  border-radius: 20%;
+  
+
+} */
+
+.menu-disciplinas ul li span {
+  color: #080808;
+  font-size: 0.96rem;
+  /* z-index: 3; */
+  word-wrap: break-word;
+}
+
+.infocross {
+  background-color: red;
+}
+
+/******************* css de componente desciplinas  disciplinas.jsx************************** */
+
+.principal .h1-concept {
+  /* background-color: #50C878; */
+  display: block;
+  position: relative;
+  margin: 4rem auto;
+  padding: 1rem;
+  background-image: url("../img-banner/corriendo-sol.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.overlay-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Color negro con opacidad del 50% */
+}
+
+.principal .h1-concept .h1-disciplinas {
+  position: relative;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  /* background-color: #0056b3; */
+  color: #f5f5f5;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 2rem auto;
+  font-family: "Montserrat", sans-serif;
+}
+
+.principal .h1-concept .h2-disciplinas {
+  position: relative;
+  display: inline-block;
+  justify-content: flex-start;
+  align-items: left;
+  color: #ccc;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-family: "Montserrat", sans-serif;
+  width: 96%;
+  margin: 1rem auto;
+  /* color: white; */
+  z-index: 5;
+}
+
+.principal .h1-concept .h2-disciplinas::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 3px;
+  background-color: #ffd700;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+.principal .h1-concept p {
+  position: relative;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin: 0.4em 0.4em;
+  text-align: start;
+  /* Espaciado entre líneas */
+  z-index: 5;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #ddd;
+  margin-bottom: 1rem;
+}
+
+.principal .main-menudisciplinas img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.bloque-disciplina {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  background-color: #f5f5f5; /* o blanco si lo prefieres */
+  max-width: 900px;
+  margin: auto;
+}
+
+.titulo-disciplina {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 0.8rem;
+  position: relative;
+  display: inline-block;
+}
+
+.titulo-disciplina::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 4px;
+  background-color: #ffd700;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+.subtitulo-disciplina {
+  font-size: 1rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.principal .main-menudisciplinas h4 {
+  position: relative;
+  font-weight: 600;
+  width: 96%;
+  display: flex;
+  /* background-color: white; */
+  justify-content: left;
+  align-items: center;
+  margin: 0 auto 4em auto;
+  /* margin-top:  0;
+    margin-bottom: 2em; */
+  text-align: start;
+  line-height: 1.6;
+  /* Espaciado entre líneas */
+  z-index: 5;
+  color: #413b3b;
+  padding-left: 0.3em;
+  /* color: #888  */
+}
+
+.principal .description-disciplinas {
+  /* background-color: #c89e50; */
+  margin: 2em auto;
+  text-align: center;
+}
+
+.main-menudisciplinas p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 1em;
+  padding: 0.5rem;
+}
+/* //////////////////MENU DE DISCIPLINAS DE EQUIPOOOO  //////////// */
+
+.menu-disciplinas-equipo {
+  background-color: #f0f4f8;
+  /* background-color: rebeccapurple; */
+  /* Fondo claro del div */
+  border-radius: 15px;
+
+  /* Bordes redondeados en las esquinas */
+  /* box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.1), */
+  /* Sombra superior */
+  /* 0px 5px 15px rgba(0, 0, 0, 0.2); */
+  /* Sombra inferior 0.5rem */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 1rem 0.3rem;
+
+  /* border-top: 4px solid #ffcc00; Línea superior con color vibrante */
+}
+.menu-disciplinas-equipo ul {
+  /* background-color: blue; */
+  margin: auto 0.4rem;
+  /* padding: 0.1rem; */
+  /* background-color: blue; */
+
+  text-align: center;
+}
+
+.menu-disciplinas-equipo ul li {
+  position: relative;
+  display: flex;
+  /* flex-direction: column; */
+
+  list-style: none;
+  /* padding: 0.1rem; */
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #070707;
+  border-radius: 8px;
+  z-index: 0;
+  margin: 0.9rem auto;
+  height: 4rem;
+  background-color: #ffd700;
+  /* box-shadow: 10px 10px 20px rgba(0,0,0,0.5); #FFD700*/
+  cursor: pointer;
+  user-select: none;
+}
+
+.menu-disciplinas-equipo ul li .equipo-icon {
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* background-color: #45a049; */
+  height: 100%;
+  width: 50%;
+  padding: 0 0.5rem;
+}
+
+.menu-disciplinas-equipo ul li .equipo-icon span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4vw;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  line-height: 1.6px;
+  /* background-color: orange; */
+  padding: 0.5rem 1rem;
+  text-align: center;
+  display: inline-block;
+
+  /* color: #fbf9f9; */
+}
+
+.menu-disciplinas-equipo ul li .equipo-icon img {
+  height: 100%;
+  width: 30%;
+  /* background-color: blue; */
+  object-fit: contain;
+  margin-right: 1rem;
+}
+/* fin de menu disciplinas en disciplinas.jsx************************************************************** */
+
+/* css de subcategoria infocalistenia  infocalistenia.jsx**************************************************** */
+
+.description-disciplinas .main-calistenia {
+  /* background-color: #FFD700; */
+  /* text-align: justify; */
+  margin: 2em auto 24px auto;
+  line-height: 1.6;
+  padding: 0 0.2em;
+}
+
+.description-disciplinas .main-calistenia h1 {
+  display: flex;
+  /* background-color: #2f6a20; */
+  /* justify-content: center;
+    align-items: center; */
+  margin: 2em auto 24px auto;
+  font-size: 2.5rem;
+  z-index: 2;
+  /* margin-bottom: 3em; */
+}
+
+.description-disciplinas .main-calistenia p {
+  /* background-color: #0056b3; */
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 96%;
+  margin-bottom: 3em;
+  /* align-items: start; */
+  margin: auto auto 3em auto;
+  font-size: 1rem;
+}
+
+.main-calistenia .h2-infocalistenia {
+  position: relative;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  width: 96%;
+  margin: auto;
+  /* background-color: #fb8804; */
+  margin-bottom: 2.5rem;
+}
+
+.h2-infocalistenia::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 3px;
+  background-color: #ffd700;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+/* *************************************************************** */
+.description-disciplinas .main-calistenia ul li {
+  position: relative;
+  background-color: #1e1e1e;
+  border-radius: 16px;
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.4);
+  width: 96%;
+  margin: 2rem auto;
+  overflow: hidden;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: transform 0.2s ease-in-out;
+}
+
+.description-disciplinas .main-calistenia ul li:hover {
+  transform: translateY(-4px);
+}
+
+/* Contenedor del video o imagen */
+.description-disciplinas .main-calistenia ul li .wrap-img-iframe {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-color: #000;
+  /* overflow: hidden; */
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+/* Imagen miniatura */
+.description-disciplinas .main-calistenia ul li .img-card-disciplina {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+}
+
+/* Iframe del video */
+.description-disciplinas .main-calistenia ul li .iframe-card-disciplina {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: none;
+}
+
+/* Botón moderno para reproducir video */
+.description-disciplinas .main-calistenia ul li .vervideo-play {
+  background-color: #444;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  margin: 1.2rem auto;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: fit-content;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.description-disciplinas .main-calistenia ul li .vervideo-play:hover {
+  background-color: #666;
+  transform: scale(1.05);
+}
+
+/* Descripción del ejercicio */
+.description-disciplinas .main-calistenia ul li .p-li-ejercicio {
+  padding: 1.2rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  background-color: #2a2a2a;
+  color: #eaeaea;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #333;
+}
+
+/* Footer */
+.description-disciplinas .main-calistenia ul li .footer-acordeon-video {
+  background-color: #ffd700;
+  color: #000;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.vervideo-play i {
+  margin-right: 0.5em;
+  font-size: 1.5em;
+}
+
+/* ************************** *******************************/
+
+/* /////////////////////////estilos de acordeon de infocaliestenia.jsx//////////////////////// */
+
+.contenedor-videoh3icon .acordeon-disciplina-video {
+  margin: 1rem auto 1rem auto;
+  display: flex;
+  align-items: center;
+  margin: 1rem auto;
+  /* background-color: green; */
+  padding: 0.3rem;
+  border-radius: 12px;
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); */
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  width: 100px; /* Ajusta el ancho según necesites */
+  height: 5em;
+}
+
+.contenedor-videoh3icon .acordeon-disciplina-video img {
+  width: 30px;
+  height: auto;
+  margin-bottom: 0.5rem;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  /* background-color: red; */
+}
+
+/* Cuando el acordeón está abierto, el logo desaparece con una animación */
+/* .acordeon-disciplina-video.active img {
+    opacity: 0;
+    transform: scale(0.8);
+    pointer-events: none; Evita que el elemento siga siendo clickeable 
+}*/
+
+.h3-angle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+  gap: 10px; /* Espacio entre el h3 y el ícono */
+  margin: 0.5rem auto;
+}
+
+.h3-angle .h3-vervideo {
+  color: #070606;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  display: flex;
+  white-space: nowrap;
+
+  /* background-color: #b34b00; */
+}
+
+.h3-angle i {
+  color: #070606;
+  font-size: 2rem;
+  transition: transform 0.7s ease-in-out;
+}
+
+.acordeon-disciplina-video.active i {
+  transform: rotate(360deg); /*Gira el icono cuando se abre */
+}
+
+/* ************************fin estilos de acordeon de infocaliestenia.jsx *********************************** */
+
+/* **************************************** banner de cada disciplina************************ */
+.descripcion-calistenia {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.descripcion-calistenia h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.descripcion-calistenia p {
+  background-color: #e6f0ff;
+  color: #333;
+  padding: 1.5rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* opcional */
+  width: 96%;
+}
+
+.hero-calistenia {
+  background: linear-gradient(to bottom, #111, #222);
+  color: #fff;
+  text-align: center;
+  margin: 2rem auto;
+  width: 96%;
+  min-height: 40vh;
+  border-radius: 10px;
+  justify-content: center;
+  padding: 3rem 1rem 2rem;
+}
+
+.hero-calistenia .circle-img {
+  width: 10rem;
+  height: 10rem;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid white;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); */
+}
+
+.hero-calistenia img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #ffd700;
+}
+
+.hero-calistenia h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffd700;
+}
+
+/* ****************************************fin banner de cada disciplina************************ */
+
+/* estilos de page entrenamiento  ENTRENMIENTO.JSX************************************************************ */
+
+.principal-entrenamiento section {
+  margin: 0.4rem 0.4rem;
+  text-align: justify;
+  line-height: 1.6;
+  padding: 0.2em;
+}
+
+.principal-entrenamiento .h1-concept-entrenamiento {
+  position: relative;
+  margin: 1.5em auto 2em;
+  padding: 1em;
+  /* background-image: url("../img-banner/banner-entrenamiento.webp"); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: clamp(250px, 30vw, 350px); /* Se adapta mejor a pantallas */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.principal-entrenamiento .h1-concept-entrenamiento p {
+  color: white;
+}
+
+.principal-entrenamiento .h1-concept-entrenamiento2 {
+  position: relative;
+  margin: 1.5em auto 1em;
+  padding: 1em;
+  background-image: url("../img-banner/img-banner-hipertrofia.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: clamp(250px, 30vw, 350px); /* Se adapta mejor a pantallas */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.principal-entrenamiento .h1-concept-entrenamiento2 p {
+  color: white;
+}
+
+.overlay-train {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Más oscuro para mejor legibilidad */
+  z-index: 0;
+}
+
+.h1-entrenamiento {
+  font-size: clamp(1.8rem, 4vw, 3rem); /* Tamaño adaptable */
+  font-weight: bold;
+  z-index: 1;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.p-entrenamiento {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  z-index: 1;
+  max-width: 80%;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+.principal-entrenamiento section h2 {
+  position: relative;
+  margin: 0;
+  font-weight: 200;
+  padding: 0.05em 0.5em;
+  /* background-color: red; */
+}
+
+.lista-acordeon {
+  display: flex;
+  /* Activa flexbox */
+  align-items: center;
+  /* Alinea verticalmente los elementos */
+  justify-content: space-between;
+  /* Distribuye los elementos: uno a la izquierda y otro a la derecha */
+  padding: 10px;
+  /* Espaciado interno */
+  background-color: #ffd700;
+  /*#e2e6e2 Fondo claro para el contenedor */
+  border: 1px solid #ddd;
+  /* Opcional: borde */
+  border-radius: 5px;
+  /* Opcional: bordes redondeados */
+  margin-bottom: 0.5em;
+  font-size: 16px;
+}
+
+.lista-acordeon .h2-entrenamiento {
+  font-size: clamp(20px, 2vw, 24px);
+}
+
+.acordeon-icon {
+  margin-left: auto;
+  /* Empuja el ícono al extremo derecho */
+  font-size: 1.5rem;
+  /* Tamaño del ícono */
+}
+
+.informacion-ul {
+  max-height: 800px;
+  overflow: scroll;
+  transition: max-height 0.5s ease-out;
+  /* Transición para un efecto de expansión suave */
+}
+
+.principal section strong {
+  /* background-color: #50C878; */
+  /* font-weight: 800; */
+  color: #3e3c3c;
+}
+
+/* estilos del acordeon en traincalistenia.jsx********************************************************/
+
+.main-calisteniatrain ul li {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+  padding: 1em 0;
+  margin: 0.3em auto;
+}
+
+/* .main-calistenia ul .videos {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out; /* Transición para un efecto de expansión suave /
+} */
+
+.main-calisteniatrain ul .videos {
+  max-height: 500px;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  /* Transición para un efecto de expansión suave */
+}
+
+.main-calisteniatrain ul .clasevideo {
+  max-height: 500px;
+  /* Establece una altura máxima mayor cuando se muestra */
+  background-color: #ffd700;
+}
+
+/* +++++++++++++++++++++++++++++++++NUTRICION nutricion.jsx+++++++++++++++++++++++++++++++++ */
+
+.nutricion-principal {
+  font-family: roboto, arial, sans-serif;
+  height: auto;
+  /* background-color: #0056b3; */
+  margin: 1rem auto;
+  /* width: 98%; */
+  padding: 0.2rem 0.5rem;
+}
+
+.nutricion-principal .title-nutricion {
+  font-family: "Montserrat", sans-serif;
+  /* font-weight: 600; */
+  position: relative;
+  margin: 1rem auto 1rem;
+  padding: 1rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img-banner/banner-nutricion.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 1em;
+  height: 300px;
+  color: white;
+  border-radius: 1rem;
+}
+
+.foto-nutrientes img {
+  width: 30%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.nutricion-principal h2 {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 1em;
+}
+
+.nutricion-principal p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 1em;
+}
+
+.grasas {
+  margin-bottom: 2em;
+  /* background-color: #2f6a20; */
+}
+
+.macros .ul-nutricion {
+  list-style-type: disc;
+  margin-left: 2em;
+}
+
+.ul-nutricion li {
+  margin-bottom: 0.6em;
+}
+
+/* +++++++++++++++++++++++++++++++ diseño de imagenes  NUTRICION ++++++++++++++++++++++++++++++++ */
+.foto-nutrientes {
+  display: flex;
+  /* Activa el layout de flexbox */
+  justify-content: center;
+  /* Centra horizontalmente los elementos */
+  gap: 20px;
+  /* Espaciado entre los elementos */
+  padding: 20px;
+  /* Espaciado general */
+  flex-wrap: wrap;
+  /* Permite que los elementos bajen de línea en pantallas pequeñas */
+  margin-bottom: 2em;
+  background-color: #ffd700;
+  border-radius: 1rem;
+}
+
+.foto-nutrientes .wrap-nutrientes {
+  display: flex;
+}
+
+.nutriente {
+  display: flex;
+  flex-direction: column;
+  /* Alinea la imagen y el texto verticalmente */
+  align-items: center;
+  /* Centra la imagen y el texto horizontalmente */
+  max-width: 150px;
+  /* Tamaño máximo del elemento */
+}
+
+.foto-nutrientes img {
+  width: 35%;
+  max-width: 250px;
+  min-width: 150px;
+  /* No reduce el tamaño de la imagen por debajo de 80px */
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+.foto-nutrientes span {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.h2-aminoacidos {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  position: relative;
+  margin: 1.5em auto 2em;
+  padding: 0.5em;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img-banner/aminoacidos.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  /* margin-bottom: 1em; */
+  height: 300px;
+  color: white;
+  border-radius: 1rem;
+}
+
+.h2-creatina {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  position: relative;
+  margin: 1.5em auto 2em;
+  padding: 0.5em;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img-banner/creatina.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  /* margin-bottom: 1em; */
+  height: 300px;
+  color: white;
+  border-radius: 1rem;
+}
+
+.h2-proteina {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  position: relative;
+  margin: 1.5em auto 2em;
+  padding: 0.5em;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img-banner/proteina-suplemento.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  /* margin-bottom: 1em; */
+  height: 300px;
+  color: white;
+  border-radius: 1rem;
+}
+
+/*++++++++++++++++++++++++++++++ fin diseño de imagenes  +++++++++++++++++++++++++++++++++++++++++++  */
+
+/* ++++++++++++++++++++++++++++++++   ACORDEON DE NUTRICION +++++++++++++++++++++++++++++++++++++++++++ */
+.acordeon {
+  display: flex;
+  /* Activa flexbox */
+  align-items: center;
+  /* Alinea verticalmente los elementos */
+  justify-content: space-between;
+  /* Distribuye los elementos: uno a la izquierda y otro a la derecha */
+  padding: 10px;
+  /* Espaciado interno */
+  background-color: #ffd700;
+  /*#e2e6e2 Fondo claro para el contenedor */
+  border: 1px solid #ddd;
+  /* Opcional: borde */
+  border-radius: 5px;
+  /* Opcional: bordes redondeados */
+  margin-bottom: 0.5em;
+}
+
+.macros {
+  max-height: 800px;
+  overflow: scroll;
+  transition: max-height 0.5s ease-out;
+  /* Transición para un efecto de expansión suave */
+}
+
+.aminoacidos {
+  margin-top: 2em;
+}
+
+/* ++++++++++++++++++++++  formularios de cada acordeon en calculadora.++++++++++++++++++++++++++++++++++++ */
+
+/* **************************   otras estimaciones de otrases timaciones.jsx******************************** */
+.fitness-calculator {
+  /* background: linear-gradient(90deg, #333, #555); */
+  /* color: #f5f5f5; */
+  padding: 2em;
+  border-radius: 10px;
+  margin: 1em auto;
+  width: 90%;
+  max-width: 800px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+}
+
+.fitness-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fitness-list li {
+  margin-bottom: 1.5em;
+  padding: 1em;
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  border-radius: 8px;
+}
+
+.fitness-list h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5em;
+  /* color: #ffd700; Dorado para destacar los títulos */
+}
+
+.fitness-list p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.fitness-list li:last-child {
+  margin-bottom: 0;
+}
+
+/************************** fin de otras estimaciones******************************************** */
+
+.videos .formularios {
+  background-color: #e0d7d7;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  /* Añade un espacio entre los elementos */
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+input[type="radio"] {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.formularios .genero {
+  display: flex;
+  gap: 1em;
+  /* Espacio entre los inputs de radio */
+  align-items: center;
+  /* Alinea verticalmente los elementos dentro del contenedor */
+  margin-bottom: 1em;
+  background-color: #333;
+}
+
+.formularios .genero label {
+  margin: 0;
+  /* Elimina márgenes extra */
+}
+
+input,
+select {
+  width: 100%;
+  padding: 0.5em;
+  box-sizing: border-box;
+  /* Asegura que el padding no afecte el tamaño */
+  margin-bottom: 1em;
+}
+
+button {
+  padding: 0.5em 1em;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  align-self: flex-start;
+  /* Alinea el botón al inicio (izquierda) */
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+select {
+  width: 100%;
+  /* Asegura que el select ocupe el mismo ancho que los inputs */
+}
+
+.main-calisteniatrain {
+  width: 96%;
+  margin: auto;
+}
+
+/* ***************************  fin de cada acordeon en calculadora.jsx */
+
+/* ***************************  calculadora.jsx cuerpo principal***************************** */
+
+.title-calculadora {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.1rem;
+  /* font-weight: 600; */
+  position: relative;
+  margin: 1.5em auto 2em;
+  padding: 0.5em;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img-banner/baner-calculadora.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 1em;
+  height: 300px;
+  color: white;
+  border-radius: 1rem;
+}
+
+.main-calisteniatrain p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 1em;
+}
+
+.title2-calculadora {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem; /* Tamaño relativo (~24px) */
+  font-weight: 700;
+  color: #222;
+  text-align: center;
+  position: relative;
+  margin: 2em auto 1.5em;
+}
+
+.title2-calculadora::after {
+  content: "";
+  display: block;
+  width: 60%; /* Subrayado ancho relativo al texto */
+  height: 0.15rem; /* Espesor del subrayado (~4px) */
+  background-color: #ffd700;
+  margin: 0.5em auto 0;
+  border-radius: 0.2rem;
+}
+
+/* ***************************  fin de calculadora.jsx cuerpo principal************************/
+
+/* ***************************  calculadora.jsx acordeon***************************** */
+.acordeon-calculadora {
+  display: flex;
+  /* Activa flexbox */
+  align-items: center;
+  /* Alinea verticalmente los elementos */
+  justify-content: space-between;
+  /* Distribuye los elementos: uno a la izquierda y otro a la derecha */
+  padding: 10px;
+  /* Espaciado interno */
+  background-color: #ffd700;
+  /*#e2e6e2 Fondo claro para el contenedor */
+  border: 1px solid #ddd;
+  /* Opcional: borde */
+  border-radius: 8px;
+  /* Opcional: bordes redondeados */
+  margin-bottom: 0.5em;
+  height: 70px;
+  /*altura recomendada para este div  */
+}
+
+.acordeon-calculadora img {
+  width: 40px;
+  /* Ajusta según tu diseño */
+  height: 40px;
+  border-radius: 50%;
+  /* Haz que la imagen sea circular */
+  /* object-fit: cover; Asegura que la imagen no se deforme */
+  margin-right: 15px;
+  /* Espaciado a la derecha */
+}
+
+.acordeon-calculadora h3 {
+  flex-grow: 1;
+  /* Ocupa el espacio disponible entre la imagen y el ícono */
+  margin: 0;
+  /* Elimina el margen por defecto */
+  font-size: 18px;
+  /* Ajusta el tamaño de la fuente */
+  /* color: #333; */
+}
+
+.acordeon-calculadora i {
+  font-size: 20px;
+  /* Ajusta el tamaño del ícono */
+  /* color: #666; Cambia el color del ícono */
+  margin-left: 15px;
+  /* Espaciado entre el texto y el ícono */
+}
+
+.acordeon-calculadora .formularios p span {
+  font-size: 16px;
+}
+
+.porcentaje-grasa {
+  overflow: hidden; /* Oculta el contenido cuando la altura es 0 */
+  max-height: 0; /* Altura inicial del acordeón cerrado */
+  transition: max-height 0.6s ease-out; /* Transición suave para la altura */
+}
+
+.porcentaje-grasa.open {
+  max-height: 500px; /* Altura máxima cuando está abierto (ajústala según tu contenido) */
+}
+
+.acordeon-porcentaje {
+  display: flex;
+  /* Activa flexbox */
+
+  align-items: center;
+  /* Alinea verticalmente los elementos */
+  justify-content: space-between;
+  /* Distribuye los elementos: uno a la izquierda y otro a la derecha */
+  padding: 10px;
+  /* Espaciado interno */
+  /* background-color: #FFD700; */
+  /*#e2e6e2 Fondo claro para el contenedor */
+  border: 1px solid #ddd;
+  /* Opcional: borde */
+  border-radius: 8px;
+  /* Opcional: bordes redondeados */
+  margin-bottom: 0.5em;
+  height: 4.2rem;
+  /*altura recomendada para este div  */
+  color: white;
+}
+
+.acordeon-porcentaje h3 {
+  font-size: 1.2rem;
+}
+
+.resultados {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-size: 20px;
+  color: #333;
+}
+
+.resultados h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 1em;
+  color: #222;
+  border-bottom: 2px solid #484638;
+  padding-bottom: 5px;
+}
+
+/* ***************************  fin de calculadora.jsx acordeon************************/
+
+/* ***************************  calculadora.jsx principal formulario***************************** */
+.calculosss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em auto;
+  width: 70%;
+  padding: 1em;
+  background-color: #9b9999;
+}
+
+.calculoss .input1,
+.select1 {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.calculo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em auto;
+  width: 96%;
+  /* max-width: 800px; */
+  padding: 2em;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.7) 50%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.calculo form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
+  width: 100%;
+}
+
+.calculo label {
+  font-size: 1rem;
+  font-weight: bold;
+  /* color: #333; */
+  color: white;
+}
+
+.calculo input,
+.calculo select {
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.calculo input:focus,
+.calculo select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.botones-calculadora {
+  text-align: center;
+}
+
+.botones-calculadora button {
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  background-color: #ffd700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.botones-calculadora button:hover {
+  background-color: #0056b3;
+}
+
+@media (min-width: 600px) {
+  .calculo form {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em 2em;
+  }
+
+  .botones-calculadora {
+    grid-column: span 2;
+  }
+}
+
+/* *************************** fin calculadora.jsx principal formulario***************************** */
+
+/* ****************************** estilos de dietas.jsx********************************** */
+.h2-planalimenticio {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  position: relative;
+  margin: 1.5em auto 2em;
+  padding: 0.5em;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img-banner/proteina-suplemento.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  /* margin-bottom: 1em; */
+  height: 300px;
+  color: white;
+}
+
+/* estilo de la tabla de ejemplo de menu de juan */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+  background-color: #1a1917;
+  color: white;
+  border-radius: 15px;
+}
+
+thead tr {
+  background-color: #ffd700;
+  color: #080808;
+  border-bottom: 2px solid #ddd;
+}
+
+th {
+  padding: 12px 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+td {
+  padding: 12px 15px;
+  text-align: center;
+}
+
+tbody tr:last-child {
+  border-bottom: none;
+}
+
+/* card-planalimenticio */
+.card-planalimenticio {
+  height: auto;
+  width: 96%;
+  margin-bottom: 1rem;
+  background-color: #d7d0d0;
+  border-radius: 15px;
+  padding: 0.5rem;
+}
+
+/* fin de estilos de dietas.jsx********************************************************* */
+
+/* *********************** menu de disciplinas para Equipos de entrenamiento**************************** */
+
+/* inicio banner principal de equipos */
+.banner-h1-principal {
+  display: flex;
+  /* background-color: #45a049; */
+  margin: auto auto;
+  width: 96%;
+  /* height: 150px; */
+  height: 40vh; /* Ajuste responsivo automático */
+  min-height: 150px; /* Altura mínima para pantallas pequeñas */
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../img/equipos.webp");
+  background-size: cover;
+  color: white;
+  line-height: 1.5;
+  padding: 0.5rem;
+  z-index: 0;
+  border-radius: 1rem;
+}
+
+/* .banner-h1-principal {
+    position: relative;
+    padding: 3rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+  } */
+
+.banner-contenido {
+  position: relative;
+  z-index: 2;
+  color: #f4f2f2; /* Texto en blanco para destacar sobre el fondo */
+  max-width: 800px;
+  width: 100%;
+}
+
+.banner-texto h1 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-transform: uppercase; /* Opcional: todo en mayúsculas para un diseño más moderno */
+  /* background-color: red; */
+  padding: 0 0.5rem;
+}
+
+.banner-contenido .banner-texto p {
+  font-size: 1.1rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  font-weight: bold;
+  /* background-color: red; */
+  padding: 0rem 0.5rem;
+}
+
+.main-menudisciplinas .p-principal-equipos {
+  font-size: 1.1rem; /* Un poco más pequeño para móviles */
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  margin: 0.8rem auto; /* Un poco más ajustado */
+  width: 96%; /* Un poco más estrecho para evitar que toque los bordes */
+  padding: 0.6rem; /* Ligero aumento para más espacio visual */
+}
+
+/* este es un h3 */
+.titulo-galeria-equipos {
+  font-size: 2rem; /* Un poco más pequeño para móviles */
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  margin: 0.8rem auto; /* Un poco más ajustado */
+  width: 96%; /* Un poco más estrecho para evitar que toque los bordes */
+  padding: 0.6rem; /* Ligero aumento para más espacio visual */
+}
+
+/* @media (max-width: 768px) {
+  .banner-text h1 {
+    font-size: 2rem;
+  }
+
+  .banner-text p {
+    font-size: 1rem;
+  }
+} */
+/*fin banner principal de equipos  */
+
+/* ///////////////////     galeria de equipos de entrenamiento  equipocalistenia.jsx/////////////////////// */
+
+.h1-equipos {
+  background-color: #030303;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem;
+  width: 96%;
+  margin: 2rem auto;
+  color: #ffd700;
+}
+
+.main-equipo {
+  position: relative;
+  columns: 2;
+  /* Dos columnas para el diseño masonry */
+  gap: 0.5rem;
+  margin: 0rem auto;
+  padding: 0.4rem;
+  width: 100%;
+  background-color: #ebebf2;
+  z-index: 2;
+}
+
+.card {
+  break-inside: avoid;
+  /* Evita que el contenido de las cards se divida en las columnas */
+  margin-bottom: 0.5rem;
+  /* Espacio debajo de cada card */
+  background-color: rgb(249, 246, 246);
+  padding: 0 0 0.4rem 0;
+  border-radius: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  border-radius: 15px 15px 0 0;
+  /* border: 1px solid #ccc; */
+  transition: transform 0.2s;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  /* background-color: #0056b3; */
+  padding: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem auto;
+  text-align: center;
+  margin-top: 0.1rem;
+  font-size: 15px;
+  line-height: 1;
+}
+
+.btn-vermas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffd700;
+  padding: 0.5rem;
+  margin: 0.4rem auto;
+  width: 40%; /* Cambia de 30% a un ancho dinámico */
+  min-width: 100px; /* Establece un ancho mínimo si es necesario */
+  height: 30px;
+  white-space: nowrap; /* Evita el salto de línea */
+  text-align: center;
+  font-size: 16px; /* Ajusta el tamaño del texto si es necesario */
+  border-radius: 999px; /* Para un diseño más atractivo */
+  cursor: pointer; /* Indicador de interactividad */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  font-size: 16px;
+}
+/* dinamismo en el h1 del titulo en cada equipo de  enetrenamiento por disciplina ejm equipocrossfit.jsx */
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #0b0a06 30%, #242423 100%);
+  padding: 2rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.banner-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.banner-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: contain;
+  background-color: #ffd700;
+  border: 2px solid white;
+}
+
+.banner-text {
+  flex: 1;
+}
+
+.banner-text h2 {
+  font-size: 2.5rem;
+  margin: 0 0 0.5rem 0;
+  color: #f8f4f4;
+  font-weight: bold;
+}
+
+.banner-text p {
+  font-size: 1rem;
+  color: white;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner-content {
+    flex-direction: column;
+  }
+
+  .banner-image img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .banner-text h1 {
+    font-size: 2rem;
+    color: white;
+  }
+
+  .banner-text p {
+    font-size: 0.9rem;
+  }
+}
+
+/*fin dinamismo de hi de los equipos  */
+
+/* Fondo oscuro superpuesto */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Fondo oscuro con opacidad */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+/* Estilos del modal */
+.modal {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+  z-index: 11;
+}
+
+.modal h2 {
+  margin-top: 0;
+}
+
+.modal p {
+  margin: 1rem 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 0.5rem 0.5rem;
+}
+
+.imagen-modal-equipo {
+  display: inline-block;
+  width: 80%;
+  height: 30%;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-principal-equipo .overlay .btn-closed {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  background: #938484;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 2.2rem;
+  height: 2.2rem;
+  cursor: pointer;
+}
+.main-principal-equipo .overlay .btn-closed:hover {
+  background-color: #ccc;
+}
+
+.overlay .modal .contenedor-btn-amazon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: green; */
+}
+
+.overlay .modal .contenedor-btn-amazon .btn-amazon {
+  display: inline-flex; /* Mejor para botones flexibles */
+  align-items: center;
+  justify-content: center;
+  background-color: #ffd700;
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.7rem 2rem !important;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: auto !important;
+  /* max-width: 280px; Ancho máximo controlado */
+  white-space: nowrap; /* evita saltos de linea*/
+  gap: 0.2rem;
+}
+
+.overlay .modal .btn-amazon:hover {
+  background-color: #e6c200; /* Un amarillo más oscuro al pasar el cursor */
+  transform: translateY(-3px); /* Efecto de elevación más suave */
+}
+
+.overlay .modal .amazon-icon {
+  width: 1.7rem;
+  height: 1.7rem;
+  margin-right: 0.5rem;
+}
+
+/* ************************ENTRENAMIENTO POR DIA SCRIPT ************************************* */
+
+/* Contenedor principal */
+.container-main-card {
+  background-color: #3e3b3b;
+  width: 96%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 10px;
+  color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Título principal */
+.titulo {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1rem;
+}
+
+/* Carrusel de contenido#2c3e50 */
+.container2-carrusel {
+  background-color: #222;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+/* Contenedor interno #34495edel carrusel */
+.hijo-carrusel {
+  /* background-color: #333; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Área descriptiva del ejercicio #ff7f50*/
+.descripcion-ejercicio {
+  background-color: #ffd700;
+  width: 50%;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px 0 0 10px;
+}
+
+.descripcion-ejercicio h3 {
+  font-size: 1.8em;
+  margin-bottom: 0.5rem;
+}
+
+/* Lista de definiciones */
+.definicion {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem 1rem;
+  align-items: center;
+  font-size: 1em;
+}
+
+.definicion dt {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.definicion dt img {
+  margin-right: 0.3rem;
+  width: 30px;
+  height: 30px;
+}
+
+.definicion dd {
+  margin: 0;
+}
+
+/* Área de imagen del ejercicio */
+.img-ejercicio {
+  background-color: #2d3436;
+  width: 50%;
+  border-radius: 0 10px 10px 0;
+  overflow: hidden;
+}
+
+.img-ejercicio img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Navegación del carrusel */
+.carousel-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.nav-button {
+  padding: 0.5rem 1rem; /*#ff9800  color naranja bonito*/
+  background-color: #ffd700;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  font-size: 1em;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.nav-button:hover {
+  transform: scale(1.1);
+}
+
+/* Sección de días */
+.container3-dias {
+  background-color: #222;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.container3-dias h2 {
+  font-size: 1.5em;
+  margin-bottom: 1rem;
+}
+
+/* Botones redondos para días */
+.btn-dias ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.btn-dias ul li {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  color: #333;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn-dias ul li:hover,
+.btn-dias ul li.active {
+  background-color: #ffd700;
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hijo-carrusel {
+    flex-direction: column;
+  }
+  .descripcion-ejercicio,
+  .img-ejercicio {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .descripcion-ejercicio {
+    margin-bottom: 1rem;
+  }
+}
+
+/*********************** fin de entrenamiento referencia por dias***************************  */

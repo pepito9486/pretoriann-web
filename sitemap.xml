@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://pretoriann.com/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://pretoriann.com/disciplinas</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://pretoriann.com/equipamiento</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://pretoriann.com/blog</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://pretoriann.com/calculadora</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://pretoriann.com/sistema muscular</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://pretoriann.com/entrenamiento</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://pretoriann.com/nutricion</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://pretoriann.com/dietas</loc>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>

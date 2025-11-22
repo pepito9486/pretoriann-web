@@ -1,0 +1,121 @@
+/* ========== BASE ========== */
+@media (max-width: 600px) {
+  :root {
+    /* Tipografía base */
+    --font-base: "Inter", sans-serif;
+
+    /* Colores */
+    --color-text: #222;
+    --color-subtext: #555;
+    --color-bg: #ffffff;
+    --color-accent: #ffd700;
+    --color-dark: #000000;
+    --color-success: #4caf50;
+  }
+
+  html {
+    font-size: 16px; /* Base: 1rem = 16px */
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  body {
+    font-family: var(--font-base);
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    margin: 0;
+    padding: 0;
+  }
+
+  /* ========== TIPOGRAFÍA ========== */
+
+  h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-subtext);
+    margin-bottom: 1rem;
+  }
+
+  /* ========== UTILIDADES ========== */
+
+  .text-center {
+    text-align: center;
+  }
+  .text-left {
+    text-align: left;
+  }
+  .text-right {
+    text-align: right;
+  }
+
+  .mt-1 {
+    margin-top: 0.5rem;
+  }
+  .mt-2 {
+    margin-top: 1rem;
+  }
+  .mt-3 {
+    margin-top: 1.5rem;
+  }
+  .mb-1 {
+    margin-bottom: 0.5rem;
+  }
+  .mb-2 {
+    margin-bottom: 1rem;
+  }
+  .mb-3 {
+    margin-bottom: 1.5rem;
+  }
+
+  /* Botón general */
+  .btn {
+    display: inline-block;
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .btn-green {
+    background-color: var(--color-success);
+    color: white;
+  }
+
+  .btn-yellow {
+    background-color: var(--color-accent);
+    color: #000;
+  }
+
+  .btn:hover {
+    opacity: 0.9;
+  }
+}

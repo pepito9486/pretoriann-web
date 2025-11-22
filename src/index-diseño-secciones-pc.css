@@ -1,0 +1,772 @@
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+}
+@media (min-width: 1024px) {
+  /********************************* banner principal en todas las secciones++++++++++++++++++++++++++++++ */
+
+  a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600; /* semibold */
+    letter-spacing: 0.5px; /* mejora la legibilidad */
+  }
+
+  p {
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem; /* 18px */
+    line-height: 1.6;
+    /* color: #333; */
+    margin-bottom: 1rem;
+  }
+
+  /* Contenedor del carrusel */
+  .baner {
+    /* background-color: green; */
+    width: 96%;
+    height: 90vh;
+    margin: 3rem auto;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  }
+
+  /* Slide (crossfade) */
+  .banner-item {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    display: flex;
+    flex-direction: column; /* imagen arriba, contenido debajo */
+    align-items: center;
+    justify-content: flex-start; /* NO centrar vertical para que respete padding inferior */
+    gap: 0.75rem; /* espacio entre imagen y contenido */
+    padding: 2rem 1rem; /* padding-bottom garantiza aire bajo el botón */
+    box-sizing: border-box;
+    text-align: center;
+    /* background: #154c94; tu fondo (cámbialo si usas otro) */
+    z-index: 1;
+  }
+
+  .banner-item.active {
+    opacity: 1;
+    z-index: 1;
+  }
+
+  /* Imagen */
+  .banner-item img {
+    max-width: 40%;
+    height: auto; /* evita deformaciones */
+    aspect-ratio: 4 / 3; /* estable; quítalo si no te sirve */
+    object-fit: contain;
+    border-radius: 10px;
+    margin: 0 auto; /* centrada */
+  }
+
+  /* Contenido (título, párrafo, botón) */
+  .banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 0 0.3rem; /* aire lateral */
+    color: #fff;
+  }
+
+  .banner-content h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 4.5rem;
+    margin: 0 0 0.35rem 0;
+
+    line-height: 1.2;
+    color: #050505;
+  }
+
+  .banner-content p {
+    margin: 0 0 0.5rem 0; /* separa del botón */
+    font-size: 1rem;
+    color: #ffffffde;
+  }
+
+  /* Botón CTA */
+  .btn-banner {
+    display: inline-block;
+    padding: 0.5rem 1.1rem;
+    background-color: #ffd700;
+    font-size: 2.5rem;
+    color: #333;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.2s ease, transform 0.15s ease,
+      box-shadow 0.15s ease;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+  }
+
+  .btn-banner:hover {
+    background-color: #e6b800;
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.22);
+  }
+
+  /* *****************************diseño en el sistema muscular********************************* */
+  .sistemamuscular {
+    display: block;
+
+    /* background-color: #50c878; */
+    justify-content: center;
+    margin: auto;
+    max-width: 1200px;
+  }
+
+  .sistemamuscular .bloque-disciplina .titulo-disciplina {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 0.8rem;
+    position: relative;
+    display: inline-block;
+    width: 96%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Estilo general del contenedor */
+  .trenes {
+    padding: 2rem;
+    /* background-color: #f9f9f9; */
+    font-family: "Arial", sans-serif;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* Estilo para los títulos */
+  .trenes h3 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    color: black; /* azul sobrio */
+    border-left: 4px solid #ffd700;
+    padding-left: 0.5rem;
+  }
+
+  /* Estilo para las listas */
+  .trenes ul {
+    list-style: none;
+    padding-left: 1rem;
+  }
+
+  .trenes ul li {
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    position: relative;
+    line-height: 1.6;
+    font-size: 2rem;
+  }
+
+  .trenes ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    /* color: #ffd700; */
+    font-size: 1.2rem;
+  }
+
+  .p-sistema-muscular {
+    color: #555;
+    max-width: 1200px;
+    padding: 1.5rem;
+    border-radius: 10px;
+    font-size: 2rem;
+    line-height: 1.7;
+
+    margin: 0 auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* opcional */
+  }
+
+  .intro-imagenes {
+    color: #333;
+    padding: 1.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* opcional */
+    width: 96%;
+  }
+
+  .galeria-muscular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .imagen-muscular {
+    max-width: 800px; /* Ancho máximo en móvil */
+    aspect-ratio: 3/4; /* Proporción de cuerpo humano */
+    height: auto;
+    object-fit: contain;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* Efecto hover (solo para desktop realmente) */
+  .imagen-muscular:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  /* *****************************disciplinas********************************* */
+  .principal .h1-concept {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    aspect-ratio: 500px;
+  }
+
+  .principal .h1-concept h2 {
+    font-size: 2.5rem;
+  }
+  .principal .h1-concept p {
+    font-size: 2rem;
+  }
+
+  .main-menudisciplinas {
+    background-color: none;
+  }
+  .bloque-disciplina {
+    background-color: white;
+    margin-bottom: 3rem;
+  }
+  .bloque-disciplina h3 {
+    font-size: 2.5rem;
+  }
+  .bloque-disciplina p {
+    font-size: 2rem;
+  }
+  .menu-disciplinas-equipo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-disciplinas-equipo ul {
+    /* background-color: orange; */
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 3 columnas iguales */
+    gap: 1rem; /* espacio entre celdas */
+    list-style: none; /* quita viñetas */
+    padding: 0; /* quita relleno por defecto */
+    margin: 0;
+  }
+
+  .menu-disciplinas-equipo ul li {
+    /* background-color: red; */
+    height: 200px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* sombra inicial */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .menu-disciplinas-equipo ul li:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgb(0, 0, 0, 0.2);
+  }
+
+  .menu-disciplinas-equipo ul li .equipo-icon {
+    /* background-color: green; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .menu-disciplinas-equipo ul li .equipo-icon span {
+    display: inline-block;
+    font-size: clamp(1rem, 2vw, 2rem);
+    margin-top: 1.5rem;
+    /* background-color: red; */
+  }
+
+  .menu-disciplinas-equipo ul li .equipo-icon img {
+    margin-top: 1rem;
+    /* background-color: #e6b800; */
+    width: 50%;
+    height: 50%;
+  }
+
+  /* *****************************contenedor videos en seccion disciplina*********************** */
+
+  /* esta en componente card-calistenia */
+  .description-disciplinas .main-calistenia ul li {
+    width: 80%;
+  }
+
+  .description-disciplinas .main-calistenia ul li .wrap-img-iframe {
+    position: relative;
+    width: 60%;
+    aspect-ratio: 16/9;
+    background-color: #e01919;
+    display: flex;
+    margin: 1rem auto;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+  }
+
+  .description-disciplinas .main-calistenia ul li .p-li-ejercicio {
+    font-size: 2rem;
+  }
+
+  /* ************************ esta el componente banner-disciplina********** */
+
+  .hero-calistenia {
+    width: 50%;
+  }
+
+  .hero-calistenia .circle-img {
+    width: 50%;
+    height: 50%;
+  }
+
+  .hero-calistenia h1 {
+    font-size: 3.5rem !important;
+    /* background-color: red; */
+  }
+
+  .principal .descripcion-calistenia h2 {
+    font-size: 3rem;
+  }
+
+  .principal .descripcion-calistenia p {
+    font-size: 2rem;
+    background-color: white;
+    width: 100%;
+  }
+
+  /* //////////////////////////////  infohipertrofia.jsx////////////////  acordeon, y ejercicios */
+
+  .lista-acordeon {
+    margin: 1rem auto;
+    width: 65%;
+  }
+  .lista-acordeon .h2-entrenamiento {
+    /*titulo h2    */
+    font-size: 2.5rem;
+  }
+  .informacion-ul {
+    width: 65%;
+    margin: auto;
+    overflow: scroll;
+    font-size: 2rem;
+    justify-content: center;
+  }
+
+  .description-disciplinas .main-calistenia section .informacion-ul p {
+    margin: 2em auto 24px auto;
+    line-height: 1.6;
+    padding: 0 0.2em;
+    font-size: 2rem;
+  }
+
+  .main-calistenia section .informacion-ul h3 {
+    font-size: 2.5 !important;
+  }
+  .main-calistenia section .informacion-ul p {
+    /*parrafo del titulo h2   */
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem !important;
+  }
+
+  /* ************************estilos en el recuadro de los ejercicios de infohipertrofia.jsx del carousel-hipertrofia.jsx */
+
+  .hijo-carrusel-hiper {
+    /* background-color: #333; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .descripcion-ejercicio-hiper h3 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  /* Lista de definiciones */
+  .definicion-hiper {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.5rem 1rem;
+    align-items: center;
+    font-size: 1em;
+  }
+
+  .definicion-hiper dt {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+  }
+
+  .definicion-hiper dt img {
+    margin-right: 0.3rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .definicion-hiper dd {
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  .nav-button {
+    color: black;
+    font-size: 2rem;
+  }
+
+  .container3-dias-hiper h2 {
+    font-size: 2.5rem;
+  }
+  /* Botones rectangulares para días */
+  .btn-dias-hiper ul {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .btn-dias-hiper ul li {
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+
+  /* ************************seguimos con las secciones entrenamiento.jsx ******************/
+
+  .principal-entrenamiento .h1-concept-entrenamiento {
+    width: 75%;
+    height: clamp(250px, 45vw, 900px);
+    margin-bottom: 2rem;
+  }
+
+  .principal-entrenamiento .h1-concept-entrenamiento2 {
+    width: 75%;
+    height: clamp(250px, 45vw, 900px);
+  }
+
+  /* *****************************    carousel.jsx de rutinas semanales card ********************/
+
+  .descripcion-ejercicio h3 {
+    font-size: 2.5rem;
+  }
+
+  .definicion dt img {
+    width: 50px;
+    height: 50px;
+  }
+  .definicion dt,
+  dd {
+    font-size: 2rem;
+  }
+  .principal-entrenamiento section h2 {
+    font-size: 2.5rem;
+  }
+
+  .btn-dias ul li {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+  }
+
+  /* ********************************NUTRICION.JSX****************************** */
+
+  .nutricion-principal .title-nutricion {
+    width: 75%;
+    height: clamp(250px, 40vw, 900px);
+    font-size: 3rem;
+    display: flex;
+    justify-content: center; /* centra horizontal */
+    align-items: center; /* centra vertical */
+  }
+
+  .nutricion-principal p {
+    font-size: 2rem;
+    width: 75%;
+    margin: auto;
+  }
+
+  .nutricion-principal h2 {
+    margin: 3rem auto;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .foto-nutrientes {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .acordeon {
+    width: 75%;
+    margin: 3rem auto 10px auto;
+    font-size: 2rem;
+    font-weight: 500;
+    gap: 10px;
+    /* background-color: red; */
+  }
+
+  .h3-subtitulos {
+    /* este h3 esta en nutricion solo  */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    /* background-color: red; */
+    font-size: 2rem;
+    margin: 2rem auto;
+  }
+  /* estos son imagenes banner */
+  .h2-aminoacidos,
+  .h2-creatina,
+  .h2-proteina {
+    width: 75%;
+    height: clamp(250px, 40vw, 900px);
+    font-size: 3rem;
+    display: flex;
+    justify-content: center; /* centra horizontal */
+    align-items: center; /* centra vertical */
+  }
+
+  .aminoacidos h3 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    /* background-color: red; */
+    font-size: 2rem;
+    margin: 2rem auto;
+  }
+
+  /* *************************calculadora****************************** */
+  .main-calisteniatrain .title-calculadora {
+    width: 75%;
+    height: clamp(250px, 30vw, 700px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+  }
+
+  .main-calisteniatrain p {
+    font-size: 2rem;
+    width: 75%;
+    margin: auto;
+  }
+  .title2-calculadora {
+    font-size: 2.5rem;
+    width: 75%;
+    margin: 3rem auto;
+    /* background-color: #e01919; */
+  }
+
+  .acordeon-calculadora {
+    font-size: 2.5rem;
+    width: 75%;
+    margin: 0.75rem auto;
+  }
+
+  .acordeon-calculadora img {
+    height: 90%;
+    width: auto;
+  }
+
+  .acordeon-calculadora h3,
+  h4 {
+    font-size: 2rem;
+    margin: auto;
+  }
+
+  .acordeon-calculadora .formularios h3,
+  h4 {
+    font-size: 2rem;
+    width: 75%;
+    margin: 1rem auto;
+  }
+
+  /* *********************************ESTILOS DE EL FORMULARIO DE CALCULADORA**************** */
+  .calculo {
+    margin: 3em auto;
+    width: 75%;
+  }
+
+  .calculo form {
+    width: 75%;
+  }
+
+  /* ***************************  calculadora.jsx principal formulario***************************** */
+  .calculosss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em auto;
+    width: 70%;
+    padding: 1em;
+    background-color: #9b9999;
+  }
+
+  .calculoss .input1,
+  .select1 {
+    font-size: 2rem;
+  }
+
+  .calculo label {
+    font-size: 2rem;
+    font-weight: bold;
+    /* color: #333; */
+    color: white;
+  }
+
+  .calculo input,
+  .calculo select {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .calculo input:focus,
+  .calculo select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+
+  .botones-calculadora {
+    text-align: center;
+  }
+
+  .botones-calculadora button {
+    padding: 10px 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    background-color: #ffd700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .botones-calculadora button:hover {
+    background-color: #f3ef08;
+  }
+
+  .acordeon-porcentaje h3 {
+    font-size: 1.7rem;
+  }
+
+  .resultados {
+    width: 75%;
+    margin: auto;
+  }
+  .resultados h3 {
+    font-size: 2.5rem;
+  }
+
+  /* ****************************     DIETAS   ***************************************************** */
+
+  .macros h3 {
+    font-size: 2rem;
+    margin: 1.5rem auto;
+    width: 75%;
+  }
+
+  .h2-planalimenticio {
+    width: 75%;
+    margin: auto;
+    height: clamp(250px, 30vw, 700px);
+  }
+
+  /* *********************************        EQUIPOS   ********************************** */
+
+  .banner-h1-principal {
+    width: 75%;
+    margin: auto;
+    font-size: 3rem;
+  }
+  .menu-disciplinas-equipo ul {
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .banner-text p {
+    font-size: 2rem;
+  }
+
+  .main-menudisciplinas .p-principal-equipos {
+    font-size: 2rem;
+    width: 75%;
+    margin: 2rem auto;
+  }
+
+  /* GALERIA DE CADA EQUIPO+++++++++++++++++++ */
+  .banner {
+    width: 75%;
+    margin: 2.5rem auto;
+  }
+
+  .banner h1 {
+    font-size: 3rem;
+  }
+
+  .titulo-galeria-equipos {
+    font-size: 3rem; /* Un poco más pequeño para móviles */
+    width: 75%;
+    margin: auto;
+  }
+
+  .main-equipo {
+    /* background-color: red; */
+    width: 75%;
+    margin: 2rem auto;
+  }
+
+  .card img {
+    width: 90%;
+    margin: auto;
+  }
+
+  .card h3 {
+    font-size: 2rem;
+  }
+
+  .btn-vermas {
+    font-size: 1.8rem;
+    padding: 0.2rem;
+  }
+}

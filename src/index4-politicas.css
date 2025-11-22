@@ -1,0 +1,53 @@
+/* *********************politica privacidas */
+.legal-page-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  background-color: #ffffff;
+  color: #222;
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.6;
+}
+
+.legal-page-container h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #000;
+  text-align: center;
+}
+
+.legal-page-container h2 {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  color: #444;
+}
+
+.legal-page-container p,
+.legal-page-container li {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.legal-page-container ul {
+  padding-left: 1.5rem;
+}
+
+/* Responsive para móviles */
+@media (max-width: 600px) {
+  .legal-page-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .legal-page-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .legal-page-container h2 {
+    font-size: 1.05rem;
+  }
+
+  .legal-page-container p,
+  .legal-page-container li {
+    font-size: 0.9rem;
+  }
+}
