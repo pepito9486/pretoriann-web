@@ -1,0 +1,227 @@
+/* CONTENEDOR GENERAL */
+/* HEADER FIJO Y CENTRADO */
+@media (max-width: 600px) {
+  header.scrolled {
+    background: linear-gradient(180deg, #ffd700 0%, #f5c400 100%);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: transparent;
+  }
+
+  /* CONTENEDOR INTERNO SIMÉTRICO */
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+    max-width: 1400px;
+    margin: 0 auto; /* ✅ centra el contenido */
+    padding: 5px 0px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    /* background-color: purple; */
+  }
+
+  /* LOGO */
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+
+  .logo-image {
+    height: 90px;
+  }
+
+  .logo-text {
+    font-family: "League Spartan", sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #111;
+    margin: 0;
+    letter-spacing: 1.5px;
+  }
+
+  .nav1 a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #111;
+  }
+
+  /* HAMBURGUESA */
+
+  .menu-icon i {
+    font-size: 28px;
+    color: #111;
+    cursor: pointer;
+    /* background-color: #f5c400; */
+    padding: 1rem;
+  }
+}
+/* RESPONSIVE */
+
+/* *************** PARA PC ******************* */
+header {
+  height: 120px;
+}
+
+@media (min-width: 1024px) {
+  body {
+    margin: 0;
+  }
+  /* header {
+    background: linear-gradient(180deg, #ffd700 0%, #f5c400 100%);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  } */
+
+  header.scrolled {
+    background: linear-gradient(180deg, #ffd700 0%, hsl(48, 100%, 48%) 100%);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    height: 120px;
+  }
+
+  .header-container {
+    position: relative;
+    width: 100%;
+    /* max-width: 1400px; */
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+
+    justify-content: flex-start; /* ✅ */
+    gap: 80px; /* ✅ controlas separación */
+    padding: 40px 30px;
+    /* background: linear-gradient(180deg, #ffd700 0%, #f5c400 100%);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); */
+    /* box-sizing: border-box; */
+    /* background-color: red; */
+  }
+  .logo-container {
+    border: none;
+    /* background-color: red; */
+  }
+
+  .logo-image {
+    height: 120px;
+  }
+
+  .logo-link {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 10px 0;
+    text-decoration: none; /* ✅ AQUÍ */
+  }
+
+  .logo-link .logo-text {
+    font-size: 2.1rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin: 0;
+    color: #000;
+    text-decoration: none; /* ✅ refuerzo */
+  }
+
+  .logo-link {
+    outline: none;
+    border: none;
+  }
+
+  .logo-link:focus {
+    outline: none;
+  }
+
+  .logo-link img {
+    border: none;
+    outline: none;
+    display: block;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .nav1 {
+    position: static;
+    background: transparent;
+    padding: 0;
+    margin-left: auto;
+  }
+
+  .nav1 ul {
+    display: flex;
+    align-items: center;
+    gap: 35px; /* 👈 antes 55px */
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav1 li {
+    list-style: none;
+  }
+
+  .nav1 a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #111;
+    text-decoration: none;
+    position: relative;
+    padding: 5px 0;
+  }
+
+  .nav1 a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    left: 0;
+    bottom: -8px;
+    background: #000;
+    transition: 0.3s ease;
+  }
+
+  .nav1 a:hover::after {
+    width: 100%;
+  }
+
+  .nav1 ul li a i {
+    display: none;
+  }
+
+  .nav1 a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    left: 0;
+    bottom: -6px;
+    background: #111;
+    transition: 0.3s ease;
+  }
+
+  .nav1 a:hover::after {
+    width: 100%;
+  }
+}

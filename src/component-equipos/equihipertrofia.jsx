@@ -6,26 +6,26 @@ const Equihipertrofia = forwardRef((props, ref) => {
   const [selectedEquipo, setSelectedEquipo] = useState(null);
 
   const equipos = [
-    { name: "Mancuernas", descripcion: "Press de banca, curl de bíceps, press de hombros, remo inclinado y sentadillas con mancuernas.", imagen: "/img-equipo-hipertrofia/mancuernas.jpg" },
-    { name: "Barra Olímpica y Discos", descripcion: "Sentadilla, peso muerto, press de banca, press militar y remo con barra.", imagen: "/img-equipo-hipertrofia/barrra-olimpica.jpg" },
-    { name: "Máquina de Poleas", descripcion: "Jalón de tríceps, curl de bíceps en polea, elevaciones de hombros, cruces de pecho y jalón al pecho.", imagen: "/img-equipo-hipertrofia/maquina-poleas.jpg" },
+    { name: "Mancuernas", descripcion: "Press de banca, curl de bíceps, press de hombros, remo inclinado y sentadillas con mancuernas.", imagen: "/img-equipo-hipertrofia/mancuernas.webp" },
+    { name: "Barra Olímpica y Discos", descripcion: "Sentadilla, peso muerto, press de banca, press militar y remo con barra.", imagen: "/img-equipo-hipertrofia/barrra-olimpica.webp" },
+    { name: "Máquina de Poleas", descripcion: "Jalón de tríceps, curl de bíceps en polea, elevaciones de hombros, cruces de pecho y jalón al pecho.", imagen: "/img-equipo-hipertrofia/maquina-poleas.webp" },
     { name: "Banco de Pesas Ajustable", descripcion: "Press de banca plano, inclinado y declinado, remo inclinado y ejercicios de tríceps en banco.", imagen: "/img-equipo-hipertrofia/banco-ajustable.webp" },
-    { name: "Máquinas de Pecho (Pec Deck)", descripcion: "Aperturas y contracciones de pecho en máquina.", imagen: "/img-equipo-hipertrofia/maquina-pecho.jpg" },
-    { name: "Máquina de Piernas (Leg Press)", descripcion: "Prensa de piernas, prensa en una sola pierna para cuádriceps, glúteos y femorales.", imagen: "/img-equipo-hipertrofia/maquina-piernas-abajo.jpg" },
+    { name: "Máquinas de Pecho (Pec Deck)", descripcion: "Aperturas y contracciones de pecho en máquina.", imagen: "/img-equipo-hipertrofia/maquina-pecho.webp" },
+    { name: "Máquina de Piernas (Leg Press)", descripcion: "Prensa de piernas, prensa en una sola pierna para cuádriceps, glúteos y femorales.", imagen: "/img-equipo-hipertrofia/maquina-piernas-abajo.webp" },
     { name: "Rack de Sentadillas", descripcion: "Sentadillas, peso muerto rumano, press militar y levantamientos de barra en rack.", imagen: "/img-equipo-hipertrofia/rack-sentadilla.webp" },
-    { name: "Máquina Smith", descripcion: "Sentadilla en máquina, press de banca en máquina.", imagen: "/img-equipo-hipertrofia/rack-smith.jpg" },
-    { name: "Barras Paralelas para Fondos", descripcion: "Fondos de pecho y tríceps, ejercicios de hombros y planchas asistidas.", imagen: "/img-equipo-hipertrofia/barras-paralelas.jpg" },
+    { name: "Máquina Smith", descripcion: "Sentadilla en máquina, press de banca en máquina.", imagen: "/img-equipo-hipertrofia/rack-smith.webp" },
+    { name: "Barras Paralelas para Fondos", descripcion: "Fondos de pecho y tríceps, ejercicios de hombros y planchas asistidas.", imagen: "/img-equipo-hipertrofia/barras-paralelas.webp" },
     { name: "Máquina de Curl de Piernas", descripcion: "Curl de pierna acostado, curl sentado.", imagen: "/img-equipo-hipertrofia/maquina-curl-pierna.webp" },
-    { name: "Máquina de Extensión de Piernas", descripcion: "Extensiones de pierna en diferentes ángulos.", imagen: "/img-equipo-hipertrofia/extension-pierna.jpg" },
+    { name: "Máquina de Extensión de Piernas", descripcion: "Extensiones de pierna en diferentes ángulos.", imagen: "/img-equipo-hipertrofia/extension-pierna.webp" },
     { name: "Cinturón para Carga de Peso", descripcion: "Dominadas con peso, fondos en barra paralela con peso.", imagen: "/img-equipo-hipertrofia/cinturon-carga-peso.webp" },
     { name: "Máquina de Abductores y Adductores", descripcion: "Abertura de piernas para abductores.", imagen: "/img-equipo-hipertrofia/maquina-aductores.webp" },
-    { name: "Máquina de Remo Sentado", descripcion: "Remo en diferentes agarres.", imagen: "/img-equipo-hipertrofia/remo-sentado.jpg" },
-    { name: "Máquina de Press de Hombros", descripcion: "Press de hombros sentado.", imagen: "/img-equipo-hipertrofia/press-hombro.jpg" },
-    { name: "Barras para Curl de Bíceps", descripcion: "Curl de bíceps con barra EZ.", imagen: "/img-equipo-hipertrofia/barra-EZ.jpg" },
-    { name: "Barra Hexagonal (Hex Bar)", descripcion: "Peso muerto, encogimientos de trapecio.", imagen: "/img-equipo-hipertrofia/barra-hexagonal.jpg" },
-    { name: "Máquina Prensa Inclinada para Piernas", descripcion: "Prensa de piernas inclinada.", imagen: "/img-equipo-hipertrofia/sentadilla-inclinada.jpg" },
+    { name: "Máquina de Remo Sentado", descripcion: "Remo en diferentes agarres.", imagen: "/img-equipo-hipertrofia/remo-sentado.webp" },
+    { name: "Máquina de Press de Hombros", descripcion: "Press de hombros sentado.", imagen: "/img-equipo-hipertrofia/press-hombro.webp" },
+    { name: "Barras para Curl de Bíceps", descripcion: "Curl de bíceps con barra EZ.", imagen: "/img-equipo-hipertrofia/barra-EZ.webp" },
+    { name: "Barra Hexagonal (Hex Bar)", descripcion: "Peso muerto, encogimientos de trapecio.", imagen: "/img-equipo-hipertrofia/barra-hexagonal.webp" },
+    { name: "Máquina Prensa Inclinada para Piernas", descripcion: "Prensa de piernas inclinada.", imagen: "/img-equipo-hipertrofia/sentadilla-inclinada.webp" },
     { name: "Máquina para Elevación de Gemelos", descripcion: "Elevación de talones.", imagen: "/img-equipo-hipertrofia/maquina-gemelos.webp" },
-    { name: "Cinturón de Levantamiento de Pesas", descripcion: "Soporte lumbar y refuerzo del core.", imagen: "/img-equipo-hipertrofia/cinturon-peso.jpg" }
+    { name: "Cinturón de Levantamiento de Pesas", descripcion: "Soporte lumbar y refuerzo del core.", imagen: "/img-equipo-hipertrofia/cinturon-peso.webp" }
   ];
 
   const openModal = (equipo) => {

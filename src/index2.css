@@ -299,8 +299,10 @@
   }
 
   .hero-img {
-    width: 160px;
-    object-fit: cover;
+    max-width: 70%;
+    height: auto;
+    aspect-ratio: 3/4;
+    object-fit: contain;
     margin-bottom: 1rem;
   }
 

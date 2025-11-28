@@ -219,7 +219,7 @@ const routines = [
                 series: "3",
                 repetitions: "12-15",
                 muscles: "Bíceps",
-                image: "img-gif/dia5-curlEz-predicador.jpg"
+                image: "img-gif/dia5-curlEz-predicador.webp"
             },
 
             {

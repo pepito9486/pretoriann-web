@@ -14,42 +14,42 @@ const Equiyoga = forwardRef((props, ref) => {
     {
       name: "Bloques de Yoga",
       descripcion: "Postura del triángulo, media luna, cuervo, flexiones hacia adelante.",
-      imagen: "/img-equipo-yoga/bloques.jpg"
+      imagen: "/img-equipo-yoga/bloques.webp"
     },
     {
       name: "Correas o Cinturones de Yoga",
       descripcion: "Pinza, mariposa, apertura de caderas, flexibilidad en hombros.",
-      imagen: "/img-equipo-yoga/correas.jpg"
+      imagen: "/img-equipo-yoga/correas.webp"
     },
     {
       name: "Bolster (Cojín de Yoga)",
       descripcion: "Savasana, postura del niño, torsiones suaves, extensiones de espalda.",
-      imagen: "/img-equipo-yoga/cojines.jpg"
+      imagen: "/img-equipo-yoga/cojines.webp"
     },
     {
       name: "Manta de Yoga",
       descripcion: "Soporte para rodillas, posturas de meditación, savasana.",
-      imagen: "/img-equipo-yoga/mantas.jpg"
+      imagen: "/img-equipo-yoga/mantas.webp"
     },
     {
       name: "Rueda de Yoga",
       descripcion: "Aperturas de espalda, extensiones de pecho, postura de la rueda.",
-      imagen: "/img-equipo-yoga/rueda.jpg"
+      imagen: "/img-equipo-yoga/rueda.webp"
     },
     {
       name: "Almohadillas para Rodillas",
       descripcion: "Gato, vaca, camello.",
-      imagen: "/img-equipo-yoga/almohadilla.jpg"
+      imagen: "/img-equipo-yoga/almohadilla.webp"
     },
     {
       name: "Silla de Yoga",
       descripcion: "Ángulo lateral extendido, torsiones sentadas, invertidas asistidas.",
-      imagen: "/img-equipo-yoga/banco-yoga.jpg"
+      imagen: "/img-equipo-yoga/banco-yoga.webp"
     },
     {
       name: "Saco de Arena (Sandbag)",
       descripcion: "Postura del niño, relajación final, peso en espalda.",
-      imagen: "/img-equipo-yoga/bolsa-arena.jpeg"
+      imagen: "/img-equipo-yoga/bolsa-arena.webp"
     },
     {
       name: "Pelotas de Yoga",

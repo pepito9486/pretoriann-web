@@ -14,9 +14,9 @@ html {
   display: none;
 }
 
-.nav1 i {
+/* .nav1 i {
   display: none;
-}
+} */
 
 .feature-box {
   width: 100%;
@@ -34,6 +34,7 @@ html {
       #ffd700 200px,
       rgba(245, 245, 245, 0) 50vh
     );
+    -webkit-text-size-adjust: 100%;
 
     /* #f5f5f5;
 
@@ -60,7 +61,7 @@ html {
     font-size: 1.125rem !important;
   }
   a {
-    font-family: "Roboto", sans-serif !important;
+    /* font-family: "Roboto", sans-serif !important; */
     font-size: 1.2rem;
   }
 
@@ -103,6 +104,7 @@ html {
     align-items: center;
     padding: 10px;
     margin-bottom: 2em;
+    /* background-color: red; */
     z-index: 10;
   }
 
@@ -130,22 +132,35 @@ html {
 
   header nav ul {
     list-style: none; /* Quitar las viñetas de la lista */
-    padding: 0; /* Eliminar el relleno predeterminado */
+    padding: 3rem 1rem; /* Eliminar el relleno predeterminado */
     margin: 0; /* Eliminar el margen predeterminado */
     display: flex;
     flex-direction: column;
     margin-top: 40px;
   }
 
-  header nav ul li {
+  .nav1 li {
+    display: flex;
+    gap: 12px;
     margin-top: 30px;
+    background-color: #ffd700;
+    border-radius: 20px;
   }
 
-  header nav ul li a {
-    color: #d7d7d7;
+  header .nav1 ul li a {
+    display: flex;
+    gap: 12px;
+    color: #000;
     text-decoration: none;
     padding: 10px 20px;
-    display: block;
+    border-radius: 20px;
+    /* display: block; */
+  }
+
+  .nav1 ul li a i {
+    color: #000; /* iconos visibles */
+    width: 20px;
+    font-size: 18px;
   }
 
   header .icon {
@@ -187,10 +202,12 @@ html {
   .baner {
     width: 96%;
     height: 340px;
-    margin: 1em auto;
+    margin: 6rem auto 2rem auto;
+    padding: 0.5rem 1rem;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
+    /* background-color: red; */
     /* box-shadow: 0 0 8px rgba(0, 0, 0, 0.08); */
   }
 
@@ -206,7 +223,7 @@ html {
     justify-content: flex-start; /* NO centrar vertical para que respete padding inferior */
     gap: 0.75rem; /* espacio entre imagen y contenido */
     padding: 1rem 1rem 1.75rem; /* padding-bottom garantiza aire bajo el botón */
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     text-align: center;
     /* background: #edf0f4; tu fondo (cámbialo si usas otro) */
   }
@@ -218,12 +235,14 @@ html {
 
   /* Imagen */
   .banner-item img {
-    max-width: 60%;
+    max-width: 70%;
     height: auto; /* evita deformaciones */
     aspect-ratio: 4 / 3; /* estable; quítalo si no te sirve */
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 10px;
     margin: 0 auto; /* centrada */
+    /* background-color: blue; */
+    padding: 0.5rem;
   }
 
   /* Contenido (título, párrafo, botón) */
@@ -235,6 +254,7 @@ html {
     max-width: 600px;
     padding: 0 0.3rem; /* aire lateral */
     color: #fff;
+    /* background-color: green; */
   }
 
   .banner-content h2 {
@@ -291,7 +311,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom: 1px solid #f0b400;
+    /* border-bottom: 1px solid #f0b400; */
   }
 
   .intro-glovo h1 {
@@ -462,9 +482,29 @@ html {
     width: 120px;
     height: 150px;
     padding: 10px 5px;
-    background-color: #f9f9f9;
+    /* background-color: #f2f2f2; */
+
+    /* background-image: url("../img/fondo_card.png");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-color: rgba(255, 215, 0, 0.15);*/
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 1);
     border-radius: 12px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+
+    background: radial-gradient(
+        circle at top left,
+        rgba(255, 255, 255, 0.25),
+        transparent 40%
+      ),
+      radial-gradient(
+        circle at bottom right,
+        rgba(0, 0, 0, 0.05),
+        transparent 45%
+      ),
+      linear-gradient(135deg, #f2c94c, #f0b90b);
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -814,17 +854,13 @@ html {
 
 .principal .h1-concept p {
   position: relative;
-  display: flex;
-  justify-content: right;
-  align-items: center;
+  display: block; /* ✅ texto normal */
   margin: 0.4em 0.4em;
-  text-align: start;
-  /* Espaciado entre líneas */
+  text-align: left; /* ✅ mejor para lectura */
   z-index: 5;
   font-size: 1.2rem;
-  line-height: 1.7;
+  line-height: 1.6;
   color: #ddd;
-  margin-bottom: 1rem;
 }
 
 .principal .main-menudisciplinas img {
@@ -1579,7 +1615,7 @@ html {
   margin: 1.5em auto 2em;
   padding: 0.5em;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img-banner/creatina.jpg");
+    url("../img-banner/creatina.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2254,7 +2290,7 @@ tbody tr:last-child {
   background-color: #ffd700;
   padding: 0.5rem;
   margin: 0.4rem auto;
-  width: 40%; /* Cambia de 30% a un ancho dinámico */
+  width: 90%; /* Cambia de 30% a un ancho dinámico */
   min-width: 100px; /* Establece un ancho mínimo si es necesario */
   height: 30px;
   white-space: nowrap; /* Evita el salto de línea */
@@ -2358,14 +2394,37 @@ tbody tr:last-child {
 }
 
 /* Estilos del modal */
+
 .modal {
-  background-color: #fff;
-  padding: 1.5rem;
-  border-radius: 8px;
+  position: relative;
+  padding: 2.5rem 1.5rem 1.5rem;
+  margin-top: 100px;
+  background-color: white;
+  border-radius: 12px;
   width: 80%;
   max-width: 500px;
   text-align: center;
-  z-index: 11;
+}
+
+.modal .btn-closed {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.main-principal-equipo .overlay .btn-closed:hover {
+  background-color: #ccc;
 }
 
 .modal h2 {
@@ -2388,27 +2447,6 @@ tbody tr:last-child {
   align-items: center;
 }
 
-.main-principal-equipo .overlay .btn-closed {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 1rem;
-  right: 1rem;
-  font-size: 1.5rem;
-  padding: 0.5rem;
-  background: #938484;
-  color: white;
-  border: 1px solid white;
-  border-radius: 50%;
-  width: 2.2rem;
-  height: 2.2rem;
-  cursor: pointer;
-}
-.main-principal-equipo .overlay .btn-closed:hover {
-  background-color: #ccc;
-}
-
 .overlay .modal .contenedor-btn-amazon {
   display: flex;
   justify-content: center;
@@ -2422,8 +2460,8 @@ tbody tr:last-child {
   justify-content: center;
   background-color: #ffd700;
   color: #000;
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 1rem;
+  font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
   padding: 0.7rem 2rem !important;
@@ -2431,10 +2469,10 @@ tbody tr:last-child {
   cursor: pointer;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease, transform 0.2s ease;
-  width: auto !important;
+  width: 100%;
   /* max-width: 280px; Ancho máximo controlado */
   white-space: nowrap; /* evita saltos de linea*/
-  gap: 0.2rem;
+  gap: 0.1rem;
 }
 
 .overlay .modal .btn-amazon:hover {

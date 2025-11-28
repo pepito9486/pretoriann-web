@@ -11,6 +11,7 @@ import './index3-cssglobales.css'
 import './index4-politicas.css'
 import './index-blog.css'
 import './cookies.css'
+import './logo.css'
 
 
 

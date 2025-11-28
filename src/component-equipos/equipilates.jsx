@@ -9,12 +9,12 @@ const Equipilates = forwardRef((props, ref) => {
     {
       name: "Reformer",
       descripcion: "Pierna en la barra, patadas de pierna, 'Footwork', estiramientos de piernas y brazos, ejercicios de coordinación y abdominales.",
-      imagen: "/img-equipo-pilates/maquina-reformer.jpg"
+      imagen: "/img-equipo-pilates/maquina-reformer.webp"
     },
     {
       name: "Cadillac (Trapecio)",
       descripcion: "Hangings, 'Tower', ejercicios de piernas, abdominales asistidos y movimientos de fortalecimiento del core.",
-      imagen: "/img-equipo-pilates/maquina-cadillac.jpg"
+      imagen: "/img-equipo-pilates/maquina-cadillac.webp"
     },
     {
       name: "Wunda Chair (Silla de Pilates)",
@@ -24,7 +24,7 @@ const Equipilates = forwardRef((props, ref) => {
     {
       name: "Ladder Barrel (Barril de Pilates)",
       descripcion: "Estiramientos de la columna, ejercicios de core, trabajo de espalda y de flexibilidad.",
-      imagen: "/img-equipo-pilates/maquina-barril.jpg"
+      imagen: "/img-equipo-pilates/maquina-barril.webp"
     },
     {
       name: "Spine Corrector (Corrector de Columna)",
@@ -34,17 +34,17 @@ const Equipilates = forwardRef((props, ref) => {
     {
       name: "Magic Circle (Aro de Pilates)",
       descripcion: "Squeezes de piernas y brazos, abdominales con resistencia, ejercicios de fortalecimiento del core y trabajos de resistencia de glúteos.",
-      imagen: "/img-equipo-pilates/aro-pilates.jpg"
+      imagen: "/img-equipo-pilates/aro-pilates.webp"
     },
     {
       name: "Fitball (Pelota de Pilates)",
       descripcion: "Plancha en fitball, estiramientos de espalda, abdominales, trabajo de piernas y posturas de equilibrio.",
-      imagen: "/img-equipo-pilates/pelota-pilates.jpg"
+      imagen: "/img-equipo-pilates/pelota-pilates.webp"
     },
     {
       name: "Mats o Colchonetas",
       descripcion: "Abdominales, series de piernas, extensiones de espalda, estiramientos de cuerpo completo, y movilidad de la columna.",
-      imagen: "/img-equipo-pilates/colchonetas.jpg"
+      imagen: "/img-equipo-pilates/colchonetas.webp"
     }
   ];
 

@@ -62,16 +62,17 @@ function Disciplinas() {
   const componentMapimg = {
     Calistenia: "../img-icon/icon-calistenia.webp",
     Crossfit: "../img-icon/icon-crossfit.webp",
-    Funcional: "../img-icon/icon-funcional.webp",
     Culturismo: "../img-icon/icon-mancuernas.webp",
-    Pilates: "../img-icon/icon-pilates.webp",
-    Resistencia: "../img-icon/icon-resistencia.webp",
-    Yoga: "../img-icon/icon-yoga.webp",
     Powerlifting: "../img-icon/icon-hipertrofia.webp",
-    Spinning: "../img-icon/icon-spinning.webp",
-    Bodycombat: "../img-icon/icon-combat.webp",
-    Aerobics: "../img-icon/icon-aerobics.webp",
+    Funcional: "../img-icon/icon-funcional.webp",
     HIIT: "../img-icon/icon-hiit.webp",
+    Pilates: "../img-icon/icon-pilates.webp",
+    Yoga: "../img-icon/icon-yoga.webp",
+    Aerobics: "../img-icon/icon-aerobics.webp",
+    Spinning: "../img-icon/icon-spinning.webp",
+    Resistencia: "../img-icon/icon-resistencia.webp",
+    Bodycombat: "../img-icon/icon-combat.webp",
+
   };
 
   const handleItemClick = (discipline) => {
@@ -157,7 +158,7 @@ function Disciplinas() {
                   <li key={discipline} onClick={() => handleItemClick(discipline)}>
                     {/* <span>{discipline}</span> */}
                     <div className="equipo-icon">
-                      <img src={componentMapimg[discipline]} />
+                      <img src={componentMapimg[discipline]} alt={discipline} />
 
                       <span>{discipline}</span>
 

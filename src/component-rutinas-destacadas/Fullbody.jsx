@@ -6,7 +6,7 @@ const RutinaFullBody = () => {
         <div className="blog-post-container">
             <h1>Rutina Full Body en Casa (Sin Equipamiento)</h1>
             <img
-                src="/img-rutinas/fullbody-casa.jpg"
+                src="/img-rutinas/fullbody-casa.webp"
                 alt="Rutina Full Body en casa"
                 style={{ width: '100%', borderRadius: '8px', marginBottom: '1rem' }}
             />

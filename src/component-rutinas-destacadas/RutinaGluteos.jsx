@@ -10,7 +10,7 @@ const RutinaGluteos = () => {
 
             <div className="blog-section">
                 <h2>1. Puente de glúteos</h2>
-                <img src="/img-blog/puente-gluteos.jpg" alt="Puente de glúteos" />
+                <img src="/img-blog/puente-gluteos.webp" alt="Puente de glúteos" />
                 <p>Uno de los ejercicios más efectivos para activar y fortalecer los glúteos. Puedes aumentar la intensidad elevando una pierna.</p>
                 <ul>
                     <li>3 series de 15-20 repeticiones.</li>
@@ -20,7 +20,7 @@ const RutinaGluteos = () => {
 
             <div className="blog-section">
                 <h2>2. Sentadillas profundas</h2>
-                <img src="/img-blog/sentadillas.jpg" alt="Sentadillas profundas" />
+                <img src="/img-blog/sentadillas.webp" alt="Sentadillas profundas" />
                 <p>Al bajar más allá de los 90°, se activa con mayor intensidad la parte baja del glúteo.</p>
                 <ul>
                     <li>3 series de 12-15 repeticiones.</li>
@@ -30,7 +30,7 @@ const RutinaGluteos = () => {
 
             <div className="blog-section">
                 <h2>3. Zancadas alternas</h2>
-                <img src="/img-blog/zancadas.jpg" alt="Zancadas alternas" />
+                <img src="/img-blog/zancadas.webp" alt="Zancadas alternas" />
                 <p>Un básico para trabajar los glúteos y también mejorar el equilibrio y control corporal.</p>
                 <ul>
                     <li>3 series de 10-12 repeticiones por pierna.</li>
@@ -40,7 +40,7 @@ const RutinaGluteos = () => {
 
             <div className="blog-section">
                 <h2>4. Patada de glúteo</h2>
-                <img src="/img-blog/patada-gluteo.jpg" alt="Patada de glúteo" />
+                <img src="/img-blog/patada-gluteo.webp" alt="Patada de glúteo" />
                 <p>Excelente para trabajar el glúteo mayor de forma aislada. Puedes añadir banda elástica para mayor resistencia.</p>
                 <ul>
                     <li>3 series de 12-15 repeticiones por pierna.</li>
@@ -50,7 +50,7 @@ const RutinaGluteos = () => {
 
             <div className="blog-section">
                 <h2>5. Abducciones laterales</h2>
-                <img src="/img-blog/abducciones.jpg" alt="Abducciones" />
+                <img src="/img-blog/abducciones.webp" alt="Abducciones" />
                 <p>Este ejercicio fortalece el glúteo medio, importante para la estabilidad de la cadera y la forma lateral del glúteo.</p>
                 <ul>
                     <li>3 series de 15 repeticiones por lado.</li>

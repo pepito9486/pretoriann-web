@@ -82,8 +82,10 @@ function Homepage(props) {
                     </p>
                     {/* #f8f9fa */}
                 </section>
+
+                {/* fondocard={'#e5e8eb'} */}
             </div>
-            <Slider clase1={"main-card"} clase2={"info-card"} fondocard={'#e5e8eb'} />
+            <Slider clase1={"main-card"} clase2={"info-card"} />
 
             <section className="macro-pro">
                 <div className="macro-text">

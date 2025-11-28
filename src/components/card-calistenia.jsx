@@ -15,7 +15,7 @@ const VideoCard = ({ videoid, title, description, thumbnail, isActive, onActivat
                 ) : (
                     <img
                         className="img-card-disciplina"
-                        src={`https://img.youtube.com/vi/${thumbnail}/hqdefault.jpg`}
+                        src={`https://img.youtube.com/vi/${thumbnail}/hqdefault.webp`}
                         alt="Previsualización del video"
                         loading="lazy"
                     />

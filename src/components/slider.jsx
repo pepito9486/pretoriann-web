@@ -15,7 +15,7 @@ function Slider(props) {
     { src: '/img-carrusel-icon/icon-nutricion.webp', title: 'Nutricion', link: '/nutricion' },
     { src: '/img-carrusel-icon/icon-calculadora.webp', title: 'Calculadora', link: '/calculadora' },
     { src: '/img-carrusel-icon/icon-dietas.webp', title: 'Dietas', link: '/dietas' },
-    { src: '/img-carrusel-icon/icon-equipos.webp', title: 'Equipos de Entrenamiento', link: '/equipamiento' }
+    { src: '/img-carrusel-icon/icon-equipos.webp', title: 'Equipos', link: '/equipamiento' }
   ];
 
   useEffect(() => {
