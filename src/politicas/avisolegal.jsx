@@ -28,6 +28,10 @@ const Avisolegal = () => {
 
             <h2>Legislación aplicable</h2>
             <p>Con carácter general las relaciones entre el titular y los usuarios de los servicios presentes en esta web se encuentran sometidas a la legislación y jurisdicción española.</p>
+
+            <h2>Programa de Afiliados de Amazon y Decathlon (Awin)</h2>
+            <p> Este sitio web participa en el <strong>Programa de Afiliados de Amazon</strong> y en el <strong>Programa de Afiliados de Decathlon a través de la plataforma Awin</strong>. Esto significa que algunos enlaces que aparecen en esta página pueden ser enlaces de afiliado. </p> <p> Si realizas una compra a través de dichos enlaces, Pretoriann puede recibir una pequeña comisión sin coste adicional para ti. Estos ingresos nos ayudan a mantener, mejorar y ofrecer contenido de calidad de forma gratuita. </p> <p> Amazon y el logotipo de Amazon son marcas registradas de Amazon.com, Inc. o sus afiliados. Decathlon y todas sus marcas asociadas son propiedad de Decathlon España S.A.U. Los enlaces de Decathlon son gestionados a través de la red de afiliación Awin. </p>
+
         </div>
     );
 };

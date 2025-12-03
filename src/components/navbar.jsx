@@ -135,12 +135,12 @@ const Navbar = () => {
                         ></i>
                         <ul>
                             <li><a href="/"><i className="fa-solid fa-house"></i><span>Inicio</span> </a></li>
-                            <li><a href="../disciplinas"><i className="fa-solid fa-dumbbell"></i> Disciplinas</a></li>
-                            <li><a href="../entrenamiento"><i className="fa-solid fa-calendar-days"></i> Rutinas</a></li>
-                            <li><a href="../nutricion"><i className="fa-solid fa-apple-whole"></i> Nutrición</a></li>
-                            <li><a href="../blogpage"><i className="fa-solid fa-book-open"></i> Blog</a></li>
-                            <li><a href="../calculadora"><i className="fa-solid fa-calculator"></i> Calculadora</a></li>
-                            <li><a href="../contacto"><i className="fa-solid fa-envelope"></i> Contacto</a></li>
+                            <li><a href="./disciplinas"><i className="fa-solid fa-dumbbell"></i> Disciplinas</a></li>
+                            <li><a href="./entrenamiento"><i className="fa-solid fa-calendar-days"></i> Rutinas</a></li>
+                            <li><a href="./nutricion"><i className="fa-solid fa-apple-whole"></i> Nutrición</a></li>
+                            <li><a href="./blogpage"><i className="fa-solid fa-book-open"></i> Blog</a></li>
+                            <li><a href="./calculadora"><i className="fa-solid fa-calculator"></i> Calculadora</a></li>
+                            <li><a href="./contacto"><i className="fa-solid fa-envelope"></i> Contacto</a></li>
                         </ul>
 
                     </nav>

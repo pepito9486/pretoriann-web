@@ -14,6 +14,14 @@ const BannerPorEquipo = (props) => {
                     </div>
                 </div>
             </div>
+
+            <div className="nota-recomendado">
+                <p className="nota-equipos">
+                    <strong>Nota importante:</strong> Queremos destacar que los equipos marcados como <em>Recomendados</em> no solo han sido seleccionados por su precio, sino también porque son los más eficientes y prácticos para quienes prefieren entrenar desde la comodidad de su casa.
+                </p>
+
+
+            </div>
         </>
     );
 };

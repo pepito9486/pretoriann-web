@@ -766,10 +766,29 @@ p {
     margin: auto;
   }
 
+  .nota-recomendado {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nota-equipos {
+    max-width: 900px; /* ancho bonito y controlado */
+    font-size: 1.5rem;
+    color: #333;
+    line-height: 1.5;
+    background: #fafafa; /* suave para no competir con el banner */
+    padding: 12px 16px;
+    margin: 2rem auto;
+    border-left: 4px solid #c70000; /* rojo corporativo de recomendado */
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* sombra leve profesional */
+  }
+
   .main-equipo {
     /* background-color: red; */
     width: 75%;
-    margin: 2rem auto;
+    margin: 2.5rem auto;
   }
 
   .card img {
@@ -779,6 +798,19 @@ p {
 
   .card h3 {
     font-size: 2rem;
+  }
+
+  .badge-recomendado {
+    width: 100%;
+    background-color: #c70000;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 8px 0;
+    text-align: center;
+    border-radius: 15px 15px 0 0; /* se une a la card */
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
   }
 
   .card .btn-vermas {
