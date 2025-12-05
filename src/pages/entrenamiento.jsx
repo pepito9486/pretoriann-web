@@ -146,17 +146,53 @@ function Entrenamiento(props) {
                     </div>
 
 
-
                     <div className="informacion-ul"
                         style={{ maxHeight: activeIndex === 1 ? "800px" : "0" }}>
                         <ul>
-                            <li><strong>Entrenamiento de Fuerza:</strong> Aumenta la masa muscular, mejora la densidad ósea y potencia la capacidad física para levantar, empujar o cargar peso.</li>
-                            <li><strong>Entrenamiento Cardiovascular:</strong>  Optimiza la salud del corazón y los pulmones, aumentando la resistencia física y quemando calorías.</li>
-                            <li><strong>Entrenamiento de Flexibilidad y Movilidad:</strong> Promueve la amplitud de movimiento, previene lesiones y mejora la postura corporal.</li>
-                            <li><strong>Entrenamiento de Equilibrio y Estabilidad:</strong> Fortalece el core y mejora el control del cuerpo, esencial para prevenir caídas y aumentar el rendimiento deportivo.</li>
-                            <li><strong>Entrenamiento de Velocidad y Agilidad:</strong> Desarrolla reflejos rápidos, mayor capacidad de reacción y movimientos fluidos en cambios de dirección.</li>
+
+                            <li>
+                                <i className="fa-solid fa-dumbbell icon-li"></i>
+                                <strong> Entrenamiento de Fuerza:</strong>
+                                Aumenta músculo, mejora la postura y fortalece el cuerpo.
+                                <br />
+                                <em>Disciplinas: pesas, calistenia, máquinas guiadas, crossfit.</em>
+                            </li>
+
+                            <li>
+                                <i className="fa-solid fa-person-running icon-li"></i>
+                                <strong> Entrenamiento Cardiovascular:</strong>
+                                Mejora la salud del corazón y quema calorías.
+                                <br />
+                                <em>Disciplinas: correr, natación, ciclismo, spinning.</em>
+                            </li>
+
+                            <li>
+                                <i className="fa-solid fa-child-reaching icon-li"></i>
+                                <strong> Flexibilidad y Movilidad:</strong>
+                                Aumenta el rango de movimiento y previene lesiones.
+                                <br />
+                                <em>Disciplinas: yoga, pilates, movilidad articular.</em>
+                            </li>
+
+                            <li>
+                                <i className="fa-solid fa-balance-scale icon-li"></i>
+                                <strong> Equilibrio y Estabilidad:</strong>
+                                Fortalece el core y mejora el control corporal.
+                                <br />
+                                <em>Disciplinas: pilates, bosu, core.</em>
+                            </li>
+
+                            <li>
+                                <i className="fa-solid fa-bolt icon-li"></i>
+                                <strong> Velocidad y Agilidad:</strong>
+                                Mejora la reacción y la coordinación.
+                                <br />
+                                <em>Disciplinas: HIIT, funcional, deportes de equipo.</em>
+                            </li>
+
                         </ul>
                     </div>
+
 
 
                     <div className='lista-acordeon' onClick={() => toggleAccordion(2)} >
@@ -170,17 +206,50 @@ function Entrenamiento(props) {
 
                     <div className="informacion-ul"
                         style={{ maxHeight: activeIndex === 2 ? "800px" : "0" }}>
+                        <ul>
 
-                        <ul >
-                            <li><strong>Estructura y Planificación:</strong> Una rutina está organizada y planificada de antemano, incluyendo qué ejercicios se realizarán, en qué orden, con cuántas repeticiones y series, y en qué días de la semana.</li>
-                            <li><strong>Objetivo Específico:</strong>Cada rutina se diseña en función de un objetivo particular, como aumentar la masa muscular, perder peso, mejorar la resistencia cardiovascular, o aumentar la flexibilidad.</li>
-                            <li><strong>Progresión:</strong>Las rutinas suelen estar diseñadas para progresar con el tiempo, aumentando gradualmente la intensidad, el volumen o la dificultad de los ejercicios a medida que se mejora la condición física.</li>
-                            <li><strong>Variedad:</strong>Para evitar el estancamiento y mantener la motivación, las rutinas pueden incluir una variedad de ejercicios que se enfocan en diferentes grupos musculares y capacidades físicas.</li>
-                            <li><strong>Personalización:</strong>Una rutina de fitness puede ser adaptada a las necesidades individuales de una persona, considerando su nivel de condición física, sus limitaciones físicas, y sus metas personales.</li>
-                            <li><strong>Duración y Frecuencia:</strong>Las rutinas especifican cuánto tiempo se dedica a cada sesión de entrenamiento y con qué frecuencia se realizan, como tres veces por semana durante 60 minutos cada vez.</li>
+                            <li>
+                                <i className="fa-solid fa-bullseye icon-li"></i>
+                                <strong> Objetivo claro:</strong>
+                                Define qué quieres lograr: ganar músculo, perder grasa, mejorar resistencia o moverte mejor.
+                            </li>
+
+                            <li>
+                                <i className="fa-solid fa-dumbbell icon-li"></i>
+                                <strong> Selección de ejercicios:</strong>
+                                Escoge movimientos que trabajen los grupos musculares principales. Evita repetir ejercicios que hacen lo mismo.
+                            </li>
+
+                            <li>
+                                <i className="fa-solid fa-rotate-right icon-li"></i>
+                                <strong> Series, repeticiones y descanso:</strong>
+                                Ajusta según tu objetivo:
+                                <br />– Fuerza → menos repeticiones, más peso.
+                                <br />– Hipertrofia → 8–12 repeticiones.
+                                <br />– Resistencia → más repeticiones, menos descanso.
+                            </li>
+
+                            <li>
+                                <i className="fa-solid fa-chart-line icon-li"></i>
+                                <strong> Progresión semanal:</strong>
+                                Añade poco a poco peso, repeticiones o tiempo para seguir mejorando.
+                            </li>
+
+                            <li>
+                                <i className="fa-solid fa-arrows-rotate icon-li"></i>
+                                <strong> Variedad controlada:</strong>
+                                Cambia ejercicios cada 4–6 semanas para evitar estancarte, sin perder el enfoque.
+                            </li>
+
+                            <li>
+                                <i className="fa-solid fa-calendar-days icon-li"></i>
+                                <strong> Frecuencia:</strong>
+                                Entrena cada grupo muscular 2 veces por semana para mejores resultados.
+                            </li>
 
                         </ul>
                     </div>
+
 
                     <div className='lista-acordeon' onClick={() => toggleAccordion(3)} >
                         <h2 className='h2-entrenamiento'> Entrenamiento Efectivo:</h2>
@@ -195,12 +264,34 @@ function Entrenamiento(props) {
                     <div className="informacion-ul"
                         style={{ maxHeight: activeIndex === 3 ? "800px" : "0" }}>
                         <ul>
-                            <li><strong>Calentamiento y estiramiento:</strong> consiste en hacer algunos ejercicios especificos preparando asi el cuerpo para el esfuerzo mayor, en este proceso incrementamos el flujo sanguineo llevando mas oxigeno y nutientes a los musculos, lubricamos las articulaciones y mejoramos la elasticidad al aumentar la temperatura corporal,la duracion suele oscilar entre los 10 y 15 minutos</li>
-                            <li><strong>Entrenamiento Principal:</strong>Va depender de la disciplina que entrenemos, si es fuerza, resistencia o flexibilidad debemos tener nuestro plan de entrenamiento del dia.  </li>
-                            <li><strong>Enfriamiento y Estiramientos:</strong> al finalizar cada rutina debemos enfriar el cuerpo, con esto conseguimos relajacion muscular reduciendo asi la tension muscular durante el entrenamiento, hacer estiramientos mejora la flexibilidad y la circulacion,la duracion de este proceso esta entre los 10 y 15 minutos. </li>
-                        </ul>
 
+                            <li>
+                                <i className="fa-solid fa-fire icon-li"></i>
+                                <strong> Calentamiento:</strong>
+                                Prepara el cuerpo para el esfuerzo, activa músculos y articulaciones, y reduce el riesgo de lesiones.
+                                <br />
+                                <em>Duración recomendada: 10–15 minutos.</em>
+                            </li>
+
+                            <li>
+                                <i className="fa-solid fa-dumbbell icon-li"></i>
+                                <strong> Entrenamiento principal:</strong>
+                                Es la parte fuerte de la sesión. Aquí realizas el trabajo de fuerza, resistencia, movilidad o la disciplina del día.
+                                <br />
+                                <em>Adaptado a tu objetivo: fuerza, hipertrofia, cardio, funcional, etc.</em>
+                            </li>
+
+                            <li>
+                                <i className="fa-solid fa-snowflake icon-li"></i>
+                                <strong> Enfriamiento y estiramientos:</strong>
+                                Reduce la tensión muscular, baja progresivamente tus pulsaciones y mejora la movilidad.
+                                <br />
+                                <em>Duración recomendada: 10–15 minutos.</em>
+                            </li>
+
+                        </ul>
                     </div>
+
 
 
 
@@ -215,81 +306,65 @@ function Entrenamiento(props) {
 
                     </div>
 
-                    <div className="informacion-ul" style={{
-                        maxHeight: activeIndex === 4 ? "3000px" : "0",
-                        //overflow: "hidden",  Para asegurar que el contenido no se desborde
-
-                    }}>
-                        <p>
-                            Cuando se trata de alcanzar tus objetivos de fitness, no existe un enfoque único para todos. La clave está en personalizar tu rutina de entrenamiento según tus metas, nivel de experiencia y necesidades individuales. En este blog, te explicamos los cuatro pilares fundamentales para diseñar un plan efectivo: frecuencia, duración, volumen e intensidad, y descanso y recuperación.
-                        </p>
+                    <div className="informacion-ul"
+                        style={{ maxHeight: activeIndex === 4 ? "1200px" : "0" }}>
                         <ul>
-                            <li><strong>1. Frecuencia: ¿Cuántos Días a la Semana Debes Entrenar?</strong> La frecuencia de entrenamiento se refiere a la cantidad de días que dedicas a ejercitarte cada semana. Este factor depende en gran medida de tu objetivo y nivel de experiencia:
-                                <p><strong>Principiantes:</strong> Si estás empezando, 3-4 días a la semana son suficientes para construir una base sólida sin sobrecargar tu cuerpo.</p>
 
-                                <p><strong>Intermedios y Avanzados:</strong> Para quienes buscan mejorar su rendimiento o ganar masa muscular, 4-6 días de entrenamiento semanal pueden ser ideales.</p>
-
-                                <p> <strong>Objetivos Específicos:</strong> Si tu meta es perder grasa, combinar entrenamientos de fuerza con cardio 5-6 días a la semana puede ser efectivo. Para mantenimiento, 3-4 días pueden ser suficientes.</p>
-
+                            <li>
+                                <i className="fa-solid fa-calendar-check icon-li"></i>
+                                <strong> Frecuencia:</strong>
+                                Cuántos días entrenas por semana.
+                                <br />
+                                – Principiantes: 3–4 días.
+                                – Intermedios: 4–5 días.
+                                – Avanzados: 5–6 días (si la recuperación es buena).
+                                <br />
+                                <em>Más días no significa mejores resultados. Lo importante es dar descanso suficiente a cada grupo muscular.</em>
                             </li>
 
                             <li>
-                                <strong>2. Duración: ¿Cuánto Debe Durar Cada Sesión de Entrenamiento?</strong>
-                                <p>La duración de tu entrenamiento varía según el tipo de ejercicio que realices</p>
-                                <p>
-                                    Cardio: Las sesiones de cardio pueden durar entre 20 y 60 minutos, dependiendo de la intensidad. Por ejemplo, un HIIT (entrenamiento de intervalos de alta intensidad) puede ser más corto pero muy efectivo.
-                                </p>
-                                <p>
-                                    Entrenamiento de Fuerza: Una sesión típica de pesas puede durar entre 45 y 90 minutos, dependiendo del volumen de ejercicios y grupos musculares que trabajes.
-                                </p>
-                                <p>
-                                    Yoga o Estiramientos: Estas sesiones pueden durar entre 30 y 60 minutos, enfocándose en la flexibilidad y la recuperación.
-                                </p>
-
-                                <p>
-                                    La clave es priorizar la calidad sobre la cantidad. Un entrenamiento bien planificado de 45 minutos puede ser más efectivo que uno de 2 horas sin estructura.
-                                </p>
-
+                                <i className="fa-solid fa-hourglass-half icon-li"></i>
+                                <strong> Duración:</strong>
+                                La cantidad de tiempo de tu sesión.
+                                <br />
+                                – Cardio: 20–45 minutos.
+                                – Fuerza: 45–90 minutos.
+                                – Movilidad/Yoga: 30–60 minutos.
+                                <br />
+                                <em>La calidad importa más que la cantidad.</em>
                             </li>
 
                             <li>
-                                <strong>3. Volumen e Intensidad: El Equilibrio Perfecto</strong>
-                                <p>
-                                    El volumen (cantidad de trabajo) y la intensidad (qué tan duro trabajas) son dos factores que deben ajustarse cuidadosamente para alcanzar tus objetivos:
-                                </p>
-                                <p>
-                                    Volumen: Se refiere al número de series, repeticiones y ejercicios que realizas. Un volumen alto es ideal para hipertrofia (ganancia muscular), mientras que un volumen moderado puede ser mejor para fuerza y resistencia.
-                                </p>
-                                <p>
-                                    Intensidad: Es el nivel de esfuerzo que aplicas durante el entrenamiento. Para mejorar la fuerza, es recomendable trabajar con pesos más pesados y menos repeticiones. Para resistencia, pesos más ligeros y más repeticiones.
-                                </p>
-                                <p>
-                                    Asegúrate de progresar gradualmente para evitar lesiones y maximizar los resultados. ¡No intentes hacer demasiado en poco tiempo!
-                                </p>
+                                <i className="fa-solid fa-chart-bar icon-li"></i>
+                                <strong> Volumen e intensidad:</strong>
+                                Cantidad de trabajo y esfuerzo aplicado.
+                                <br />
+                                – Fuerza: pocas repeticiones, más peso.
+                                – Hipertrofia: 8–12 repeticiones.
+                                – Resistencia: más repeticiones, menos descanso.
+                                <br />
+                                <em>Progresión constante = mejores resultados.</em>
+                            </li>
 
-                            </li>
                             <li>
-                                <strong>4. Descanso y Recuperación:</strong>
-                                <p>
-                                    Muchas personas subestiman la importancia del descanso, pero es tan crucial como el entrenamiento mismo. Los músculos necesitan tiempo para repararse y crecer después del esfuerzo físico. Aquí algunos consejos:
-                                </p>
-                                <p>
-                                    Días de Descanso: Incluye al menos 1-2 días de descanso completo o activo (como caminar o hacer yoga) en tu rutina semanal.
-                                </p>
-                                <p>
-                                    Sueño: Dormir 7-9 horas por noche es esencial para la recuperación muscular y el rendimiento general.
-                                </p>
-                                <p>
-                                    Alimentación: Una dieta rica en proteínas, carbohidratos complejos y grasas saludables ayudará a tu cuerpo a recuperarse más rápido.
-                                </p>
+                                <i className="fa-solid fa-bed icon-li"></i>
+                                <strong> Descanso y recuperación:</strong>
+                                Tus músculos se reparan fuera del gimnasio.
+                                <br />
+                                – 1–2 días de descanso total por semana.
+                                – Dormir 7–9 horas.
+                                – Buena hidratación y alimentación.
+                                <br />
+                                <em>Sin descanso, no hay progreso.</em>
                             </li>
+
                         </ul>
-
                     </div>
 
 
+
                     <div className='lista-acordeon' onClick={() => toggleAccordion(5)} >
-                        <h2 className='h2-entrenamiento'>Consideraciones Nutricionales:</h2>
+                        <h2 className='h2-entrenamiento'>Nutricion para el Entrenamiento:</h2>
                         {activeIndex === 5 ? (
                             <i className="fa-solid fa-angle-up acordeon-icon"></i>
                         ) : (
@@ -300,223 +375,97 @@ function Entrenamiento(props) {
                     </div>
 
                     <div className="informacion-ul"
-                        style={{ maxHeight: activeIndex === 5 ? "8000px" : "0" }}>
-                        <div>
-                            <h2>Nutrición Pre-Entrenamiento: Qué Comer Antes del Ejercicio</h2>
-                            <p>La nutrición pre-entrenamiento es fundamental para optimizar el rendimiento, retrasar la fatiga y maximizar los resultados del ejercicio. Lo que comes antes de entrenar depende del tipo, intensidad y duración de la actividad física, así como de tus objetivos personales.</p>
+                        style={{ maxHeight: activeIndex === 5 ? "1000px" : "0" }}>
+                        <ul>
 
-                            <p><strong>1. Objetivos de la Nutrición Pre-Entrenamiento</strong></p>
-                            <ul>
-                                <li><strong>Proveer energía:</strong> Los carbohidratos son la principal fuente de energía para ejercicios de alta intensidad.</li>
-                                <li><strong>Preservar la masa muscular:</strong> Las proteínas ayudan a reducir el catabolismo muscular (descomposición de proteínas).</li>
-                                <li><strong>Mantener la hidratación:</strong> Beber líquidos antes del ejercicio es crucial para evitar la deshidratación.</li>
-                            </ul>
+                            <li>
+                                <i className="fa-solid fa-bolt icon-li"></i>
+                                <strong> Antes de entrenar:</strong>
+                                Come algo ligero que te dé energía sin pesadez.
+                                <br />
+                                <em>Opciones:</em> plátano, avena, tostada integral, café, yogur con fruta.
+                                <br />
+                                <em>Cuándo:</em> 60–90 minutos antes del entrenamiento.
+                            </li>
 
-                            <p><strong>2. ¿Qué Comer Antes del Entrenamiento?</strong></p>
-                            <ul>
-                                <li><strong>Carbohidratos:</strong> Son la fuente de energía más eficiente. Opta por carbohidratos complejos y de bajo índice glucémico para una liberación sostenida de energía.
-                                    <ul>
-                                        <li>Ejemplos: Avena, arroz integral, pan integral, frutas (plátano, manzana), batata.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Proteínas:</strong> Ayudan a mantener la masa muscular y a reparar tejidos.
-                                    <ul>
-                                        <li>Ejemplos: Yogur griego, huevos, pollo, pescado, proteína en polvo.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Grasas Saludables:</strong> En cantidades moderadas, proporcionan energía para ejercicios de baja intensidad o larga duración.
-                                    <ul>
-                                        <li>Ejemplos: Aguacate, nueces, semillas, mantequilla de almendras.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Hidratación:</strong> Bebe agua o bebidas con electrolitos 1-2 horas antes del entrenamiento.</li>
-                            </ul>
+                            <li>
+                                <i className="fa-solid fa-water icon-li"></i>
+                                <strong> Durante el entrenamiento:</strong>
+                                Mantén una buena hidratación para rendir mejor.
+                                <br />
+                                <em>Opciones:</em> agua, bebida con electrolitos si entrenas más de 1 hora.
+                            </li>
 
-                            <p><strong>3. Timing (Cuándo Comer)</strong></p>
-                            <ul>
-                                <li><strong>2-3 horas antes:</strong> Una comida completa con carbohidratos, proteínas y grasas.
-                                    <ul>
-                                        <li>Ejemplo: Pechuga de pollo con arroz integral y verduras.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>30-60 minutos antes:</strong> Un snack ligero rico en carbohidratos y bajo en grasas.
-                                    <ul>
-                                        <li>Ejemplo: Un plátano con una cucharada de mantequilla de maní o un batido de proteínas.</li>
-                                    </ul>
-                                </li>
-                            </ul>
+                            <li>
+                                <i className="fa-solid fa-apple-whole icon-li"></i>
+                                <strong> Después de entrenar:</strong>
+                                Tu cuerpo necesita recuperar y reparar los músculos.
+                                <br />
+                                <em>Opciones:</em> batido de proteína, yogur, huevo con tostada, fruta, arroz o patata.
+                                <br />
+                                <em>Cuándo:</em> dentro de los 30–60 minutos post-entrenamiento.
+                            </li>
 
-                            <p><strong>4. Ejemplos de Snacks Pre-Entrenamiento</strong></p>
-                            <ul>
-                                <li>Tostadas integrales con aguacate.</li>
-                                <li>Yogur griego con frutas.</li>
-                                <li>Barritas de proteína bajas en azúcar.</li>
-                                <li>Batido de proteínas con avena.</li>
-                            </ul>
-
-                            <h2>Nutrición Post-Entrenamiento: La Importancia de una Buena Alimentación Después del Ejercicio</h2>
-                            <p>La nutrición post-entrenamiento es crucial para la recuperación muscular, la reposición de energía y la adaptación al ejercicio. Después de entrenar, el cuerpo necesita nutrientes específicos para reparar tejidos y reponer glucógeno.</p>
-
-                            <p><strong>1. Objetivos de la Nutrición Post-Entrenamiento</strong></p>
-                            <ul>
-                                <li><strong>Reparar músculos:</strong> Las proteínas ayudan a reconstruir las fibras musculares dañadas.</li>
-                                <li><strong>Reponer glucógeno:</strong> Los carbohidratos restauran las reservas de energía agotadas durante el ejercicio.</li>
-                                <li><strong>Rehidratar:</strong> Reponer los líquidos y electrolitos perdidos a través del sudor.</li>
-                            </ul>
-
-                            <p><strong>2. ¿Qué Comer Después del Entrenamiento?</strong></p>
-                            <ul>
-                                <li><strong>Proteínas:</strong> Esenciales para la síntesis de proteínas musculares.
-                                    <ul>
-                                        <li>Ejemplos: Huevos, pollo, pescado, tofu, proteína en polvo, lácteos.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Carbohidratos:</strong> Ayudan a reponer las reservas de glucógeno.
-                                    <ul>
-                                        <li>Ejemplos: Arroz, pasta integral, patata, frutas, quinoa.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Grasas Saludables:</strong> En menor cantidad, ya que pueden retardar la digestión.
-                                    <ul>
-                                        <li>Ejemplos: Aguacate, aceite de oliva, nueces.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Hidratación:</strong> Agua o bebidas con electrolitos para rehidratar.</li>
-                            </ul>
-
-                            <p><strong>3. Timing (Cuándo Comer)</strong></p>
-                            <ul>
-                                <li><strong>30-60 minutos después:</strong> Es el momento ideal para consumir una comida o snack post-entrenamiento, ya que el cuerpo está más receptivo a absorber nutrientes.
-                                    <ul>
-                                        <li>Ejemplo: Batido de proteínas con frutas y avena.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>2 horas después:</strong> Una comida completa que incluya proteínas, carbohidratos y verduras.
-                                    <ul>
-                                        <li>Ejemplo: Salmón con quinoa y brócoli.</li>
-                                    </ul>
-                                </li>
-                            </ul>
-
-                            <p><strong>4. Ejemplos de Snacks Post-Entrenamiento</strong></p>
-                            <ul>
-                                <li>Batido de proteínas con leche y plátano.</li>
-                                <li>Yogur griego con granola y frutas.</li>
-                                <li>Sándwich de pavo en pan integral.</li>
-                                <li>Huevos revueltos con tostadas integrales.</li>
-                            </ul>
-
-                            <h2>Hidratación: La Importancia de Mantenerse Hidratado</h2>
-                            <p>La hidratación es un pilar fundamental para el rendimiento deportivo y la salud en general. Durante el ejercicio, el cuerpo pierde líquidos y electrolitos a través del sudor, lo que puede afectar el rendimiento y la recuperación.</p>
-
-                            <p><strong>1. Importancia de la Hidratación</strong></p>
-                            <ul>
-                                <li><strong>Regula la temperatura corporal:</strong> El sudor ayuda a enfriar el cuerpo durante el ejercicio.</li>
-                                <li><strong>Mejora el rendimiento:</strong> La deshidratación reduce la fuerza, resistencia y concentración.</li>
-                                <li><strong>Facilita la recuperación:</strong> Ayuda a transportar nutrientes a las células musculares.</li>
-                            </ul>
-
-                            <p><strong>2. ¿Cuánto Beber?</strong></p>
-                            <ul>
-                                <li><strong>Antes del ejercicio:</strong> 500 ml de agua 2-3 horas antes y 250 ml 20-30 minutos antes.</li>
-                                <li><strong>Durante el ejercicio:</strong> 150-350 ml cada 15-20 minutos, dependiendo de la intensidad y el clima.</li>
-                                <li><strong>Después del ejercicio:</strong> Reponer el 150% del peso perdido durante el ejercicio (por ejemplo, si perdiste 1 kg, bebe 1.5 litros de agua).</li>
-                            </ul>
-
-                            <p><strong>3. Bebidas Recomendadas</strong></p>
-                            <ul>
-                                <li><strong>Agua:</strong> Ideal para ejercicios de baja intensidad y corta duración.</li>
-                                <li><strong>Bebidas con electrolitos:</strong> Recomendadas para ejercicios de alta intensidad o larga duración (más de 1 hora).
-                                    <ul>
-                                        <li>Ejemplos: Bebidas deportivas, agua de coco.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Batidos de recuperación:</strong> Combinan líquidos, carbohidratos y proteínas.</li>
-                            </ul>
-
-                            <p><strong>4. Señales de Deshidratación</strong></p>
-                            <ul>
-                                <li>Sed excesiva.</li>
-                                <li>Fatiga o mareos.</li>
-                                <li>Orina oscura o escasa.</li>
-                                <li>Calambres musculares.</li>
-                            </ul>
-                        </div>
+                        </ul>
                     </div>
+
 
                     <div className='h1-concept-entrenamiento2'>
                         <div className='overlay-train'></div>
                         <h1 className='h1-entrenamiento' ref={hipertrofiaRef}>Rutina de Hipertrofia</h1>
-                        <p className='p-entrenamiento'>Veamos algunas referencias con ejercicios de Hipertrofia
+                        <p className='p-entrenamiento'>
+                            Aquí tienes un ejemplo práctico de cómo estructurar una rutina orientada a ganar músculo.
                         </p>
-
-                    </div>
-                    <div className="informacion-ul" >
-                        <p><strong>El gym nunca pasa de moda</strong> como una de las mejores opciones para mejorar la condición física y la salud. En esta sección de <strong>entrenamiento</strong>, tomaremos como referencia la disciplina de <strong>hipertrofia</strong> para entender cómo estructurar una rutina efectiva.</p>
-
-                        <p>Sabemos que entrenar <strong>6 días a la semana</strong> es lo ideal para maximizar el crecimiento muscular, pero en la vida real, no todos tienen el tiempo o la recuperación suficiente para mantener ese ritmo. <strong>Afortunadamente, con 4 días bien estructurados también se pueden trabajar todos los grupos musculares de manera efectiva.</strong></p>
-
-                        <p>A continuación, veremos un ejemplo de <strong>rutina semanal</strong>, que puede adaptarse a distintas frecuencias de entrenamiento según tu disponibilidad y nivel de experiencia. 💪🔥</p>
-
                     </div>
 
                     <div className="informacion-ul">
-                        {/* style={{ maxHeight: activeIndex === 4 ? "800px" : "0" }} */}
+                        <p>
+                            La hipertrofia se basa en entrenar cada grupo muscular con el estímulo adecuado y la frecuencia correcta.
+                            No es necesario entrenar 6 días para ver resultados: con 4 días bien organizados puedes trabajar todo el cuerpo de forma efectiva.
+                        </p>
+
+                        <p>
+                            A continuación verás un ejemplo de rutina semanal que puedes adaptar según tu tiempo, nivel y experiencia.
+                        </p>
+                    </div>
+
+                    <div className="informacion-ul">
                         <ul>
-                            <h2>Rutina:</h2>
-                            <li>💪<strong>Frecuencia:</strong> 6 dias a la semana</li>
-                            <li>🔥<strong>Repeticiones:</strong> 8-12 </li>
-                            <li>📌<strong>series</strong> 3-4 por ejercicios</li>
-                            <li>⏳<strong>Descanso entre series:</strong> 60-90 segundos</li>
+                            <h2>Parámetros de la rutina:</h2>
+                            <li>💪 <strong>Frecuencia recomendada:</strong> 4–6 días dependiendo de tu nivel.</li>
+                            <li>🔥 <strong>Repeticiones:</strong> 8–12 por ejercicio.</li>
+                            <li>📌 <strong>Series:</strong> 3–4 por ejercicio.</li>
+                            <li>⏳ <strong>Descanso:</strong> 60–90 segundos entre series.</li>
                         </ul>
                     </div>
 
                     <Carousel />
-                    {/*  style={{ maxHeight: '1000px' }}*/}
 
-                    <div className="informacion-ul" style={{ maxHeight: '2000px' }} >
-                        <p>En la ficha anterior, si nos damos cuenta los diferentes grupos musculares los trabajamos al menos dos veces por semana para lograr un equilibrio óptimo entre recuperación y estímulo muscular. Este enfoque, conocido como frecuencia 2, es ampliamente recomendado, especialmente para personas con niveles intermedios y avanzados de entrenamiento, ya que maximiza el proceso de supercompensación al acercar los estímulos entre sesiones.</p>
+                    <div className="informacion-ul">
+                        <p>
+                            Como ves en la rutina, cada grupo muscular se trabaja al menos dos veces por semana.
+                            Esto ayuda a mejorar la recuperación, el crecimiento y el rendimiento general.
+                        </p>
 
-                        <p>Algunos optan por entrenar un grupo muscular una vez por semana, concentrando todo el volumen de entrenamiento en una sola sesión. Por ejemplo, si realizas 8 series para el pecho en una semana, podrías distribuirlas en dos sesiones de 4 series cada una o en una única sesión de 8 series. Aunque ambos métodos pueden ser efectivos, la evidencia sugiere que distribuir el volumen en múltiples sesiones semanales puede ser más beneficioso para la hipertrofia muscular.</p>
-
-                        <p>Para estructurar una rutina equilibrada, se recomienda:</p>
+                        <p>
+                            Si buscas una opción más simple, puedes usar este esquema:
+                        </p>
 
                         <ul>
-                            <li><strong>Opción 1:</strong> Entrenar el tren superior dos días y el tren inferior otros dos días, sumando un total de cuatro días de entrenamiento a la semana.</li>
-                            <li><strong>Opción 2:</strong> Para aquellos con más experiencia o limitaciones de tiempo, entrenar tres días a la semana de la siguiente manera:
-                                <ul>
-                                    <li><strong>Día 1:</strong> Tren superior</li>
-                                    <li><strong>Día 2:</strong> Tren inferior</li>
-                                    <li><strong>Día 3:</strong> Cuerpo completo (full-body)</li>
-                                </ul>
-                            </li>
+                            <li><strong>Opción 1 (4 días):</strong> Dos días tren superior + dos días tren inferior.</li>
+                            <li><strong>Opción 2 (3 días):</strong> Superior – Inferior – Full body.</li>
                         </ul>
 
-                        <p>Este esquema permite una alta frecuencia de estímulo muscular en menos días de entrenamiento, lo que puede ser beneficioso para quienes tienen limitaciones de tiempo.</p>
-
-                        <p>Es fundamental tener objetivos claros y un conocimiento básico de los diferentes ejercicios para cada grupo muscular. Con esta base, es posible estructurar una rutina de ejercicios personalizada y eficiente que se adapte a tus necesidades y metas específicas. Recuerda que la consistencia y la progresión son clave en cualquier programa de entrenamiento.</p>
-
+                        <p>
+                            Ajusta los ejercicios y el volumen según tu nivel.
+                            Recuerda que la clave está en la consistencia y en progresar poco a poco.
+                        </p>
                     </div>
 
 
                 </section>
 
-                {/* <aside className='main-menudisciplinas'>
-                    <h3>Ejercicios y Rutinas</h3>
-                    <nav className='menu-disciplinas'>
-                        <ul>
-                            {Object.keys(componentMap).map((discipline) => (
-                                <li key={discipline} onClick={() => handleItemClick(discipline)}>
-                                    <span>{discipline}</span>
-                                </li>
-                            ))}
-                        </ul>
-                    </nav>
-                </aside>
 
-                <section className='description-disciplinas'>
-                    {selectedDiscipline}
-                </section> */}
             </main >
         </>
     );
