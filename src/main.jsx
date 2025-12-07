@@ -12,7 +12,7 @@ import './index4-politicas.css'
 import './index-blog.css'
 import './cookies.css'
 import './logo.css'
-import './pretorian-desktop-fixed-style.css'
+// import './pretorian-desktop-fixed-style.css'
 
 
 
