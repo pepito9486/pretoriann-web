@@ -81,7 +81,7 @@
 
 /* *************** PARA PC ******************* */
 header {
-  height: 110px;
+  height: 100px;
 }
 
 @media (min-width: 1024px) {
@@ -96,7 +96,7 @@ header {
   header.scrolled {
     background: linear-gradient(180deg, #ffd700 0%, hsl(48, 100%, 48%) 100%);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-    height: 120px;
+    height: 100px;
   }
 
   .header-container {
@@ -109,7 +109,7 @@ header {
     justify-content: center;
 
     gap: 20px; /* antes 50px, demasiado */
-    padding: 20px 20px; /* antes 40px 30px, empujaba todo */
+    padding: 35px 20px; /* antes 40px 30px, empujaba todo */
   }
   .logo-container {
     border: none;
@@ -117,7 +117,7 @@ header {
   }
 
   .logo-image {
-    height: 110px;
+    height: 100px;
     padding: 5px;
   }
 
