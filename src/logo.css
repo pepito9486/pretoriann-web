@@ -106,7 +106,8 @@ header {
     margin: 20px auto 0 auto;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
+
     gap: 20px; /* antes 50px, demasiado */
     padding: 20px 20px; /* antes 40px 30px, empujaba todo */
   }
@@ -129,7 +130,7 @@ header {
   }
 
   .logo-link .logo-text {
-    font-size: 2.1rem;
+    font-size: 2rem;
     font-weight: 800;
     letter-spacing: 2px;
     margin: 0;
