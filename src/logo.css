@@ -108,7 +108,7 @@ header {
     align-items: center;
 
     justify-content: flex-start; /* ✅ */
-    gap: 80px; /* ✅ controlas separación */
+    gap: 50px; /* ✅ controlas separación */
     padding: 40px 30px;
     /* background: linear-gradient(180deg, #ffd700 0%, #f5c400 100%);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); */
@@ -127,7 +127,7 @@ header {
   .logo-link {
     display: flex;
     align-items: center;
-    gap: 22px;
+    gap: 10px;
     padding: 10px 0;
     text-decoration: none; /* ✅ AQUÍ */
   }
@@ -170,7 +170,7 @@ header {
   .nav1 ul {
     display: flex;
     align-items: center;
-    gap: 35px; /* 👈 antes 55px */
+    gap: 20px; /* 👈 antes 55px */
     margin: 0;
     padding: 0;
   }
@@ -183,7 +183,7 @@ header {
     text-transform: uppercase;
     letter-spacing: 1px;
 
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 800;
     color: #111;
     text-decoration: none;
