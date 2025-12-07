@@ -254,7 +254,7 @@ html {
     max-width: 600px;
     padding: 0 0.3rem; /* aire lateral */
     color: #fff;
-    /* background-color: green; */
+    background-color: none;
   }
 
   .banner-content h2 {

@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Card from './card';
-
+// 
 function Slider(props) {
   const caruselRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(null);

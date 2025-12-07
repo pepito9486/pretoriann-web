@@ -81,7 +81,7 @@ p {
     max-width: 600px;
     padding: 0 0.3rem; /* aire lateral */
     color: #fff;
-    background-color: white;
+    /* background-color: white; */
   }
 
   .banner-content h2 {

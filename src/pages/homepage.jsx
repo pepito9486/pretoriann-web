@@ -85,6 +85,7 @@ function Homepage(props) {
 
                 {/* fondocard={'#e5e8eb'} */}
             </div>
+            {/* clase1={"main-card"} clase2={"info-card"}  */}
             <Slider clase1={"main-card"} clase2={"info-card"} />
 
             <section className="macro-pro">
