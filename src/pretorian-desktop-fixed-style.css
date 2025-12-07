@@ -1,8 +1,7 @@
 /* =========================================================
-   PRETORIANN — DESKTOP FIXED STYLES
-   Ajustes únicamente para PC (>=1024px)
-   No toca posiciones, no altera layouts.
-   Solo reduce tamaños excesivos y optimiza proporciones.
+   PRETORIANN — DESKTOP FIXED STYLES (FINAL VERSION)
+   Arreglo visual completo para PC (>=1024px)
+   Sin romper layouts, sin tocar tu diseño móvil.
    ========================================================= */
 
 @media (min-width: 1024px) {
@@ -22,13 +21,10 @@
     font-size: 1.4rem !important;
   }
 
-  p {
-    font-size: 1rem !important;
-    line-height: 1.6 !important;
-  }
-
+  p,
   li {
     font-size: 1rem !important;
+    line-height: 1.6 !important;
   }
 
   a,
@@ -37,10 +33,7 @@
   }
 
   /* ================= HEADER ================= */
-  header nav ul li a {
-    font-size: 1rem !important;
-  }
-
+  header nav ul li a,
   header nav ul li {
     font-size: 1rem !important;
   }
@@ -59,23 +52,75 @@
     padding: 0.6rem 1.4rem !important;
   }
 
+  /* ================= GLOBAL IMAGE BEHAVIOR ================= */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* ================= GLOBAL BACKGROUND FIX ================= */
+  .banner-bg,
+  .hero-glovo,
+  .macro-pro,
+  .card-recomendados,
+  .rutina-card,
+  .cta-dark-section .overlay-train {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
+
+  /* ================= GLOBAL BANNER RESIZE ================= */
+
+  .h1-concept-entrenamiento,
+  .h1-entrenamiento,
+  .macro-pro,
+  .rutina-card,
+  .card-recomendados {
+    overflow: hidden !important;
+    border-radius: 8px;
+  }
+
+  /* ================= SPECIFIC BANNER HEIGHTS ================= */
+
+  /* Banner de Hipertrofia */
+  .h1-concept-entrenamiento,
+  .h1-entrenamiento,
+  .h1-concept-entrenamiento2 {
+    max-height: 420px !important;
+  }
+
+  .h1-concept-entrenamiento img {
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+  .h1-concept-entrenamiento2 img {
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+
+  /* Banner macros */
+  .macro-pro {
+    max-height: 360px !important;
+  }
+
+  .macro-img img {
+    object-fit: cover !important;
+  }
+
+  /* Rutinas destacadas */
+  .rutina-card {
+    max-height: 460px !important;
+  }
+
+  /* Productos recomendados */
+  .card-recomendados {
+    max-height: 420px !important;
+  }
+
   /* ================= SLIDER ================= */
   .main-card .info-card h3 {
     font-size: 1rem !important;
-  }
-
-  /* ================= MACROS BANNER ================= */
-  .macro-text .h3-calcu-homepage {
-    font-size: 1.8rem !important;
-  }
-
-  .macro-text .macro-desc {
-    font-size: 1.1rem !important;
-  }
-
-  .macro-btn {
-    font-size: 1rem !important;
-    padding: 0.5rem 1.2rem !important;
   }
 
   /* ================= DISCIPLINAS ================= */

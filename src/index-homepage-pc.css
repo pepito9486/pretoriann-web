@@ -29,7 +29,7 @@
   .header-container {
     max-width: 1200px;
     margin: 0 auto 3rem auto;
-    height: 64px;
+    height: 45px;
     padding: 0 16px;
     display: flex;
     align-items: center;
@@ -65,12 +65,12 @@
   header nav ul li {
     margin: 0;
     list-style: none;
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 
   header nav ul li a {
     color: #050606;
-    font-size: 2rem;
+    font-size: 1.2rem;
     text-decoration: none;
     /* font-weight: 600; */
     padding: 8px 4px;
@@ -246,11 +246,11 @@
   }
 
   .main-fitness2 .main-card {
-    flex: 0 0 200px;
-    /* width: 80px;
-    height: 100px; */
+    flex: 0 0 150px; /* Antes 200px — ahora más compacto */
     aspect-ratio: 3/4;
-    padding: 10px 5px;
+    padding: 8px 4px;
+    border-radius: 10px;
+    transform: none;
     background: radial-gradient(
         circle at top left,
         rgba(255, 255, 255, 0.25),
@@ -262,7 +262,7 @@
         transparent 45%
       ),
       linear-gradient(135deg, #f2c94c, #f0b90b);
-    border-radius: 12px;
+    /* border-radius: 12px; */
     /* background-image: url("../img/fondo_card.png");
     background-size: cover; 
     background-position: center; 
@@ -290,8 +290,8 @@
   }
 
   .main-card img {
-    width: 50%;
-    height: 50%;
+    width: 40%; /* Antes 50% — reduce icono */
+    height: auto;
     margin-bottom: 6px;
     object-fit: contain;
   }
