@@ -536,12 +536,12 @@
   .bloque-rutinas {
     /* background-color: blue; */
     max-width: 1200px;
-    margin: auto auto 3rem auto;
+    margin: 3rem auto;
     padding: 0 1rem;
   }
 
   .bloque-rutinas h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 1.5rem;
     text-align: center;
     font-family: "Montserrat", sans-serif;
@@ -550,9 +550,11 @@
   /* Card */
   .rutina-card {
     position: relative;
-    width: 70%; /* imagen ocupa 70% del ancho */
+    width: 50%; /* más pequeño y elegante */
+    max-width: 500px; /* no crecerá más que esto */
+    height: auto; /* deja que la imagen controle la altura */
     margin: 0 auto;
-    border-radius: 16px;
+    border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
     /* height: 800px; */
@@ -561,17 +563,16 @@
   /* Imagen */
   .rutina-card img {
     width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-    aspect-ratio: 3/4; /* controla altura relativa */
-    filter: brightness(0.6); /* oscurece imagen */
+    height: auto;
+    aspect-ratio: 3 / 4; /* mantiene proporción elegante */
+    filter: brightness(0.9); /* oscurece imagen */
     transition: transform 0.3s ease;
+    border-radius: 20px;
   }
 
-  .rutina-card:hover img {
-    transform: scale(1.05); /* zoom sutil */
-  }
+  /* .rutina-card:hover img {
+    transform: scale(1.05); /* zoom sutil 
+  } */
 
   /* Texto sobre la imagen */
   .rutina-info {
@@ -586,7 +587,7 @@
   }
 
   .rutina-info h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 0.5rem;
     font-weight: bold;
   }
@@ -599,14 +600,15 @@
   }
 
   /* Botón */
-  .btn-ver {
-    padding: 0.6rem 1.4rem;
+  .rutina-info .btn-rutina {
+    width: auto;
+    padding: 0.6rem auto;
     color: #000;
     background-color: #ffd700;
     border: none;
     border-radius: 9999px;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.5rem;
     cursor: pointer;
     transition: background 0.2s ease, transform 0.2s ease;
   }
@@ -619,14 +621,14 @@
   /* ******************************blog************************** */
   /* --- Sección --- */
   .blog-carrusel {
-    width: 96%;
+    width: 75%;
     max-width: 1200px;
     margin: 3rem auto;
     text-align: center;
   }
 
   .blog-carrusel h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
     margin-bottom: 2rem;
     color: #222;
@@ -635,21 +637,24 @@
 
   /* Contenedor de las tarjetas */
   .carrusel-container {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 2rem; /* separación entre cards */
+    max-width: 1200px; /* ancho ideal para PC */
+    margin: 0 auto; /* centrado */
+    padding: 1rem 0; /* pequeño respiro vertical */
     flex-wrap: wrap; /* por si se reduce pantalla */
   }
 
   /* Cada tarjeta del blog */
-  .blog-slide {
+  /* .blog-slide {
     background: #fff;
     border-radius: 16px;
 
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
 
     overflow: hidden;
-    flex: 1 1 calc(33.333% - 2rem); /* 3 columnas */
+    flex: 1 1 calc(33.333% - 2rem);  3 columnas 
     min-width: 280px;
     max-width: 350px;
     aspect-ratio: 3/4;
@@ -657,6 +662,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  } */
+
+  .blog-slide {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    aspect-ratio: 3/4; /* mantiene proporción ideal */
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
   }
 
   .blog-slide:hover {
@@ -675,7 +694,7 @@
 
   /* Textos */
   .blog-slide h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     margin: 1rem 0 0.5rem;
     color: #333;
@@ -693,7 +712,7 @@
   /* Botón debajo */
   .blog-btn {
     display: inline-block;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-top: 2rem;
     padding: 0.75rem 1.5rem;
     background: #ffd700;
@@ -719,8 +738,8 @@
     }
 
     .card-recomendados {
-      width: 90%; /* ocupa el 90% del ancho */
-      height: 700px; /* ajusta según quieras */
+      width: 70%; /* ocupa el 90% del ancho */
+      height: 500px; /* ajusta según quieras */
       background-image: url("/img-banner-principal/productos-recomendados.webp");
       background-size: cover; /* cubre todo el área */
       background-position: center; /* centra la imagen */
@@ -803,19 +822,19 @@
     }
 
     .cta-dark-container h2 {
-      font-size: 7rem;
+      font-size: 4rem;
       margin-bottom: 2rem;
     }
 
     .cta-dark-container p {
-      font-size: 3rem;
+      font-size: 2rem;
       line-height: 1.8;
       max-width: 600px;
       margin-bottom: 2rem;
     }
 
     .cta-dark-btn {
-      font-size: 4rem;
+      font-size: 2rem;
       padding: 1.1rem 2.5rem;
       border-radius: 999px;
       transition: all 0.3s ease;

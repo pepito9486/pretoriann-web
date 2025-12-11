@@ -190,7 +190,7 @@ function Homepage(props) {
                         <div className="rutina-info">
                             <h3>Rutinas en el Gym</h3>
                             <p className="limitar-lineas">Entrena todo tu cuerpo en solo 20 minutos. Ideal para nivel principiante o intermedio.</p>
-                            <button onClick={() => handleIrRutina(1)} className="btn-ver">Ver Rutinas</button>
+                            <button onClick={() => handleIrRutina(1)} className="btn-rutina">Ver Rutinas</button>
                         </div>
                     </div>
                     {/* <div className="rutina-card">
@@ -220,7 +220,7 @@ function Homepage(props) {
                     <div className="blog-slide">
                         <img src="/img-banner-principal/proteina-blog.webp" alt="Proteínas" />
                         <h3>5 mitos sobre proteinas</h3>
-                        <p className="limitar-lineas">Conoce las diferencias.</p>
+                        <p className="limitar-lineas">Conoce la verdad detras de este suplemento alimenticio.</p>
                     </div>
                     <div className="blog-slide">
                         <img src="/img-banner-principal/pesas-blog.webp" alt="Equipo básico" />
