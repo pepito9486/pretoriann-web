@@ -562,9 +562,10 @@
 
   /* Imagen */
   .rutina-card img {
-    width: 100%;
+    width: 500px;
+    height: 550px;
     height: auto;
-    aspect-ratio: 3 / 4; /* mantiene proporción elegante */
+    /* aspect-ratio: 3 / 4; mantiene proporción elegante */
     filter: brightness(0.9); /* oscurece imagen */
     transition: transform 0.3s ease;
     border-radius: 20px;
@@ -622,6 +623,7 @@
   /* --- Sección --- */
   .blog-carrusel {
     width: 75%;
+    padding: 1rem;
     max-width: 1200px;
     margin: 3rem auto;
     text-align: center;
@@ -637,6 +639,7 @@
 
   /* Contenedor de las tarjetas */
   .carrusel-container {
+    width: 90%;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columnas */
     gap: 2rem; /* separación entre cards */
@@ -694,7 +697,7 @@
 
   /* Textos */
   .blog-slide h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 600;
     margin: 1rem 0 0.5rem;
     color: #333;
@@ -702,7 +705,7 @@
   }
 
   .blog-slide p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #555;
     margin-bottom: 1rem;
     padding: 0 1rem;
@@ -786,6 +789,7 @@
     }
 
     .btn-ver {
+      font-size: 1.5rem;
       background-color: #ffd700;
       color: #000;
       padding: 0.9rem 2rem;
