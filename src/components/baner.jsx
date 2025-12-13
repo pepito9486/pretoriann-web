@@ -23,7 +23,7 @@ function Baner({ banners, colores }) {
                     <img src={banner.img} alt={banner.title} className='no-lazy' />
                     <div className="banner-content">
                         <h2>{banner.title}</h2>
-                        {/* <p>{banner.description}</p> */}
+                        <p>{banner.description}</p>
                         <a href={banner.link} className="btn-banner">{banner.boton}</a>
                     </div>
                 </div>

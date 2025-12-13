@@ -17,9 +17,9 @@ function Sistemamuscular(props) {
 
     const bannersEquipo = [
         {
-            img: '/img-banner-principal/libro-banner1-sm.webp',
-            title: 'Libro de Anatomia Muscular',
-            // description: 'Conoce .',
+            img: '/img-banner-principal/hombre_atletico2.png',
+            title: 'Sistema Muscular',
+            description: 'Conoce la estructura del sistema muscular orientado al fitness',
             link: '/equipamiento',
             boton: 'Comprar en Amazon',
         },
@@ -90,7 +90,7 @@ function Sistemamuscular(props) {
 
 
 
-                <p className='p-sistema-muscular'>En el mundo del fitness, entender los principales grupos musculares es clave para entrenar de forma efectiva. Esta sección no busca profundizar en toda la anatomía humana, sino mostrar de forma visual y sencilla los músculos más relevantes que suelen trabajarse por estética y rendimiento. Conoce qué zonas estás activando en tus rutinas y aprende a identificar los músculos protagonistas de cada movimiento.
+                <p className='p-sistema-muscular'>Entender los principales grupos musculares es clave para entrenar de forma efectiva. Esta sección no busca profundizar en toda la anatomía humana, sino mostrar de forma visual y sencilla los músculos más relevantes que suelen trabajarse por estética y rendimiento. Conoce qué zonas estás activando en tus rutinas y aprende a identificar los músculos protagonistas de cada movimiento.
                 </p>
                 <div className="bloque-disciplina">
 
@@ -98,9 +98,9 @@ function Sistemamuscular(props) {
                 </div>
 
 
-                <p className='p-sistema-muscular'>
-                    En el contexto del fitness y entrenamiento estético, los grupos musculares más trabajados y conocidos (porque visualmente impactan y suelen formar parte de los objetivos físicos más comunes) son los siguientes:
-                </p>
+                {/* <p className='p-sistema-muscular'>
+                    No nos caigamos a rodeos esto no es una guia medica, queremos ver que grupos musculares trabajar en el Gym (porque visualmente impactan y suelen formar parte de los objetivos físicos más comunes), pues a continuacion te lo enseñamos de manera sencilla y son los siguientes:
+                </p> */}
 
                 <div class="trenes">
                     <h3>Tren superior</h3>
@@ -124,9 +124,11 @@ function Sistemamuscular(props) {
                 </div>
 
                 <p class="p-sistema-muscular">
-                    A continuación veamos, de una forma sencilla y visual, las principales regiones musculares del cuerpo. Las imágenes que verás no son representaciones anatómicas exactas ni mucho menos sacadas de un libro de medicina, pero sí son una excelente guía para empezar a ubicar y reconocer los grupos musculares más importantes que solemos entrenar en el gym(sí, esos que todos queremos ver marcados en el espejo). La idea es ayudar a identificar mejor cada zona y que tengamos una base clara al momento de trabajar tu cuerpo. <br />
-                    <strong>¡Así que atentos, que esto es la base para entrenar con cabeza y no solo con ganas!</strong>
+                    Antes de entrar en materia, vamos a ver —de forma simple y visual— las zonas musculares más importantes del cuerpo. No son ilustraciones anatómicas de libro, pero sí te van a servir para ubicar rápido cada grupo muscular que solemos trabajar en el gym.
+                    La idea es que identifiques mejor cada zona y tengas una base clara para entrenar con sentido y no solo “por hacer”.
+                    <strong>Así que vamos al grano, que esto es lo mínimo que todos deberíamos saber antes de entrenar.</strong>
                 </p>
+
 
                 <div class="galeria-muscular">
                     <img src="/img-anatomia/frontal-partes.webp" alt="Grupo muscular: Pectorales" className='imagen-muscular' data-aos="zoom-in" />

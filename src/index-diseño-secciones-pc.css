@@ -24,7 +24,7 @@ p {
 
   /* Contenedor del carrusel */
   .baner {
-    /* background-color: green; */
+    /* background-color: red; */
     width: 96%;
     /* height: 90vh; */
     margin: 3rem auto;
@@ -38,21 +38,27 @@ p {
   /* Slide (crossfade) */
   .banner-item {
     /* background-color: blue; */
+
     position: absolute;
     inset: 0;
     opacity: 0;
     transition: opacity 1s ease-in-out;
+
     display: flex;
-    flex-direction: column; /* imagen arriba, contenido debajo */
+    flex-direction: row-reverse; /* Imagen derecha, texto izquierda */
+
+    justify-content: center; /* 🔥 CENTRA TODO */
     align-items: center;
-    justify-content: flex-start; /* NO centrar vertical para que respete padding inferior */
-    gap: 0.75rem; /* espacio entre imagen y contenido */
-    padding: 2rem 1rem; /* padding-bottom garantiza aire bajo el botón */
-    /* box-sizing: border-box; */
-    text-align: center;
-    /* background: #154c94; tu fondo (cámbialo si usas otro) */
+
+    max-width: 1200px; /* 🔥 ANCHO CONTROLADO */
+    margin: 0 auto; /* 🔥 CENTRAR EN LA PÁGINA */
+
+    gap: 2rem; /* 🔥 SEPARACIÓN ENTRE TEXTO E IMAGEN */
+
+    padding: 3rem 2rem;
+    text-align: left;
+
     z-index: 1;
-    /* min-height: calc(100vh - 120px); */
   }
 
   .banner-item.active {
@@ -63,21 +69,23 @@ p {
   /* Imagen */
   .banner-item img {
     /* background-color: orange; */
-    padding: 0px;
-    max-width: 40%;
-    height: auto; /* evita deformaciones */
-    aspect-ratio: 4 / 3; /* estable; quítalo si no te sirve */
+    width: 32%; /* tamaño ideal para PC */
+    max-width: 380px; /* límite duro para que nunca sea gigante */
+    height: auto; /* mantiene proporción real */
     object-fit: contain;
-    border-radius: 10px;
-    margin: auto;
+    padding: 0; /* elimina espacio fantasma */
+    margin: 0; /* NO auto */
+    aspect-ratio: auto; /* 🔥 elimina proporción forzada */
+    display: block; /* evita espacios fantasmas inline */
   }
 
   /* Contenido (título, párrafo, botón) */
   .banner-content {
+    /* background-color: green; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    /* width: 100%; */
     max-width: 600px;
     padding: 0 0.3rem; /* aire lateral */
     color: #fff;
@@ -86,28 +94,35 @@ p {
 
   .banner-content h2 {
     font-family: "Montserrat", sans-serif;
-    font-size: 3.5rem;
-    margin: 0 0 0.35rem 0;
-
+    font-size: 2.8rem; /* Más equilibrado para desktop */
+    font-weight: 700; /* Título sólido */
+    margin: 0 0 0.75rem 0; /* Espacio perfecto respecto al párrafo */
     line-height: 1.2;
-    color: #050505;
+    color: #1a1a1a; /* Mejor contraste, no tan negro duro */
+    max-width: 420px; /* Evita que la frase se haga demasiado larga */
+    text-align: left; /* Para hacerlo 100% profesional */
   }
 
   .banner-content p {
-    margin: 0 0 0.5rem 0; /* separa del botón */
-    font-size: 1rem;
-    color: #ffffffde;
+    margin: 0.5rem 0 1rem 0;
+    font-size: 1.4rem;
+    line-height: 1.5; /* mejora la lectura */
+    font-weight: 500; /* ligeramente más fuerte */
+    color: #2c2c2c;
+    max-width: 420px; /* evita líneas muy largas */
+    text-align: left; /* más elegante y legible */
   }
 
   /* Botón CTA */
   .btn-banner {
-    display: inline-block;
+    display: none;
+    /* display: inline-block; */
     padding: 0.5rem 1.1rem;
     background-color: #ffd700;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #050505;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 999px;
     transition: background 0.2s ease, transform 0.15s ease,
       box-shadow 0.15s ease;
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
@@ -154,7 +169,7 @@ p {
 
   /* Estilo para los títulos */
   .trenes h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-top: 2rem;
     color: black; /* azul sobrio */
     border-left: 4px solid #ffd700;
@@ -172,7 +187,7 @@ p {
     padding-left: 1rem;
     position: relative;
     line-height: 1.6;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .trenes ul li::before {
@@ -216,7 +231,7 @@ p {
   }
 
   .imagen-muscular {
-    max-width: 800px; /* Ancho máximo en móvil */
+    max-width: 500px; /* Ancho máximo en móvil */
     aspect-ratio: 3/4; /* Proporción de cuerpo humano */
     height: auto;
     object-fit: contain;
