@@ -69,7 +69,7 @@ p {
   /* Imagen */
   .banner-item img {
     /* background-color: orange; */
-    width: 32%; /* tamaño ideal para PC */
+    width: 28%; /* tamaño ideal para PC */
     max-width: 380px; /* límite duro para que nunca sea gigante */
     height: auto; /* mantiene proporción real */
     object-fit: contain;
