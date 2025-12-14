@@ -238,6 +238,7 @@ p {
   .imagen-muscular {
     width: 480px; /* 🔥 ahora sí caben 3 por fila */
     height: auto;
+    aspect-ratio: 3/4;
     object-fit: contain;
     background: white;
     border-radius: 12px;
