@@ -121,24 +121,16 @@ function Disciplinas() {
             Empezemos por los conceptos....
           </h2>
           <p>
-            El Fitness se refiere al estado general de
-            la buena salud fisica, resistencia y bienestar que se alcanza a
-            traves de la actividad fisica regular , una nutricion adecuada y
-            otros habitos saludables. <br /> En el contexto del entrenamiento y el
-            acondicionamiento fisico hablaremos de la calistenia, crossfit, hipertrofia
-            y otras actividades deportivas como
-            disciplinas Fitness ya que cada una de ellas ofrece un enfoque estructurado
-            y organizado para mejorar la condición física, la salud y el
-            bienestar general a través de técnicas específicas de entrenamiento
-            y desarrollo físico.
+            El fitness es simplemente la combinación de buena salud, resistencia y bienestar que logramos a través del movimiento, la nutrición adecuada y buenos habitos que podamos mantener con el tiempo.Es la base de cualquier disciplina, ya sea calistenia, crossfit, hipertrofia o entrenamiento funcional. Cada una trabaja el cuerpo de una manera distinta, pero todas comparten el mismo objetivo: mejorar nuestra salud y rendimiento en el día a día.
           </p>
         </div>
 
         <span style={{
+
           display: 'block',
           height: '1px',
           backgroundColor: 'rgba(60, 60, 60, 0.6)', // Línea blanca sutil
-          margin: '50px 0 50px 0', // Espaciado arriba y abajo
+          margin: '1rem auto', // Espaciado arriba y abajo
         }}></span>
 
         <div className="main-menudisciplinas">
