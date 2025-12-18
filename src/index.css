@@ -942,10 +942,11 @@ html {
 /* //////////////////MENU DE DISCIPLINAS DE EQUIPOOOO  //////////// */
 
 .menu-disciplinas-equipo {
-  background-color: #f0f4f8;
+  /* background-color: #f0f4f8; */
   /* background-color: rebeccapurple; */
   /* Fondo claro del div */
   border-radius: 15px;
+  /* margin: 2rem auto; */
 
   /* Bordes redondeados en las esquinas */
   /* box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.1), */

@@ -258,8 +258,8 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 80%;
-    aspect-ratio: 500px;
+    width: 70%;
+    aspect-ratio: 600px;
   }
 
   .principal .h1-concept .h1-disciplinas {
@@ -298,65 +298,65 @@ p {
   }
 
   .menu-disciplinas-equipo {
-    /* background-color: green; */
     display: flex;
     justify-content: center;
-    width: 100%;
+    align-items: center;
+    margin-top: 2rem;
+    /* background-color: red; */
+    padding: 2rem;
   }
 
-  .menu-disciplinas-equipo ul {
-    /* background-color: red; */
-    width: 1200px; /* ⭐ ANCHO FIJO QUE GARANTIZA 4 COLUMNAS */
-    max-width: 100%;
+  .main-menudisciplinas-acordeon .menu-disciplinas-equipo ul {
+    /* background-color: orange; */
+    width: 65%;
     display: grid;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px; /* ⭐ Separación uniforme en todas direcciones */
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr); /* 3 columnas iguales */
+    gap: 1rem; /* espacio entre celdas */
+    list-style: none; /* quita viñetas */
+    padding: 0; /* quita relleno por defecto */
+    margin: 0;
   }
 
   .menu-disciplinas-equipo ul li {
-    background: white;
-    height: 200px; /* ⭐ Altura fija para uniformidad */
-    border-radius: 12px;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    /* background-color: red; */
+    height: 200px;
+    padding: 0 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* sombra inicial */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
   .menu-disciplinas-equipo ul li:hover {
     transform: translateY(-8px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 12px 24px rgb(0, 0, 0, 0.2);
   }
 
-  .menu-disciplinas-equipo .equipo-icon {
+  .menu-disciplinas-equipo ul li .equipo-icon {
+    /* background-color: green; */
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 1rem;
+  }
+  .menu-disciplinas-equipo ul li .equipo-icon span {
+    display: inline-block;
+    font-size: clamp(1rem, 2vw, 2rem);
+    margin-top: 1.5rem;
+    /* background-color: red; */
   }
 
-  .menu-disciplinas-equipo .equipo-icon img {
-    width: 55%;
-    height: auto;
-  }
-
-  .menu-disciplinas-equipo .equipo-icon span {
+  .menu-disciplinas-equipo ul li .equipo-icon img {
     margin-top: 1rem;
-    font-size: 1.35rem; /* ⭐ Tamaño fijo y legible */
-    font-weight: 600;
+    /* background-color: #e6b800; */
+    width: 50%;
+    height: 50%;
   }
 
   /* *****************************contenedor videos en seccion disciplina*********************** */
 
   /* esta en componente card-calistenia */
   .description-disciplinas .main-calistenia ul li {
-    width: 80%;
+    width: 45%;
   }
 
   .description-disciplinas .main-calistenia ul li .wrap-img-iframe {
@@ -374,31 +374,49 @@ p {
   }
 
   .description-disciplinas .main-calistenia ul li .p-li-ejercicio {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   /* ************************ esta el componente banner-disciplina********** */
 
+  .main-calistenia .h2-infocalistenia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto;
+    padding: 2rem auto;
+  }
+
   .hero-calistenia {
-    width: 50%;
+    width: 40%;
+    margin: 2rem auto;
+    background-color: white;
   }
 
   .hero-calistenia .circle-img {
-    width: 50%;
-    height: 50%;
+    width: 300px;
+    height: 300px;
+  }
+
+  .hero-calistenia .circle-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+    display: block;
   }
 
   .hero-calistenia h1 {
-    font-size: 3.5rem !important;
+    font-size: 3rem !important;
     /* background-color: red; */
   }
 
   .principal .descripcion-calistenia h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .principal .descripcion-calistenia p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     background-color: white;
     width: 100%;
   }
@@ -767,8 +785,13 @@ p {
   }
   .menu-disciplinas-equipo ul {
     /* background-color: red; */
+    width: 65%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    gap: 1rem; /* espacio entre celdas */
+    list-style: none; /* quita viñetas */
+    padding: 0; /* quita relleno por defecto */
+    margin: 0;
   }
 
   .banner-text p {
