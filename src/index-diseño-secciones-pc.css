@@ -308,7 +308,8 @@ p {
 
   .main-menudisciplinas-acordeon .menu-disciplinas-equipo ul {
     /* background-color: orange; */
-    width: 65%;
+    width: 60%;
+    max-height: 500px;
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 3 columnas iguales */
     gap: 1rem; /* espacio entre celdas */
@@ -319,7 +320,7 @@ p {
 
   .menu-disciplinas-equipo ul li {
     /* background-color: red; */
-    height: 200px;
+    height: 150px;
     padding: 0 1rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* sombra inicial */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -341,7 +342,7 @@ p {
   .menu-disciplinas-equipo ul li .equipo-icon span {
     display: inline-block;
     font-size: clamp(1rem, 2vw, 2rem);
-    margin-top: 1.5rem;
+    margin-top: 1.225rem;
     /* background-color: red; */
   }
 
