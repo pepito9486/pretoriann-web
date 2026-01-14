@@ -286,7 +286,8 @@ p {
   }
   .bloque-disciplina {
     background-color: white;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
+    padding: 0;
   }
   .bloque-disciplina h3 {
     font-size: 2rem;
@@ -301,26 +302,25 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
+    margin: 2rem auto;
     /* background-color: red; */
-    padding: 2rem;
   }
 
   .main-menudisciplinas-acordeon .menu-disciplinas-equipo ul {
     /* background-color: orange; */
     width: 60%;
-    max-height: 500px;
+    max-height: 600px;
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 3 columnas iguales */
-    gap: 1rem; /* espacio entre celdas */
+    gap: 0rem 1rem; /* espacio entre celdas */
     list-style: none; /* quita viñetas */
     padding: 0; /* quita relleno por defecto */
-    margin: 0;
+    margin: 1rem auto 5rem auto;
   }
 
   .menu-disciplinas-equipo ul li {
     /* background-color: red; */
-    height: 150px;
+    height: 130px;
     padding: 0 1rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* sombra inicial */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -341,8 +341,8 @@ p {
   }
   .menu-disciplinas-equipo ul li .equipo-icon span {
     display: inline-block;
-    font-size: clamp(1rem, 2vw, 2rem);
-    margin-top: 1.225rem;
+    font-size: 1.225rem;
+    margin-top: 2rem;
     /* background-color: red; */
   }
 
@@ -358,6 +358,7 @@ p {
   /* esta en componente card-calistenia */
   .description-disciplinas .main-calistenia ul li {
     width: 45%;
+    height: 500px;
   }
 
   .description-disciplinas .main-calistenia ul li .wrap-img-iframe {
@@ -375,7 +376,7 @@ p {
   }
 
   .description-disciplinas .main-calistenia ul li .p-li-ejercicio {
-    font-size: 1.5rem;
+    font-size: 1.225rem;
   }
 
   /* ************************ esta el componente banner-disciplina********** */
@@ -390,13 +391,14 @@ p {
 
   .hero-calistenia {
     width: 40%;
+    height: 400px;
     margin: 2rem auto;
     background-color: white;
   }
 
   .hero-calistenia .circle-img {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
   }
 
   .hero-calistenia .circle-img img {
@@ -409,6 +411,7 @@ p {
 
   .hero-calistenia h1 {
     font-size: 3rem !important;
+    margin: 0.8rem auto;
     /* background-color: red; */
   }
 
