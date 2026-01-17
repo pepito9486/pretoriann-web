@@ -341,8 +341,9 @@ p {
   }
   .menu-disciplinas-equipo ul li .equipo-icon span {
     display: inline-block;
-    font-size: 1.225rem;
-    margin-top: 2rem;
+    font-size: 1.125rem;
+    margin-top: 1.5rem;
+
     /* background-color: red; */
   }
 
@@ -357,8 +358,10 @@ p {
 
   /* esta en componente card-calistenia */
   .description-disciplinas .main-calistenia ul li {
+    display: flex;
     width: 45%;
     height: 500px;
+    flex-direction: column;
   }
 
   .description-disciplinas .main-calistenia ul li .wrap-img-iframe {
@@ -428,9 +431,12 @@ p {
   }
 
   .hero-calistenia {
+    display: flex;
+    flex-direction: column;
+
     width: 40%;
-    height: 400px;
-    margin: 2rem auto;
+    height: 350px;
+    margin: auto;
     background-color: white;
   }
 
@@ -447,9 +453,9 @@ p {
     display: block;
   }
 
-  .hero-calistenia h1 {
+  .description-disciplinas .main-calistenia .hero-calistenia h1 {
     font-size: 3rem !important;
-    margin: 0.8rem auto;
+    margin: auto;
     /* background-color: red; */
   }
 
