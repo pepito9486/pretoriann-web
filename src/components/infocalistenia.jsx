@@ -16,107 +16,108 @@ const Infocalistenia = forwardRef((props, ref) => {
             videoid: "https://www.youtube.com/embed/wLGn8XmLeEM?start=490",
             thumbnail: "wLGn8XmLeEM",
             title: "Flexiones (Push-Ups):",
-            description: "Las flexiones son un ejercicio de peso corporal que se centra en el desarrollo de la fuerza del tren superior, especialmente el pecho, los tríceps y los hombros. Se realizan apoyando las manos en el suelo a la altura del pecho y extendiendo las piernas hacia atrás, manteniendo el cuerpo en una línea recta. Desde esta posición, se flexionan los codos para bajar el pecho hacia el suelo y luego se extienden los brazos para volver a la posición inicial."
+            description: "Ejercicio básico para ganar fuerza y control. Trabaja principalmente pectorales, tríceps y deltoides anterior, con una gran activación del core (abdomen y zona lumbar) para mantener el cuerpo alineado. Perfectas para mejorar la estabilidad del hombro y la resistencia muscular sin necesidad de material."
         },
         {
             id: 2,
             videoid: "https://www.youtube.com/embed/514akP5ueQk",
             thumbnail: "514akP5ueQk",
             title: "Dominadas (Pull-Ups):",
-            description: "Las dominadas son un ejercicio que se realiza colgándose de una barra fija con las palmas de las manos mirando hacia adelante (agarre prono) o hacia atrás (agarre supino). Desde esta posición, se tira del cuerpo hacia arriba hasta que la barbilla pase por encima de la barra, trabajando principalmente la espalda, los bíceps y los músculos del core."
+            description: "Ejercicio clave para desarrollar una espalda fuerte y ancha. Trabaja dorsales, romboides y trapecio, además de bíceps y antebrazos por el agarre. El core se activa para evitar el balanceo y mantener el cuerpo estable. Ideal para fuerza de tracción y control corporal."
         },
         {
             id: 3,
             videoid: "https://www.youtube.com/embed/BjixzWEw4EY?start=200",
             thumbnail: "BjixzWEw4EY",
             title: "Sentadillas (Squats):",
-            description: "Las sentadillas son un ejercicio fundamental para fortalecer las piernas, incluyendo los cuádriceps, los isquiotibiales y los glúteos. Se realizan con los pies separados a la altura de los hombros y las manos extendidas al frente o detrás de la cabeza. Desde esta posición, se flexionan las rodillas y las caderas, bajando los glúteos hacia el suelo como si se fuera a sentar, y luego se vuelve a la posición de pie."
+            description: "Uno de los mejores ejercicios para construir piernas y glúteos. Trabaja cuádriceps, glúteo mayor e isquiotibiales, con apoyo de abdomen y zona lumbar para estabilizar el tronco. Mejora fuerza, movilidad de cadera/rodilla y potencia, siendo base para saltos y rendimiento general."
         },
         {
             id: 4,
             videoid: "https://www.youtube.com/embed/fmHg90mpviA",
             thumbnail: "fmHg90mpviA",
             title: "Fondos en Paralelas (Dips):",
-            description: "Los fondos en paralelas son un ejercicio que se realiza utilizando barras paralelas, y se enfoca en fortalecer los músculos del pecho, los tríceps y los hombros."
+            description: "Ejercicio potente para empuje y masa en el tren superior. Trabaja tríceps como protagonista, junto a pectoral inferior y deltoides anterior. También exige estabilización de escápulas y core para controlar la bajada y la subida. Muy efectivo para fuerza y definición de brazos."
         },
         {
             id: 5,
             videoid: "https://www.youtube.com/embed/Yec1nAMGRqU",
             thumbnail: "Yec1nAMGRqU",
             title: "Abdominales (Crunches):",
-            description: "Los crunches son un ejercicio abdominal diseñado para fortalecer los músculos del recto abdominal. Se realizan acostado sobre la espalda con las rodillas flexionadas y los pies apoyados en el suelo. Desde esta posición, se levantan los hombros y la parte superior de la espalda hacia las rodillas, utilizando los músculos abdominales."
+            description: "Ejercicio directo para fortalecer el abdomen, sobre todo el recto abdominal. También participa el transverso al estabilizar y mantener tensión. Sirve para mejorar la resistencia del core y el control del tronco, siempre cuidando la técnica: elevar el torso sin tirar del cuello y controlando la bajada."
         },
         {
             id: 6,
             videoid: "https://www.youtube.com/embed/SEdzWP82C6c",
             thumbnail: "SEdzWP82C6c",
             title: "Muscle-Up:",
-            description: "Una combinación de dominada y fondo en barra fija, donde se pasa de la posición de colgado a una posición de empuje sobre la barra."
+            description: "Movimiento avanzado que combina tracción y empuje en un solo gesto. Trabaja dorsales, bíceps y antebrazos al subir, y tríceps, pecho y hombros al finalizar arriba. El core es clave para la transición y el control del balanceo. Ideal para potencia, coordinación y dominio corporal."
         },
         {
             id: 7,
             videoid: "https://www.youtube.com/embed/bDUq1YfdsBU",
             thumbnail: "bDUq1YfdsBU",
             title: "Planche:",
-            description: "Un ejercicio en el que se sostiene el cuerpo paralelo al suelo solo con las manos, sin que los pies toquen el suelo. Requiere mucha fuerza en los hombros, brazos y core."
+            description: "Isométrico avanzado que desarrolla fuerza brutal de empuje y estabilidad. Trabaja hombros (deltoides anterior), pectoral, tríceps y serrato anterior, con una activación intensa de abdomen y glúteos para mantener el cuerpo rígido. Mejora control corporal y fuerza de muñecas y escápulas."
         },
         {
             id: 8,
             videoid: "https://www.youtube.com/embed/i0W5ASFDbkI",
             thumbnail: "i0W5ASFDbkI",
             title: "Front Lever:",
-            description: "El cuerpo se sostiene horizontalmente con la espalda hacia el suelo, colgado de una barra fija. Es un gran desafío para la fuerza del core y la espalda."
+            description: "Isométrico de tracción que fortalece la espalda y el core como pocos. Trabaja dorsales, romboides y trapecio, además de bíceps y antebrazos por el agarre. El abdomen y la zona lumbar mantienen el cuerpo en línea para sostener la palanca. Perfecto para control y fuerza funcional."
         },
         {
             id: 9,
             videoid: "https://www.youtube.com/embed/_COSTGc-qf8",
             thumbnail: "_COSTGc-qf8",
             title: "Back Lever:",
-            description: "Similar al front lever, pero el cuerpo se mantiene horizontal con el pecho hacia el suelo. Es un ejercicio avanzado para la espalda, los hombros y el core."
+            description: "Isométrico avanzado que exige mucha estabilidad de hombros y core. Trabaja hombros, dorsal ancho y músculos escapulares, además de bíceps y antebrazos por la sujeción. El abdomen y glúteos se activan para mantener la postura horizontal. Muy útil para control corporal y fuerza articular."
         },
         {
             id: 10,
             videoid: "https://www.youtube.com/embed/Qw_pffgAeW4",
             thumbnail: "Qw_pffgAeW4",
             title: "Human Flag:",
-            description: "Un ejercicio en el que el cuerpo se sostiene en posición horizontal agarrando un poste o una barra vertical con las manos. Requiere una combinación de fuerza, estabilidad y control."
+            description: "Ejercicio icónico de fuerza lateral y estabilidad total. Trabaja oblicuos y core en máxima tensión, junto a dorsales, hombros y serrato para sostener el cuerpo. Los brazos y antebrazos aportan fuerza de agarre y control. Excelente para estabilidad, coordinación y dominio corporal avanzado."
         },
         {
             id: 11,
             videoid: "https://www.youtube.com/embed/hdx8-jKMOZ8",
             thumbnail: "hdx8-jKMOZ8",
             title: "Pistol Squat (Sentadilla a una pierna):",
-            description: "Una sentadilla profunda realizada con una sola pierna, manteniendo la otra pierna extendida hacia adelante. Desarrolla fuerza en las piernas y mejora el equilibrio."
+            description: "Sentadilla unilateral que mejora fuerza, equilibrio y movilidad. Trabaja cuádriceps y glúteo a alta intensidad, con apoyo de isquiotibiales y pantorrilla para estabilizar. El core mantiene el tronco firme y evita compensaciones. Muy útil para corregir desbalances y ganar control en piernas."
         },
         {
             id: 12,
             videoid: "https://www.youtube.com/embed/yTUDQKmJOKw",
             thumbnail: "yTUDQKmJOKw",
             title: "One-Arm Pull-Up:",
-            description: "Una dominada realizada con un solo brazo. Es un ejercicio muy avanzado que requiere una gran fuerza en el brazo y el core."
+            description: "Dominada a un brazo: máxima fuerza de tracción. Trabaja dorsales y bíceps con una demanda enorme, además de antebrazo y agarre. El core y los oblicuos se activan para evitar rotaciones y mantener el cuerpo estable. Ejercicio avanzado ideal para fuerza pura y control total del cuerpo."
         },
         {
             id: 13,
             videoid: "https://www.youtube.com/embed/i0D9XCh_BiA",
             thumbnail: "i0D9XCh_BiA",
             title: "One-Arm Push-Up:",
-            description: "Una flexión de brazos realizada con un solo brazo. Fortalece el pecho, el tríceps y los músculos estabilizadores del core."
+            description: "Flexión a un brazo que desarrolla fuerza y estabilidad de empuje. Trabaja pectoral, tríceps y hombro, mientras el core (especialmente oblicuos) evita que el torso gire. Mejora control corporal, coordinación y fuerza unilateral. Recomendable progresar con variantes antes de intentar la completa."
         },
         {
             id: 14,
             videoid: "https://www.youtube.com/embed/9iMXZA92Ud0",
             thumbnail: "9iMXZA92Ud0",
             title: "Handstand Push-Up (Flexión en pino):",
-            description: "Una flexión realizada mientras se sostiene un pino (handstand). Desarrolla fuerza en los hombros y los brazos, así como equilibrio."
+            description: "Ejercicio avanzado para hombros y empuje vertical. Trabaja deltoides, tríceps y parte superior del pecho, con fuerte participación del core para mantener el equilibrio en el pino. También exige estabilidad de muñecas y control escapular. Ideal para ganar fuerza, potencia y control en vertical."
         },
         {
             id: 15,
             videoid: "https://www.youtube.com/embed/_9TtEekVvDI",
             thumbnail: "_9TtEekVvDI",
             title: "L-Sit:",
-            description: "Sentado en el aire, con las piernas extendidas hacia adelante formando una 'L', sosteniéndose solo con las manos sobre el suelo o barras paralelas. Fortalece el core y los flexores de la cadera."
+            description: "Isométrico excelente para core y control corporal. Trabaja recto abdominal, transverso y oblicuos, además de flexores de cadera. También participan tríceps y hombros al sostener el peso del cuerpo. Mejora estabilidad, fuerza de abdomen y resistencia, y es una base útil para movimientos más avanzados."
         }
     ];
+
 
     return (
         <div className='main-calistenia' ref={ref}>

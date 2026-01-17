@@ -13,21 +13,28 @@ const VideoCard = ({ videoid, title, description, thumbnail, isActive, onActivat
                         title={title}
                     />
                 ) : (
-                    <img
-                        className="img-card-disciplina"
-                        src={`https://img.youtube.com/vi/${thumbnail}/hqdefault.jpg`}
-                        alt="Previsualización del video"
-                        loading="lazy"
-                    />
+                    <div className="thumbnail-container" onClick={onActivate}>
+                        <img
+                            className="img-card-disciplina"
+                            src={`https://img.youtube.com/vi/${thumbnail}/hqdefault.jpg`}
+                            alt={title}
+                        />
+                        <div className="play-overlay">
+                            <i className="fa-solid fa-circle-play"></i>
+                        </div>
+
+
+                    </div>
+
                 )}
             </div>
 
-            {!isActive && (
+            {/* {!isActive && (
                 <div className="vervideo-play" onClick={onActivate}>
                     <i className="fa-solid fa-circle-play"></i>
                     <strong>Ver Video</strong>
                 </div>
-            )}
+            )} */}
 
             <p className="p-li-ejercicio">{description}</p>
 

@@ -365,7 +365,7 @@ p {
     position: relative;
     width: 60%;
     aspect-ratio: 16/9;
-    background-color: #e01919;
+    /* background-color: #e01919; */
     display: flex;
     margin: 1rem auto;
     justify-content: center;
@@ -375,8 +375,46 @@ p {
     border-top-right-radius: 16px;
   }
 
+  /* Contenedor de miniatura: debe tener tamaño y ser el “padre” del overlay */
+  .thumbnail-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  /* La imagen debe ocupar todo el contenedor */
+  .img-card-disciplina {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* Overlay: centrado sobre la imagen */
+  .play-overlay {
+    position: absolute;
+    inset: 0; /* atajo a left:0, top:0 etc..*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.25);
+    opacity: 1;
+    transition: opacity 0.2s ease;
+    pointer-events: none; /* NO bloquea el click */
+  }
+
+  /* Mostrar al pasar el mouse */
+  /* .thumbnail-container:hover .play-overlay {
+    opacity: 1;
+  } */
+
+  /* *************************************************** */
+
   .description-disciplinas .main-calistenia ul li .p-li-ejercicio {
-    font-size: 1.225rem;
+    font-size: 1.125rem;
   }
 
   /* ************************ esta el componente banner-disciplina********** */
