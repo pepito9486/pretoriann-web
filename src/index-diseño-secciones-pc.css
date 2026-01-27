@@ -613,28 +613,28 @@ p {
 
   .nutricion-principal .title-nutricion {
     width: 75%;
-    height: clamp(250px, 40vw, 900px);
-    font-size: 3rem;
+    height: clamp(220px, 22vw, 560px);
+    font-size: 2rem;
     display: flex;
     justify-content: center; /* centra horizontal */
     align-items: center; /* centra vertical */
   }
 
   .nutricion-principal p {
-    font-size: 2rem;
-    width: 75%;
+    font-size: 1.5rem;
+    width: 70%;
     margin: auto;
   }
 
   .nutricion-principal h2 {
     margin: 3rem auto;
-    font-size: 2.5rem;
+    font-size: 2rem;
     display: flex;
     justify-content: center;
   }
 
   .foto-nutrientes {
-    width: 75%;
+    width: 65%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -643,9 +643,9 @@ p {
   }
 
   .acordeon {
-    width: 75%;
+    width: 65%;
     margin: 3rem auto 10px auto;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
     gap: 10px;
     /* background-color: red; */
@@ -657,16 +657,16 @@ p {
     justify-content: center;
     margin-bottom: 1rem;
     /* background-color: red; */
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 2rem auto;
   }
   /* estos son imagenes banner */
   .h2-aminoacidos,
   .h2-creatina,
   .h2-proteina {
-    width: 75%;
-    height: clamp(250px, 40vw, 900px);
-    font-size: 3rem;
+    width: 70%;
+    height: clamp(220px, 22vw, 560px);
+    font-size: 2rem;
     display: flex;
     justify-content: center; /* centra horizontal */
     align-items: center; /* centra vertical */
