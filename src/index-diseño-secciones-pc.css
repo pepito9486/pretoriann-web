@@ -592,7 +592,8 @@ p {
     font-weight: 500;
   }
 
-  .informacion-ul ul li {
+  .informacion-ul ul li,
+  p {
     font-size: 1.5rem;
   }
 

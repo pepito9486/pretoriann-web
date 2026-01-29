@@ -340,15 +340,15 @@ const Carousel = () => {
         setActiveExerciseIndex((prevIndex) => (prevIndex - 1 + totalExercises) % totalExercises);
     };
     // desactivar el click derecho
-    useEffect(() => {
-        const handleContextMenu = (event) => {
-            event.preventDefault();
-        };
-        document.addEventListener('contextmenu', handleContextMenu);
-        return () => {
-            document.removeEventListener('contextmenu', handleContextMenu);
-        };
-    }, []);
+    // useEffect(() => {
+    //     const handleContextMenu = (event) => {
+    //         event.preventDefault();
+    //     };
+    //     document.addEventListener('contextmenu', handleContextMenu);
+    //     return () => {
+    //         document.removeEventListener('contextmenu', handleContextMenu);
+    //     };
+    // }, []);
 
     // Auto-play: Cambia de ejercicio cada 5 segundos
     // useEffect(() => {
