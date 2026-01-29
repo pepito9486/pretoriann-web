@@ -575,14 +575,25 @@ p {
   /* ************************seguimos con las secciones entrenamiento.jsx ******************/
 
   .principal-entrenamiento .h1-concept-entrenamiento {
-    width: 75%;
-    height: clamp(250px, 45vw, 900px);
+    width: 65%;
+    height: clamp(220px, 22vw, 576px);
     margin-bottom: 2rem;
+    font-size: 2rem;
   }
 
   .principal-entrenamiento .h1-concept-entrenamiento2 {
-    width: 75%;
-    height: clamp(250px, 45vw, 900px);
+    width: 65%;
+    height: clamp(220px, 22vw, 576px);
+    font-size: 2.4rem;
+  }
+
+  .lista-acordeon .h2-entrenamiento {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .informacion-ul ul li {
+    font-size: 1.5rem;
   }
 
   /* *****************************    carousel.jsx de rutinas semanales card ********************/
