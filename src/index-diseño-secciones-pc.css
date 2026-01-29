@@ -633,6 +633,11 @@ p {
     justify-content: center;
   }
 
+  h3 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
   .foto-nutrientes {
     width: 65%;
     margin: auto;
@@ -678,6 +683,7 @@ p {
     margin-bottom: 1rem;
     /* background-color: red; */
     font-size: 2rem;
+    font-weight: 500;
     margin: auto;
   }
 
