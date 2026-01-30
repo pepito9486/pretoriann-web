@@ -504,74 +504,6 @@ p {
     font-size: 2rem !important;
   }
 
-  /* ************************estilos en el recuadro de los ejercicios de infohipertrofia.jsx del carousel-hipertrofia.jsx */
-
-  .hijo-carrusel-hiper {
-    /* background-color: #333; */
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    gap: 1rem;
-    padding: 0.5rem;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-
-  .descripcion-ejercicio-hiper h3 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-  }
-  /* Lista de definiciones */
-  .definicion-hiper {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 0.5rem 1rem;
-    align-items: center;
-    font-size: 1em;
-  }
-
-  .definicion-hiper dt {
-    display: flex;
-    align-items: center;
-    font-size: 2rem;
-  }
-
-  .definicion-hiper dt img {
-    margin-right: 0.3rem;
-    width: 2.5rem;
-    height: 2.5rem;
-  }
-
-  .definicion-hiper dd {
-    margin: 0;
-    font-size: 2rem;
-  }
-
-  .nav-button {
-    color: black;
-    font-size: 2rem;
-  }
-
-  .container3-dias-hiper h2 {
-    font-size: 2.5rem;
-  }
-  /* Botones rectangulares para días */
-  .btn-dias-hiper ul {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .btn-dias-hiper ul li {
-    font-size: 2rem;
-    padding: 0.5rem;
-  }
-
   /* ************************seguimos con las secciones entrenamiento.jsx ******************/
 
   .principal-entrenamiento .h1-concept-entrenamiento {
@@ -597,28 +529,68 @@ p {
     font-size: 1.5rem;
   }
 
-  /* *****************************    carousel.jsx de rutinas semanales card ********************/
+  /* ************************estilos en el recuadro de los ejercicios de infohipertrofia.jsx del carousel-hipertrofia.jsx */
 
-  .descripcion-ejercicio h3 {
-    font-size: 2.5rem;
-  }
-
-  .definicion dt img {
-    width: 50px;
-    height: 50px;
-  }
-  .definicion dt,
-  dd {
-    font-size: 2rem;
-  }
-  .principal-entrenamiento section h2 {
-    font-size: 2.5rem;
+  .hijo-carrusel-hiper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 14px;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
   }
 
-  .btn-dias ul li {
-    width: 60px;
-    height: 60px;
-    font-size: 2rem;
+  .descripcion-ejercicio-hiper h3 {
+    font-size: 1.6rem; /* antes 2.5rem (muy grande en PC) */
+    margin-bottom: 0.5rem;
+  }
+
+  .definicion-hiper {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px 14px;
+    align-items: center;
+  }
+
+  .definicion-hiper dt,
+  .definicion-hiper dd {
+    font-size: 1.25rem; /* antes 2rem */
+    margin: 0;
+  }
+
+  .definicion-hiper dt {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .definicion-hiper dt img {
+    width: 34px; /* antes 2.5rem */
+    height: 34px;
+  }
+
+  .nav-button {
+    font-size: 1.2rem; /* antes 2rem */
+  }
+
+  .container3-dias-hiper h2 {
+    font-size: 1.6rem; /* antes 2.5rem */
+  }
+
+  .btn-dias-hiper ul {
+    display: flex; /* en PC mejor fila */
+    justify-content: center;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .btn-dias-hiper ul li {
+    font-size: 1.2rem; /* antes 2rem */
+    padding: 10px 14px;
   }
 
   /* ********************************NUTRICION.JSX****************************** */
