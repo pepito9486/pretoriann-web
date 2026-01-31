@@ -669,29 +669,29 @@ p {
 
   /* *************************calculadora****************************** */
   .main-calisteniatrain .title-calculadora {
-    width: 75%;
-    height: clamp(250px, 30vw, 700px);
+    width: 65%;
+    height: clamp(20px, 22vw, 560px);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .main-calisteniatrain p {
-    font-size: 2rem;
-    width: 75%;
+    font-size: 1.4rem;
+    width: 65%;
     margin: auto;
   }
   .title2-calculadora {
-    font-size: 2.5rem;
-    width: 75%;
-    margin: 3rem auto;
+    font-size: 2rem;
+    width: 65%;
+    margin: 2.5rem auto;
     /* background-color: #e01919; */
   }
 
   .acordeon-calculadora {
-    font-size: 2.5rem;
-    width: 75%;
+    font-size: 1.5rem;
+    width: 65%;
     margin: 0.75rem auto;
   }
 
@@ -702,25 +702,25 @@ p {
 
   .acordeon-calculadora h3,
   h4 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: auto;
   }
 
   .acordeon-calculadora .formularios h3,
   h4 {
-    font-size: 2rem;
-    width: 75%;
+    font-size: 1.5rem;
+    width: 65%;
     margin: 1rem auto;
   }
 
   /* *********************************ESTILOS DE EL FORMULARIO DE CALCULADORA**************** */
   .calculo {
-    margin: 3em auto;
-    width: 75%;
+    margin: 2em auto;
+    width: 65%;
   }
 
   .calculo form {
-    width: 75%;
+    width: 65%;
   }
 
   /* ***************************  calculadora.jsx principal formulario***************************** */
@@ -729,19 +729,19 @@ p {
     justify-content: center;
     align-items: center;
     margin: 2em auto;
-    width: 70%;
+    width: 65%;
     padding: 1em;
     background-color: #9b9999;
   }
 
   .calculoss .input1,
   .select1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .calculo label {
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 1.5rem;
+    /* font-weight: bold; */
     /* color: #333; */
     color: white;
   }
@@ -750,7 +750,7 @@ p {
   .calculo select {
     width: 100%;
     padding: 10px 14px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #fff;
@@ -770,7 +770,7 @@ p {
 
   .botones-calculadora button {
     padding: 10px 20px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: black;
     background-color: #ffd700;
@@ -789,11 +789,11 @@ p {
   }
 
   .resultados {
-    width: 75%;
+    width: 65%;
     margin: auto;
   }
   .resultados h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   /* ****************************     DIETAS   ***************************************************** */
