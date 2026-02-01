@@ -111,7 +111,7 @@ const Dietas = () => {
           </p>
           <h3>Dieta Hipocalorica</h3>
           <p>
-            <i style={{ fontWeight: "bold" }}>Definicion:</i> Es aquella dieta
+            <em style={{ fontWeight: "bold" }}>Definicion:</em> Es aquella dieta
             en la que la ingesta calórica es menor que las necesidades
             energéticas del cuerpo, o lo que es lo mismo llegar a un deficit
             calorico.

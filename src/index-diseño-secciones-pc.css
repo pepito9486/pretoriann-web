@@ -837,22 +837,31 @@ p {
   .nutricion-principal p {
     width: 65%;
     font-size: 1.5rem;
+    margin: 0.5rem auto;
   }
 
   .nutricion-principal .acordeon h3 {
     width: 65%;
+    margin: 0.5rem auto;
+    font-size: 1.5;
+    font-weight: 600;
   }
   .macros h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 1.5rem auto;
-    width: 75%;
+    width: 65%;
     margin: auto;
   }
 
   .h2-planalimenticio {
-    width: 75%;
+    width: 65%;
     margin: auto;
-    height: clamp(250px, 30vw, 700px);
+    height: clamp(220px, 22vw, 576px);
+  }
+
+  .card-planalimenticio {
+    width: 65%;
+    margin: auto;
   }
 
   /* *********************************        EQUIPOS   ********************************** */
