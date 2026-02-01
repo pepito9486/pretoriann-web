@@ -834,10 +834,19 @@ p {
 
   /* ****************************     DIETAS   ***************************************************** */
 
+  .nutricion-principal p {
+    width: 65%;
+    font-size: 1.5rem;
+  }
+
+  .nutricion-principal .acordeon h3 {
+    width: 65%;
+  }
   .macros h3 {
     font-size: 2rem;
     margin: 1.5rem auto;
     width: 75%;
+    margin: auto;
   }
 
   .h2-planalimenticio {
@@ -874,7 +883,7 @@ p {
     margin: 2rem auto;
   }
 
-  /* GALERIA DE CADA EQUIPO+++++++++++++++++++ */
+  /****************************** GALERIA DE CADA EQUIPO+++++++++++++++++++ */
   .banner {
     width: 75%;
     margin: 2.5rem auto;
