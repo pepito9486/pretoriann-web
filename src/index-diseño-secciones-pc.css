@@ -840,17 +840,41 @@ p {
     margin: 0.5rem auto;
   }
 
+  .nutricion-principal .acordeon {
+    margin: 2rem auto;
+  }
+
   .nutricion-principal .acordeon h3 {
     width: 65%;
-    margin: 0.5rem auto;
+    white-space: nowrap;
+
     font-size: 1.5;
     font-weight: 600;
+  }
+
+  .nutricion-principal h2 {
+    border-radius: 1rem;
+  }
+
+  .nutricion-principal p {
+    width: 65%;
   }
   .macros h3 {
     font-size: 1.5rem;
     margin: 1.5rem auto;
     width: 65%;
     margin: auto;
+  }
+
+  .macros p {
+    margin: 0.5rem auto;
+    width: 65%;
+  }
+
+  .macros i {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 500;
   }
 
   .h2-planalimenticio {

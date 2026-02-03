@@ -104,10 +104,7 @@ const Dietas = () => {
         <div className='macros'
           style={{ maxHeight: activeIndex === 1 ? "800px" : "0" }}>
           <p>
-            Este tipo de dietas se basan en el consumo de alimentos teniendo en
-            cuenta la la cantidad de calorias que cada uno de estos aportan al
-            final del dia, existen 3 tipos. la hipocalorica, la hipercalorica y
-            la normacalorica,
+            Estas dietas se basan en ajustar las calorías que consumes al día en relación con las calorías que tu cuerpo gasta. Existen tres tipos: hipocalórica (menos calorías de las que gastas), normocalórica (calorías similares a las que gastas) e hipercalórica (más calorías de las que gastas).
           </p>
           <h3>Dieta Hipocalorica</h3>
           <p>
