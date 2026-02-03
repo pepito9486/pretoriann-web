@@ -848,7 +848,7 @@ p {
     width: 65%;
     white-space: nowrap;
 
-    font-size: 1.5;
+    font-size: 1.5rem;
     font-weight: 600;
   }
 
@@ -860,7 +860,7 @@ p {
     width: 65%;
   }
   .macros h3 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     margin: 1.5rem auto;
     width: 65%;
     margin: auto;
@@ -874,7 +874,8 @@ p {
   .macros i {
     font-size: 1.5rem;
     font-style: italic;
-    font-weight: 500;
+    font-weight: normal;
+    text-decoration: underline;
   }
 
   .h2-planalimenticio {
