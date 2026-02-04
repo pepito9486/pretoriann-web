@@ -886,15 +886,38 @@ p {
 
   .card-planalimenticio {
     width: 65%;
-    margin: auto;
+    margin: 1rem auto;
   }
 
   /* *********************************        EQUIPOS   ********************************** */
 
   .banner-h1-principal {
-    width: 75%;
+    width: 65%;
     margin: auto;
-    font-size: 3rem;
+    font-size: 2.5rem;
+  }
+
+  .banner-text h1 {
+    font-size: 2rem;
+  }
+
+  .banner-text p {
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .main-menudisciplinas .p-principal-equipos {
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+    width: 65%;
+    margin: 2rem auto;
+  }
+
+  .titulo-galeria-equipos {
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+    width: 65%;
+    margin: auto;
   }
   .menu-disciplinas-equipo ul {
     /* background-color: red; */
@@ -907,19 +930,9 @@ p {
     margin: 0;
   }
 
-  .banner-text p {
-    font-size: 2rem;
-  }
-
-  .main-menudisciplinas .p-principal-equipos {
-    font-size: 2rem;
-    width: 75%;
-    margin: 2rem auto;
-  }
-
   /****************************** GALERIA DE CADA EQUIPO+++++++++++++++++++ */
   .banner {
-    width: 75%;
+    width: 65%;
     margin: 2.5rem auto;
   }
   .banner .banner-content {
@@ -927,7 +940,7 @@ p {
   }
 
   .banner h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .banner img {
@@ -936,7 +949,7 @@ p {
 
   .titulo-galeria-equipos {
     font-size: 3rem; /* Un poco más pequeño para móviles */
-    width: 75%;
+    width: 65%;
     margin: auto;
   }
 
@@ -961,8 +974,9 @@ p {
 
   .main-equipo {
     /* background-color: red; */
-    width: 75%;
+    width: 65%;
     margin: 2.5rem auto;
+    columns: 3;
   }
 
   .card img {
@@ -971,7 +985,7 @@ p {
   }
 
   .card h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .badge-recomendado {
@@ -988,10 +1002,10 @@ p {
   }
 
   .card .btn-vermas {
-    width: 40%;
+    width: 50%;
     height: auto;
-    font-size: 1.8rem;
-    padding: 0.7rem;
+    font-size: 1.2rem;
+    padding: 0.5rem;
   }
 
   /* overlay de equipos */
