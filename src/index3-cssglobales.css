@@ -45,37 +45,44 @@
 
 /* footer para pc */
 
-/* footer para pc (compacto) */
 @media (min-width: 1024px) {
   .footer {
-    font-size: 1.1rem; /* antes 2rem → era gigante */
-    min-height: auto; /* ❌ quita el 40vh que lo hacía enorme */
-    padding: 1.5rem 1rem; /* reduce el alto real del footer */
+    padding: 2.5rem 1rem; /* menos alto, más compacto */
+    font-size: 1rem; /* evita textos gigantes */
   }
 
   .footer-container {
-    max-width: 800px; /* un poco más ancho en PC */
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr; /* logo + links + legales */
+    gap: 2rem;
+    align-items: start;
+    text-align: left; /* más profesional en desktop */
   }
 
   .footer-logo {
-    font-size: 1.4rem;
-    margin-bottom: 0.6rem;
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
   }
 
   .footer-links {
-    margin: 0 0 1rem; /* menos aire vertical */
+    margin: 0;
   }
 
   .footer-links li {
-    margin: 0.25rem 0; /* compacta filas */
+    margin: 0.35rem 0; /* menos espacio vertical */
   }
 
-  .footer-links li a {
-    font-size: 1.1rem; /* antes 1.5rem → demasiado grande */
+  .footer-links a {
+    font-size: 1rem;
+    color: #ddd; /* más contraste */
   }
 
   .footer-copy {
+    grid-column: 1 / -1; /* copyright abajo centrado */
+    text-align: center;
+    margin-top: 1.5rem;
     font-size: 0.9rem;
-    margin-top: 0.5rem;
+    color: #aaa;
   }
 }
