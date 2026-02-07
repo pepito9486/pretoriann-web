@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer-container">
-                <p className="footer-logo">FitZone</p>
+                <p className="footer-logo">Pretoriann</p>
 
                 <ul className="footer-links">
                     <li><a href="/blog">Blog</a></li>
@@ -21,7 +21,7 @@ const Footer = () => {
                 </ul>
 
                 <p className="footer-copy">
-                    &copy; {new Date().getFullYear()} FitZone. Todos los derechos reservados.
+                    &copy; {new Date().getFullYear()} Pretoriann. Todos los derechos reservados.
                 </p>
             </div>
         </footer>
