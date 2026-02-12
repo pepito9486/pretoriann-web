@@ -223,7 +223,7 @@ const Calculadora = () => {
 
       <Helmet>
         {/* 🔹 SEO General */}
-        <title>Calculadora Fitness | Tu Sitio Fitness</title>
+        <title>Calculadora Fitness | Pretoriann</title>
         <meta
           name="description"
           content="Calcula tu gasto calórico diario, tus macronutrientes y el equilibrio perfecto entre proteínas, grasas y carbohidratos según tu objetivo: volumen, definición o mantenimiento."
@@ -232,19 +232,28 @@ const Calculadora = () => {
           name="keywords"
           content="calculadora fitness, gasto calórico, macronutrientes, calorías diarias, proteínas, grasas, carbohidratos, déficit calórico, superávit calórico, mantenimiento"
         />
-        <meta name="author" content="Tu Sitio Fitness" />
+        <meta name="author" content="Pretoriann" />
 
         {/* 🔹 Open Graph (para redes sociales) */}
-        <meta property="og:title" content="Calculadora de Calorías y Macronutrientes | Tu Sitio Fitness" />
-        <meta property="og:description" content="Usa nuestra calculadora fitness para conocer tu gasto calórico diario y ajustar tu alimentación a tu meta: volumen, definición o mantenimiento." />
+        <meta property="og:title" content="Calculadora de Calorías y Macronutrientes | Pretoriann" />
+        <meta
+          property="og:description"
+          content="Usa la calculadora fitness de Pretoriann para conocer tu gasto calórico diario y ajustar tu alimentación a tu meta: volumen, definición o mantenimiento."
+        />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://tusitiofitness.com/calculadora" />
-        <meta property="og:image" content="https://tusitiofitness.com/img-banner-principal/calculadora-banner.webp" />
+        <meta property="og:url" content="https://www.pretoriann.com/calculadora" />
+        <meta
+          property="og:image"
+          content="https://www.pretoriann.com/img-banner-principal/calculadora-banner.webp"
+        />
         <meta property="og:locale" content="es_ES" />
 
         {/* 🔹 SEO técnico */}
-        <link rel="canonical" href="https://tusitiofitness.com/calculadora" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.pretoriann.com/calculadora" />
       </Helmet>
+
+
 
 
       {/* colores={coloresCalculadora} */}

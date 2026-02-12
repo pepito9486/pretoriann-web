@@ -35,28 +35,37 @@ const Nutricion = () => {
     <>
       <Helmet>
         {/* 🔹 SEO General */}
-        <title>Nutrición y Alimentación Fitness | Tu Sitio Fitness</title>
+        <title>Nutrición y Alimentación Fitness | Pretoriann</title>
         <meta
           name="description"
-          content="Aprende a estructurar tu alimentación según tus objetivos: perder grasa, ganar masa muscular o mantenerte en forma. Guías, consejos y cálculos nutricionales adaptados a ti."
+          content="Aprende a estructurar tu alimentación según tus objetivos: perder grasa, ganar masa muscular o mantenerte en forma. Guías, consejos y cálculos nutricionales adaptados a ti en Pretoriann."
         />
         <meta
           name="keywords"
           content="nutrición fitness, alimentación saludable, dieta equilibrada, macronutrientes, proteínas, grasas saludables, carbohidratos, recetas fitness, nutrición deportiva, salud y bienestar"
         />
-        <meta name="author" content="Tu Sitio Fitness" />
+        <meta name="author" content="Pretoriann" />
 
         {/* 🔹 Open Graph para redes sociales */}
-        <meta property="og:title" content="Nutrición y Alimentación Fitness | Tu Sitio Fitness" />
-        <meta property="og:description" content="Descubre cómo mejorar tu rendimiento y bienestar con una alimentación balanceada. Calcula tus macros y conoce los alimentos más recomendados." />
+        <meta property="og:title" content="Nutrición y Alimentación Fitness | Pretoriann" />
+        <meta
+          property="og:description"
+          content="Descubre cómo mejorar tu rendimiento y bienestar con una alimentación balanceada en Pretoriann. Calcula tus macros y conoce los alimentos más recomendados."
+        />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://tusitiofitness.com/nutricion" />
-        <meta property="og:image" content="https://tusitiofitness.com/img-banner-principal/nutricion-banner.webp" />
+        <meta property="og:url" content="https://www.pretoriann.com/nutricion" />
+        <meta
+          property="og:image"
+          content="https://www.pretoriann.com/img-banner-principal/nutricion-banner.webp"
+        />
         <meta property="og:locale" content="es_ES" />
 
         {/* 🔹 SEO técnico */}
-        <link rel="canonical" href="https://tusitiofitness.com/nutricion" />
+        <meta name="robots" content="index, follow" />
+
+        <link rel="canonical" href="https://www.pretoriann.com/nutricion" />
       </Helmet>
+
 
 
       <Baner banners={bannersNutricion} colores={coloresNutricion} />

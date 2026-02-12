@@ -46,7 +46,7 @@ const Dietas = () => {
     <>
       <Helmet>
         {/* 🔹 SEO General */}
-        <title>Dietas Fitness | Tu Sitio Fitness</title>
+        <title>Dietas Fitness | Pretoriann</title>
         <meta
           name="description"
           content="Explora ejemplos de dietas fitness adaptadas a tus objetivos: definición, volumen o mantenimiento. Aprende a distribuir tus comidas y a combinar los macronutrientes correctamente."
@@ -55,19 +55,28 @@ const Dietas = () => {
           name="keywords"
           content="dietas fitness, plan de alimentación, nutrición deportiva, dieta para definición, dieta para volumen, comidas saludables, balance de macros, menú fitness"
         />
-        <meta name="author" content="Tu Sitio Fitness" />
+        <meta name="author" content="Pretoriann" />
 
         {/* 🔹 Open Graph para redes sociales */}
-        <meta property="og:title" content="Dietas y Planes de Alimentación Fitness" />
-        <meta property="og:description" content="Conoce ejemplos de dietas fitness según tu objetivo, aprende cómo estructurar tus comidas y optimiza tus resultados con una buena nutrición." />
+        <meta property="og:title" content="Dietas y Planes de Alimentación Fitness | Pretoriann" />
+        <meta
+          property="og:description"
+          content="Conoce ejemplos de dietas fitness según tu objetivo, aprende cómo estructurar tus comidas y optimiza tus resultados con una buena nutrición en Pretoriann."
+        />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://tusitiofitness.com/dietas" />
-        <meta property="og:image" content="https://tusitiofitness.com/img-banner-principal/dietas-banner.webp" />
+        <meta property="og:url" content="https://www.pretoriann.com/dietas" />
+        <meta
+          property="og:image"
+          content="https://www.pretoriann.com/img-banner-principal/dietas-banner.webp"
+        />
         <meta property="og:locale" content="es_ES" />
 
         {/* 🔹 SEO técnico */}
-        <link rel="canonical" href="https://tusitiofitness.com/dietas" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.pretoriann.com/dietas" />
       </Helmet>
+
+
 
 
 

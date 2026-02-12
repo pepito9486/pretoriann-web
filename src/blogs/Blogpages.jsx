@@ -49,6 +49,40 @@ const BlogPage = () => {
     ];
     return (
         <>
+
+            <Helmet>
+                {/* 🔹 SEO General */}
+                <title>Blog Fitness | Pretoriann</title>
+                <meta
+                    name="description"
+                    content="Explora el blog fitness de Pretoriann con guías prácticas, rutinas, nutrición, mitos del gimnasio y consejos para entrenar mejor en casa o en el gym."
+                />
+                <meta
+                    name="keywords"
+                    content="blog fitness, artículos de entrenamiento, nutrición deportiva, consejos fitness, rutinas en casa, errores comunes al entrenar, mitos del gimnasio, salud y bienestar"
+                />
+                <meta name="author" content="Pretoriann" />
+
+                {/* 🔹 Open Graph (para redes sociales) */}
+                <meta property="og:title" content="Blog Fitness | Pretoriann" />
+                <meta
+                    property="og:description"
+                    content="Lee artículos de fitness, entrenamiento y nutrición en el blog de Pretoriann. Guías prácticas para mejorar tu rendimiento y tu salud."
+                />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://www.pretoriann.com/blogpage" />
+                <meta
+                    property="og:image"
+                    content="https://www.pretoriann.com/img-banner-principal/blog-banner.webp"
+                />
+                <meta property="og:locale" content="es_ES" />
+
+                {/* 🔹 SEO técnico */}
+                <meta name="robots" content="index, follow" />
+
+                <link rel="canonical" href="https://www.pretoriann.com/blogpage" />
+            </Helmet>
+
             <Baner banners={bannersGym} colores={coloresGym} />
             <div className="blog-container">
                 <div className="blog-banner">

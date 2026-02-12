@@ -53,7 +53,7 @@ function Sistemamuscular(props) {
         <>
             <Helmet>
                 {/* 🔹 SEO General */}
-                <title>Sistema Muscular | Tu Sitio Fitness</title>
+                <title>Sistema Muscular | Pretoriann</title>
                 <meta
                     name="description"
                     content="Conoce el sistema muscular y cómo trabaja cada grupo muscular durante el entrenamiento. Aprende qué ejercicios estimulan cada zona y mejora tu rendimiento físico."
@@ -62,19 +62,28 @@ function Sistemamuscular(props) {
                     name="keywords"
                     content="sistema muscular, músculos del cuerpo, anatomía, grupos musculares, ejercicios, fuerza, hipertrofia, entrenamiento por músculo, anatomía fitness, fisiología deportiva"
                 />
-                <meta name="author" content="Tu Sitio Fitness" />
+                <meta name="author" content="Pretoriann" />
 
                 {/* 🔹 Open Graph (para redes sociales) */}
-                <meta property="og:title" content="Sistema Muscular y Anatomía Fitness | Tu Sitio Fitness" />
-                <meta property="og:description" content="Explora el sistema muscular humano y descubre cómo activar cada grupo en tus rutinas. Guía visual y explicativa para entrenar mejor." />
+                <meta property="og:title" content="Sistema Muscular y Anatomía Fitness | Pretoriann" />
+                <meta
+                    property="og:description"
+                    content="Explora el sistema muscular humano en Pretoriann y descubre cómo activar cada grupo en tus rutinas. Guía visual y explicativa para entrenar mejor."
+                />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://tusitiofitness.com/sistema-muscular" />
-                <meta property="og:image" content="https://tusitiofitness.com/img-banner-principal/sistemamuscular-banner.webp" />
+                <meta property="og:url" content="https://www.pretoriann.com/sistema-muscular" />
+                <meta
+                    property="og:image"
+                    content="https://www.pretoriann.com/img-banner-principal/sistemamuscular-banner.webp"
+                />
                 <meta property="og:locale" content="es_ES" />
 
                 {/* 🔹 SEO técnico */}
-                <link rel="canonical" href="https://tusitiofitness.com/sistema-muscular" />
+                <meta name="robots" content="index, follow" />
+
+                <link rel="canonical" href="https://www.pretoriann.com/sistema-muscular" />
             </Helmet>
+
 
 
             <Baner banners={bannersEquipo} colores={coloresEquipo} />

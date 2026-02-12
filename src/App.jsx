@@ -73,7 +73,7 @@ function AppContent() {
         <Route path="/blogentrenarencasa" element={<BlogTrainHome />} />
         <Route path="/blogerrores" element={<BlogErrores />} />
 
-        <Route path="/sistema muscular" element={<Sistemamuscular />} />
+        <Route path="/sistema-muscular" element={<Sistemamuscular />} />
         <Route path="/entrenamiento" element={<Entrenamiento />} />
         <Route path="/disciplinas" element={<Disciplinas />} />
         <Route path="/nutricion" element={<Nutricion />} />

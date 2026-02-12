@@ -20,29 +20,38 @@ function Homepage(props) {
             {/* OPTIMIZANDO SEO MEDIANTE HELMET */}
             <Helmet>
                 {/* 🔹 SEO General */}
-                <title>Inicio | Tu Sitio Fitness</title>
+                <title>Pretoriann | Entrena, Aprende y Mejora tu Cuerpo</title>
                 <meta
                     name="description"
-                    content="Entrena, aprende y mejora tu cuerpo y mente con Tu Sitio Fitness. Encuentra rutinas, calculadoras, guías de nutrición y equipos de entrenamiento adaptados a tu nivel."
+                    content="Entrena, aprende y mejora tu cuerpo y mente con Pretoriann. Encuentra rutinas, calculadoras, guías de nutrición y equipamiento de entrenamiento adaptados a tu nivel."
                 />
                 <meta
                     name="keywords"
                     content="fitness, entrenamiento, nutrición, rutinas, salud, ejercicios, bienestar, vida saludable, musculación, pérdida de peso"
                 />
-                <meta name="author" content="Tu Sitio Fitness" />
+                <meta name="author" content="Pretoriann" />
 
                 {/* 🔹 Open Graph para redes sociales */}
-                <meta property="og:title" content="Tu Sitio Fitness - Entrena, Aprende y Mejora" />
-                <meta property="og:description" content="Descubre rutinas, consejos, herramientas y guías para alcanzar tus objetivos fitness desde casa o el gimnasio." />
+                <meta property="og:title" content="Pretoriann – Entrena, Aprende y Mejora tu Cuerpo" />
+                <meta
+                    property="og:description"
+                    content="Descubre rutinas, consejos, herramientas y guías en Pretoriann para alcanzar tus objetivos fitness desde casa o el gimnasio."
+                />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://tusitiofitness.com" />
-                <meta property="og:image" content="https://tusitiofitness.com/img-banner-principal/home-banner.webp" />
+                <meta property="og:url" content="https://www.pretoriann.com/" />
+                <meta
+                    property="og:image"
+                    content="https://www.pretoriann.com/img-banner-principal/home-banner.webp"
+                />
                 <meta property="og:locale" content="es_ES" />
 
                 {/* 🔹 Responsive y SEO técnico */}
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <link rel="canonical" href="https://tusitiofitness.com" />
+                <meta name="robots" content="index, follow" />
+
+                <link rel="canonical" href="https://www.pretoriann.com/" />
             </Helmet>
+
 
 
 

@@ -103,28 +103,38 @@ function Entrenamiento(props) {
         <>
             <Helmet>
                 {/* 🔹 SEO General */}
-                <title>Entrenamiento y Rutinas | Tu Sitio Fitness</title>
+                <title>Entrenamiento y Rutinas | Pretoriann</title>
                 <meta
                     name="description"
-                    content="Encuentra rutinas de entrenamiento personalizadas, planes para ganar masa muscular o perder grasa, y considera los aspectos nutricionales clave para optimizar tus resultados."
+                    content="Encuentra rutinas de entrenamiento personalizadas, planes para ganar masa muscular o perder grasa, y consejos nutricionales clave para optimizar tus resultados."
                 />
                 <meta
                     name="keywords"
                     content="rutinas de entrenamiento, planes fitness, ejercicios en casa, musculación, fuerza, definición, volumen, entrenamiento funcional, nutrición deportiva"
                 />
-                <meta name="author" content="Tu Sitio Fitness" />
+                <meta name="author" content="Pretoriann" />
 
                 {/* 🔹 Open Graph (redes sociales) */}
-                <meta property="og:title" content="Rutinas y Planes de Entrenamiento | Tu Sitio Fitness" />
-                <meta property="og:description" content="Descubre rutinas de fuerza, resistencia y definición adaptadas a tu nivel. Incluye guías nutricionales para acompañar tu entrenamiento." />
+                <meta property="og:title" content="Rutinas y Planes de Entrenamiento | Pretoriann" />
+                <meta
+                    property="og:description"
+                    content="Descubre rutinas de fuerza, resistencia y definición adaptadas a tu nivel en Pretoriann. Incluye guías nutricionales para acompañar tu entrenamiento."
+                />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://tusitiofitness.com/entrenamiento" />
-                <meta property="og:image" content="https://tusitiofitness.com/img-banner-principal/entrenamiento-banner.webp" />
+                <meta property="og:url" content="https://www.pretoriann.com/entrenamiento" />
+                <meta
+                    property="og:image"
+                    content="https://www.pretoriann.com/img-banner-principal/entrenamiento-banner.webp"
+                />
                 <meta property="og:locale" content="es_ES" />
 
                 {/* 🔹 SEO técnico */}
-                <link rel="canonical" href="https://tusitiofitness.com/entrenamiento" />
+                <meta name="robots" content="index, follow" />
+                <link rel="canonical" href="https://www.pretoriann.com/entrenamiento" />
             </Helmet>
+
+
+
             <Baner banners={bannersRutinas} colores={coloresRutinas} />
             <Slider clase1={'main-card'} clase2={'info-card'} />
 

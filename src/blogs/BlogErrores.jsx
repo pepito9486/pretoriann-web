@@ -6,7 +6,7 @@ const BlogErrores = () => {
         <>
             <Helmet>
                 {/* 🔹 SEO General */}
-                <title>Errores comunes al entrenar (y cómo evitarlos) | Tu Sitio Fitness</title>
+                <title>Errores comunes al entrenar (y cómo evitarlos) | Pretoriann</title>
                 <meta
                     name="description"
                     content="Descubre los errores más frecuentes que pueden frenar tu progreso en el gimnasio o en casa y aprende cómo evitarlos para mejorar tus resultados y prevenir lesiones."
@@ -15,19 +15,28 @@ const BlogErrores = () => {
                     name="keywords"
                     content="errores al entrenar, entrenamiento incorrecto, cómo evitar lesiones, técnica de ejercicios, progresión, descanso, recuperación, consejos fitness, rendimiento deportivo"
                 />
-                <meta name="author" content="Tu Sitio Fitness" />
+                <meta name="author" content="Pretoriann" />
 
                 {/* 🔹 Open Graph (para redes sociales) */}
-                <meta property="og:title" content="Errores comunes al entrenar | Guía práctica para evitarlos" />
-                <meta property="og:description" content="Evita los errores más comunes en tu entrenamiento y mejora tu técnica, rendimiento y seguridad. Consejos prácticos y fáciles de aplicar." />
+                <meta property="og:title" content="Errores comunes al entrenar | Guía práctica para evitarlos | Pretoriann" />
+                <meta
+                    property="og:description"
+                    content="Evita los errores más comunes en tu entrenamiento con esta guía práctica de Pretoriann. Mejora tu técnica, rendimiento y seguridad."
+                />
                 <meta property="og:type" content="article" />
-                <meta property="og:url" content="https://tusitiofitness.com/blogerrores" />
-                <meta property="og:image" content="https://tusitiofitness.com/img-banner-principal/errorplancha-blog.webp" />
+                <meta property="og:url" content="https://www.pretoriann.com/blogerrores" />
+                <meta
+                    property="og:image"
+                    content="https://www.pretoriann.com/img-banner-principal/errorplancha-blog.webp"
+                />
                 <meta property="og:locale" content="es_ES" />
 
                 {/* 🔹 SEO técnico */}
-                <link rel="canonical" href="https://tusitiofitness.com/blogerrores" />
+                <meta name="robots" content="index, follow" />
+
+                <link rel="canonical" href="https://www.pretoriann.com/blogerrores" />
             </Helmet>
+
 
 
             <div className="blog-post-container">

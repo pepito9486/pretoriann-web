@@ -6,7 +6,7 @@ const MitosProteinas = () => {
         <>
             <Helmet>
                 {/* 🔹 SEO General */}
-                <title>5 mitos sobre las proteínas que debes conocer | Tu Sitio Fitness</title>
+                <title>5 mitos sobre las proteínas que debes conocer | Pretoriann</title>
                 <meta
                     name="description"
                     content="Aclara los mitos más comunes sobre las proteínas: cuánta necesitas realmente, cuándo consumirlas y si los suplementos son imprescindibles para progresar."
@@ -15,19 +15,28 @@ const MitosProteinas = () => {
                     name="keywords"
                     content="proteínas, mitos del fitness, suplementos, dieta fitness, nutrición deportiva, consumo de proteínas, batidos de proteínas, mitos de gimnasio, alimentación saludable"
                 />
-                <meta name="author" content="Tu Sitio Fitness" />
+                <meta name="author" content="Pretoriann" />
 
                 {/* 🔹 Open Graph (para redes sociales) */}
-                <meta property="og:title" content="5 mitos sobre las proteínas que debes conocer | Tu Sitio Fitness" />
-                <meta property="og:description" content="Descubre la verdad detrás de los mitos más populares sobre las proteínas y aprende a usarlas correctamente para mejorar tu rendimiento." />
+                <meta property="og:title" content="5 mitos sobre las proteínas que debes conocer | Pretoriann" />
+                <meta
+                    property="og:description"
+                    content="Descubre la verdad detrás de los mitos más populares sobre las proteínas con esta guía de Pretoriann y aprende a usarlas correctamente para mejorar tu rendimiento."
+                />
                 <meta property="og:type" content="article" />
-                <meta property="og:url" content="https://tusitiofitness.com/blogmitos" />
-                <meta property="og:image" content="https://tusitiofitness.com/img-banner-principal/proteina-blog.webp" />
+                <meta property="og:url" content="https://www.pretoriann.com/blogmitos" />
+                <meta
+                    property="og:image"
+                    content="https://www.pretoriann.com/img-banner-principal/proteina-blog.webp"
+                />
                 <meta property="og:locale" content="es_ES" />
 
                 {/* 🔹 SEO técnico */}
-                <link rel="canonical" href="https://tusitiofitness.com/blogmitos" />
+                <meta name="robots" content="index, follow" />
+
+                <link rel="canonical" href="https://www.pretoriann.com/blogmitos" />
             </Helmet>
+
 
             <div className="blog-post-container">
                 <img src="/img-blog/banner-mitos.webp" alt="" />

@@ -76,28 +76,37 @@ const Equipos = () => {
     <>
       <Helmet>
         {/* 🔹 SEO General */}
-        <title>Equipos de Entrenamiento | Tu Sitio Fitness</title>
+        <title>Equipamiento de Entrenamiento | Pretoriann</title>
         <meta
           name="description"
-          content="Descubre los equipos más utilizados en cada disciplina fitness: mancuernas, pesas, bandas elásticas, máquinas y más. Aprende su función y cómo integrarlos en tus rutinas."
+          content="Descubre el equipamiento de entrenamiento más utilizado en cada disciplina fitness: mancuernas, pesas, bandas elásticas, máquinas y más. Aprende su función y cómo integrarlos en tus rutinas."
         />
         <meta
           name="keywords"
-          content="equipos de entrenamiento, mancuernas, bandas elásticas, pesas, máquinas de gimnasio, equipamiento fitness, accesorios de entrenamiento, material deportivo, calistenia, yoga, pilates"
+          content="equipamiento de entrenamiento, mancuernas, bandas elásticas, pesas, máquinas de gimnasio, equipamiento fitness, accesorios de entrenamiento, material deportivo, calistenia, yoga, pilates"
         />
-        <meta name="author" content="Tu Sitio Fitness" />
+        <meta name="author" content="Pretoriann" />
 
         {/* 🔹 Open Graph para redes sociales */}
-        <meta property="og:title" content="Equipos de Entrenamiento Fitness | Tu Sitio Fitness" />
-        <meta property="og:description" content="Explora los equipos más usados en disciplinas como Calistenia, Yoga, Pilates o CrossFit. Conoce su utilidad y cómo elegir el mejor para ti." />
+        <meta property="og:title" content="Equipamiento de Entrenamiento Fitness | Pretoriann" />
+        <meta
+          property="og:description"
+          content="Explora el equipamiento más usado en disciplinas como Calistenia, Yoga, Pilates o CrossFit en Pretoriann. Conoce su utilidad y cómo elegir el mejor para ti."
+        />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://tusitiofitness.com/equipos" />
-        <meta property="og:image" content="https://tusitiofitness.com/img-banner-principal/equipos-banner.webp" />
+        <meta property="og:url" content="https://www.pretoriann.com/equipamiento" />
+        <meta
+          property="og:image"
+          content="https://www.pretoriann.com/img-banner-principal/equipos-banner.webp"
+        />
         <meta property="og:locale" content="es_ES" />
 
         {/* 🔹 SEO técnico */}
-        <link rel="canonical" href="https://tusitiofitness.com/equipos" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.pretoriann.com/equipamiento" />
       </Helmet>
+
+
 
 
       <Baner banners={bannersEquipos} colores={coloresEquipo} />

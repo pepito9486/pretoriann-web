@@ -7,7 +7,7 @@ const BlogTrainHome = () => {
 
             <Helmet>
                 {/* 🔹 SEO General */}
-                <title>Entrenar sin gimnasio: los mejores ejercicios para casa | Tu Sitio Fitness</title>
+                <title>Entrenar sin gimnasio: los mejores ejercicios para casa | Pretoriann</title>
                 <meta
                     name="description"
                     content="Aprende a entrenar sin gimnasio con ejercicios efectivos para todo el cuerpo. Mejora tu fuerza, resistencia y movilidad usando solo tu peso corporal."
@@ -16,19 +16,29 @@ const BlogTrainHome = () => {
                     name="keywords"
                     content="entrenar en casa, ejercicios sin gimnasio, calistenia, peso corporal, rutinas en casa, entrenamiento funcional, ejercicios sin equipo, fitness en casa"
                 />
-                <meta name="author" content="Tu Sitio Fitness" />
+                <meta name="author" content="Pretoriann" />
 
                 {/* 🔹 Open Graph (para redes sociales) */}
-                <meta property="og:title" content="Entrenar sin gimnasio: ejercicios para casa | Tu Sitio Fitness" />
-                <meta property="og:description" content="Descubre los mejores ejercicios para entrenar desde casa sin necesidad de gimnasio ni equipamiento. Guía práctica para mantenerte en forma." />
+                <meta property="og:title" content="Entrenar sin gimnasio: ejercicios para casa | Pretoriann" />
+                <meta
+                    property="og:description"
+                    content="Descubre los mejores ejercicios para entrenar desde casa sin necesidad de gimnasio ni equipamiento. Guía práctica de Pretoriann para mantenerte en forma."
+                />
                 <meta property="og:type" content="article" />
-                <meta property="og:url" content="https://tusitiofitness.com/blogentrenarencasa" />
-                <meta property="og:image" content="https://tusitiofitness.com/img-banner-principal/pesas-blog.webp" />
+                <meta property="og:url" content="https://www.pretoriann.com/blogentrenarencasa" />
+                <meta
+                    property="og:image"
+                    content="https://www.pretoriann.com/img-banner-principal/pesas-blog.webp"
+                />
                 <meta property="og:locale" content="es_ES" />
 
                 {/* 🔹 SEO técnico */}
-                <link rel="canonical" href="https://tusitiofitness.com/blogentrenarencasa" />
+                <meta name="robots" content="index, follow" />
+
+                <link rel="canonical" href="https://www.pretoriann.com/blogentrenarencasa" />
             </Helmet>
+
+
 
             <div className="blog-post-container">
                 <h1>Entrenar sin gimnasio: los mejores ejercicios para entrenar en casa</h1>

@@ -87,7 +87,7 @@ function Disciplinas() {
     <>
       <Helmet>
         {/* 🔹 SEO General */}
-        <title>Disciplinas Fitness | Tu Sitio Fitness</title>
+        <title>Disciplinas Fitness | Pretoriann</title>
         <meta
           name="description"
           content="Explora distintas disciplinas fitness como Calistenia, Yoga, Pilates, HIIT, CrossFit y Entrenamiento Funcional. Aprende sus beneficios, técnicas y rutinas recomendadas."
@@ -96,19 +96,28 @@ function Disciplinas() {
           name="keywords"
           content="disciplinas fitness, yoga, pilates, calistenia, crossfit, hiit, entrenamiento funcional, ejercicios, fuerza, flexibilidad, resistencia"
         />
-        <meta name="author" content="Tu Sitio Fitness" />
+        <meta name="author" content="Pretoriann" />
 
         {/* 🔹 Open Graph para redes sociales */}
-        <meta property="og:title" content="Disciplinas Fitness | Yoga, Calistenia, HIIT y más" />
-        <meta property="og:description" content="Descubre las principales disciplinas fitness y encuentra videos explicativos y rutinas para mejorar tu fuerza, flexibilidad y resistencia." />
+        <meta property="og:title" content="Disciplinas Fitness | Yoga, Calistenia, HIIT y más | Pretoriann" />
+        <meta
+          property="og:description"
+          content="Descubre las principales disciplinas fitness en Pretoriann y encuentra videos explicativos y rutinas para mejorar tu fuerza, flexibilidad y resistencia."
+        />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://tusitiofitness.com/disciplinas" />
-        <meta property="og:image" content="https://tusitiofitness.com/img-banner-principal/disciplinas-banner.webp" />
+        <meta property="og:url" content="https://www.pretoriann.com/disciplinas" />
+        <meta
+          property="og:image"
+          content="https://www.pretoriann.com/img-banner-principal/disciplinas-banner.webp"
+        />
         <meta property="og:locale" content="es_ES" />
 
         {/* 🔹 SEO técnico */}
-        <link rel="canonical" href="https://tusitiofitness.com/disciplinas" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.pretoriann.com/disciplinas" />
       </Helmet>
+
+
       <Baner banners={bannersGym} colores={coloresGym} />
       <Slider clase1={"main-card"} clase2={"info-card"} />
 
