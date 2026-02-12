@@ -16,7 +16,7 @@ import Dietas from './pages/dietas';
 import Calculadora from './pages/calculadora';
 import Equipos from './pages/equipos';
 
-import BlogPage from './blogs/Blogpages';
+import BlogPages from './blogs/Blogpages';
 import BlogMitos from './blogs/BlogMitos'
 import BlogTrainHome from './blogs/BlogTrainHome'
 import BlogErrores from './blogs/BlogErrores'
@@ -68,7 +68,7 @@ function AppContent() {
       <Routes>
         <Route path="/" element={<Homepage />} />
 
-        <Route path="/blogpage" element={<BlogPage />} />
+        <Route path="/blogpage" element={<BlogPages />} />
         <Route path="/blogmitos" element={<BlogMitos />} />
         <Route path="/blogentrenarencasa" element={<BlogTrainHome />} />
         <Route path="/blogerrores" element={<BlogErrores />} />
