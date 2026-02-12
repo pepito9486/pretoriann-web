@@ -1,6 +1,7 @@
 import React from 'react';
 import Baner from '../components/baner';
 import { Link } from 'react-router-dom';
+import { Helmet } from "react-helmet-async";
 
 const blogPosts = [
     {
