@@ -31,7 +31,7 @@ const blogPosts = [
 
 
 
-const BlogPage = () => {
+const BlogPages = () => {
     const coloresGym = ['#FFB74D', '#C62828'];
     const bannersGym = [
         {
@@ -114,6 +114,6 @@ const BlogPage = () => {
     );
 };
 
-export default BlogPage;
+export default BlogPages;
 
 

@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/navbar';
 import Slider from '../components/slider';
 import { Helmet } from "react-helmet-async";
+import { Link } from 'react-router-dom';
 
 function Homepage(props) {
     const navigate = useNavigate();
@@ -243,7 +244,9 @@ function Homepage(props) {
                     </div>
                 </div>
 
-                <a href="/blogpage" className="blog-btn">Ver artículos</a>
+                <Link to="/blogpage" className="blog-btn">
+                    Ver artículos
+                </Link>
             </section>
 
             {/* recomendados */}

@@ -56,6 +56,7 @@
 
 import React, { useState, useRef } from 'react';
 import { useEffect } from 'react';
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     const navRef = useRef(null);
@@ -134,13 +135,41 @@ const Navbar = () => {
                             onClick={ocultar}
                         ></i>
                         <ul>
-                            <li><a href="/"><i className="fa-solid fa-house"></i><span>Inicio</span> </a></li>
-                            <li><a href="./disciplinas"><i className="fa-solid fa-dumbbell"></i> Disciplinas</a></li>
-                            <li><a href="./entrenamiento"><i className="fa-solid fa-calendar-days"></i> Rutinas</a></li>
-                            <li><a href="./nutricion"><i className="fa-solid fa-apple-whole"></i> Nutrición</a></li>
-                            <li><a href="./blogpage"><i className="fa-solid fa-book-open"></i> Blog</a></li>
-                            <li><a href="./calculadora"><i className="fa-solid fa-calculator"></i> Calculadora</a></li>
-                            <li><a href="./contacto"><i className="fa-solid fa-envelope"></i> Contacto</a></li>
+                            <li>
+                                <Link to="/">
+                                    <i className="fa-solid fa-house"></i><span>Inicio</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/disciplinas">
+                                    <i className="fa-solid fa-dumbbell"></i> Disciplinas
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/entrenamiento">
+                                    <i className="fa-solid fa-calendar-days"></i> Rutinas
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/nutricion">
+                                    <i className="fa-solid fa-apple-whole"></i> Nutrición
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/blogpage">
+                                    <i className="fa-solid fa-book-open"></i> Blog
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/calculadora">
+                                    <i className="fa-solid fa-calculator"></i> Calculadora
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/contacto">
+                                    <i className="fa-solid fa-envelope"></i> Contacto
+                                </Link>
+                            </li>
                         </ul>
 
                     </nav>
