@@ -9,7 +9,7 @@ function Slider(props) {
   const navigate = useNavigate();
 
   const cards = [
-    { src: '/img-carrusel-icon/icon-sistema-muscular.webp', title: 'Sistema Muscular', link: '/sistema muscular' },
+    { src: '/img-carrusel-icon/icon-sistema-muscular.webp', title: 'Sistema Muscular', link: '/sistema-muscular' },
     { src: '/img-carrusel-icon/icon-disciplinas.webp', title: 'Disciplinas Fitness', link: '/disciplinas' },
     { src: '/img-carrusel-icon/icon-entrenamiento.webp', title: 'Rutinas', link: '/entrenamiento' },
     { src: '/img-carrusel-icon/icon-nutricion.webp', title: 'Nutricion', link: '/nutricion' },
