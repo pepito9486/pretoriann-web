@@ -1,5 +1,7 @@
 import React from 'react';
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
+
 
 const BlogTrainHome = () => {
     return (
@@ -7,11 +9,13 @@ const BlogTrainHome = () => {
 
             <Helmet>
                 {/* 🔹 SEO General */}
-                <title>Entrenar sin gimnasio: los mejores ejercicios para casa | Pretoriann</title>
+                <title>Entrenar en casa sin gimnasio: rutina completa con ejercicios | Pretoriann</title>
+
                 <meta
                     name="description"
-                    content="Aprende a entrenar sin gimnasio con ejercicios efectivos para todo el cuerpo. Mejora tu fuerza, resistencia y movilidad usando solo tu peso corporal."
+                    content="Guía completa para entrenar en casa sin gimnasio: rutina efectiva con ejercicios para todo el cuerpo, técnica correcta y consejos para progresar sin material."
                 />
+
                 <meta
                     name="keywords"
                     content="entrenar en casa, ejercicios sin gimnasio, calistenia, peso corporal, rutinas en casa, entrenamiento funcional, ejercicios sin equipo, fitness en casa"
@@ -41,14 +45,17 @@ const BlogTrainHome = () => {
 
 
             <div className="blog-post-container">
-                <h1>Entrenar sin gimnasio: los mejores ejercicios para entrenar en casa</h1>
+                <h1>Entrenar en casa sin gimnasio: rutina completa con ejercicios efectivos</h1>
+
                 <p>
                     Muchas veces se tiene la idea de que sin un gimnasio no se puede avanzar en el entrenamiento. Sin embargo, con una buena selección de ejercicios y una técnica correcta, se puede lograr un progreso real desde casa. Esta guía recoge opciones prácticas para entrenar sin necesidad de máquinas ni cuotas, solo con el propio peso corporal y algunos objetos cotidianos.
                 </p>
 
                 <div className="blog-section">
                     <h2>1. Sentadillas (Piernas y glúteos)</h2>
-                    <img src="/img-blog/sentadillas.webp" alt="Sentadillas" />
+                    <img src="/img-blog/sentadillas.webp"
+                        alt="Sentadillas para entrenar piernas y glúteos en casa sin gimnasio"
+                        loading="lazy" />
                     <p>Las sentadillas destacan por su capacidad para trabajar todo el tren inferior. Se pueden realizar con el propio peso o agregar resistencia con mochilas, garrafas o bandas elásticas.</p>
                     <ul>
                         <li>Colocar los pies a la anchura de los hombros.</li>
@@ -62,7 +69,9 @@ const BlogTrainHome = () => {
 
                 <div className="blog-section">
                     <h2>2. Flexiones (Pecho, hombros y tríceps)</h2>
-                    <img src="/img-blog/flexiones.webp" alt="Flexiones" />
+                    <img src="/img-blog/flexiones.webp"
+                        alt="Flexiones para entrenar pecho, hombros y tríceps en casa sin gimnasio"
+                        loading="lazy" />
                     <p>Un clásico que no falla. Ajustar la posición de las manos o apoyarse en las rodillas permite adaptarlas a cualquier nivel.</p>
                     <ul>
                         <li>Manos ligeramente más separadas que los hombros.</li>
@@ -76,7 +85,9 @@ const BlogTrainHome = () => {
 
                 <div className="blog-section">
                     <h2>3. Puente de glúteos (Glúteos y zona lumbar)</h2>
-                    <img src="/img-blog/elevacion-gluteos.webp" alt="Puente de glúteos" />
+                    <img src="/img-blog/elevacion-gluteos.webp"
+                        alt="Puente de glúteos para fortalecer glúteos y zona lumbar en casa sin gimnasio"
+                        loading="lazy" />
                     <p>Ejercicio ideal para la parte posterior del cuerpo. Elevar una pierna es una buena forma de añadir dificultad.</p>
                     <ul>
                         <li>Acostarse boca arriba, con rodillas flexionadas.</li>
@@ -90,7 +101,9 @@ const BlogTrainHome = () => {
 
                 <div className="blog-section">
                     <h2>4. Plancha (Core y estabilidad general)</h2>
-                    <img src="/img-blog/plancha.webp" alt="Plancha" />
+                    <img src="/img-blog/plancha.webp"
+                        alt="Plancha abdominal para fortalecer el core y la estabilidad en casa sin gimnasio"
+                        loading="lazy" />
                     <p>Ejercicio isométrico que fortalece el centro del cuerpo. Aparentemente simple, pero muy exigente.</p>
                     <ul>
                         <li>Apoyar los antebrazos y extender las piernas.</li>
@@ -103,7 +116,9 @@ const BlogTrainHome = () => {
 
                 <div className="blog-section">
                     <h2>5. Remo con garrafas (Espalda y bíceps)</h2>
-                    <img src="/img-blog/remo-casa.webp" alt="Remo" />
+                    <img src="/img-blog/remo-casa.webp"
+                        alt="Remo con garrafas para entrenar la espalda y los bíceps en casa sin gimnasio"
+                        loading="lazy" />
                     <p>Con objetos caseros como garrafas o mochilas, es posible simular un remo inclinado efectivo.</p>
                     <ul>
                         <li>Inclinar el torso con la espalda recta.</li>
@@ -117,7 +132,9 @@ const BlogTrainHome = () => {
 
                 <div className="blog-section">
                     <h2>6. Elevaciones laterales (Hombros)</h2>
-                    <img src="/img-blog/elevacion-hombros.webp" alt="Elevaciones laterales" />
+                    <img src="/img-blog/elevacion-hombros.webp"
+                        alt="Elevaciones laterales para trabajar los hombros en casa con peso ligero"
+                        loading="lazy" />
                     <p>Un movimiento simple y eficaz con cargas ligeras que mejora la forma del hombro.</p>
                     <ul>
                         <li>Sujetar una carga ligera en cada mano.</li>
@@ -130,7 +147,9 @@ const BlogTrainHome = () => {
 
                 <div className="blog-section">
                     <h2>7. Zancadas (Piernas, glúteos y estabilidad)</h2>
-                    <img src="/img-blog/zancadas.webp" alt="Zancadas" />
+                    <img src="/img-blog/zancadas.webp"
+                        alt="Zancadas para trabajar piernas y glúteos en casa sin gimnasio"
+                        loading="lazy" />
                     <p>Se pueden realizar en diferentes direcciones. Exigen equilibrio y coordinación.</p>
                     <ul>
                         <li>Dar un paso largo hacia adelante.</li>
@@ -150,6 +169,21 @@ const BlogTrainHome = () => {
                         Lo importante es conocer bien los movimientos, adaptar la dificultad y mantener la regularidad. El progreso está más cerca de lo que parece.
                     </p>
                 </div>
+
+                <p>
+                    Si quieres profundizar en rutinas más estructuradas, visita nuestra sección de
+                    <Link to="/entrenamiento"><em>entrenamiento y rutinas</em></Link>.
+                    También puedes ver ejercicios por disciplina en
+                    <Link to="/disciplinas"><em>disciplinas fitness</em></Link> o el equipamiento básico recomendado en
+                    <Link to="/equipamiento"><em>equipamiento para entrenar en casa</em></Link>.
+                </p>
+
+                <p>
+                    👉 Puedes ver más artículos como este en nuestro{" "}
+                    <Link to="/blogpage"><strong>blog de fitness</strong></Link>.
+                </p>
+
+
             </div>
         </>
     );
