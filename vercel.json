@@ -2,13 +2,14 @@
   "redirects": [
     {
       "source": "/(.*)",
-      "has": [{ "type": "host", "value": "pretoriann.com" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "pretoriann.com"
+        }
+      ],
       "destination": "https://www.pretoriann.com/$1",
       "permanent": true
     }
-  ],
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
   ]
 }
-
